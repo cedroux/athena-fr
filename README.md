@@ -15,3 +15,4 @@ Détails
 * Les codes de ponctuation sont francisés (ex: Accents avant ? et !), en cas de ponctuation qui repasse à la ligne, un
 espace insécable est inséré (Alt + 0160)
 
+J'écris de la merde
