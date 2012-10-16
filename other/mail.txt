@@ -24,113 +24,111 @@
 
 // Floating mailbox npc that all NPCs duplicate from.
 //============================================================
--	script	Mailbox#dummy::MailBox	-1,{
-	mes "[Mailbox]";
-	mes "To use the mailbox service, you are required";
-	mes "to pay 130 zeny.";
-	mes "Would you like to use the service?";
+-	script	Boîte aux Lettres#dummy::MailBox	-1,{
+	mes "[Boîte aux Lettres]";
+	mes "Les services-postaux sont disponibles pour 130 Zenys.";
+	mes "Désirez-vous utiliser ces services ?";
 	next;
-	mes "[Mailbox]";
-	if (select("Yes.:No.") == 1) {
+	mes "[Boîte aux Lettres]";
+	if (select("Oui.:Non.") == 1) {
 		if (Zeny < 130) {
-			mes "I am sorry, but you do not have enough money.";
-			mes "To use the mailbox service, you are required";
-			mes "to pay 130 zeny.";
+			mes "Vous n'avez pas assez d'argent pour utiliser ce service.";
+			mes "La consultation du courrier coûte 130 Zenys";
 			close;
 		}
-		mes "Thank you, please come again.";
+		mes "Merci d'avoir utilisé les services-postaux.";
 		set Zeny,(Zeny - 130);
 		close2;
 		openmail;
 		end;
 	}
-	mes "Thank you, please come again.";
+	mes "Merci d'avoir utilisé les services-postaux.";
 	close;
 }
 
 // Prontera
 //============================================================
-prontera,146,86,0	duplicate(MailBox)	Mailbox#prt	888
-prontera,275,213,0	duplicate(MailBox)	Mailbox#2prt	888
-prontera,34,212,0	duplicate(MailBox)	Mailbox#3prt	888
+prontera,146,86,0	duplicate(MailBox)	Boîte aux Lettres#prt	888
+prontera,275,213,0	duplicate(MailBox)	Boîte aux Lettres#2prt	888
+prontera,34,212,0	duplicate(MailBox)	Boîte aux Lettres#3prt	888
 
 // Izlude
 //============================================================
-izlude,136,94,0	duplicate(MailBox)	Mailbox#iz	888
+izlude,136,94,0	duplicate(MailBox)	Boîte aux Lettres#iz	888
 
 // Morroc
 //============================================================
-moc_ruins,72,166,0	duplicate(MailBox)	Mailbox#1moc	888
-moc_ruins,156,52,0	duplicate(MailBox)	Mailbox#2moc	888
+moc_ruins,72,166,0	duplicate(MailBox)	Boîte aux Lettres#1moc	888
+moc_ruins,156,52,0	duplicate(MailBox)	Boîte aux Lettres#2moc	888
 
 // Geffen
 //============================================================
-geffen,115,67,0	duplicate(MailBox)	Mailbox#gef	888
-geffen,199,125,0	duplicate(MailBox)	Mailbox#2gef	888
+geffen,115,67,0	duplicate(MailBox)	Boîte aux Lettres#gef	888
+geffen,199,125,0	duplicate(MailBox)	Boîte aux Lettres#2gef	888
 
 // Payon
 //============================================================
-payon,191,104,0	duplicate(MailBox)	Mailbox#pay	888
-payon,171,226,0	duplicate(MailBox)	Mailbox#2pay	888
-pay_arche,55,127,0	duplicate(MailBox)	Mailbox#3pay	888
+payon,191,104,0	duplicate(MailBox)	Boîte aux Lettres#pay	888
+payon,171,226,0	duplicate(MailBox)	Boîte aux Lettres#2pay	888
+pay_arche,55,127,0	duplicate(MailBox)	Boîte aux Lettres#3pay	888
 
 // Alberta
 //============================================================
-alberta,90,60,0	duplicate(MailBox)	Mailbox#alb	888
-alberta,30,240,0	duplicate(MailBox)	Mailbox#2alb	888
+alberta,90,60,0	duplicate(MailBox)	Boîte aux Lettres#alb	888
+alberta,30,240,0	duplicate(MailBox)	Boîte aux Lettres#2alb	888
 
 // Al De Baran
 //============================================================
-aldebaran,135,122,0	duplicate(MailBox)	Mailbox#alde	888
+aldebaran,135,122,0	duplicate(MailBox)	Boîte aux Lettres#alde	888
 
 // Juno
 //============================================================
-yuno,148,187,0	duplicate(MailBox)	Mailbox#yuno	888
-yuno,332,108,0	duplicate(MailBox)	Mailbox#2yuno	888
+yuno,148,187,0	duplicate(MailBox)	Boîte aux Lettres#yuno	888
+yuno,332,108,0	duplicate(MailBox)	Boîte aux Lettres#2yuno	888
 
 // Lightalzen
 //============================================================
-lighthalzen,164,85,0	duplicate(MailBox)	Mailbox#lht	888
-lighthalzen,196,320,0	duplicate(MailBox)	Mailbox#2lht	888
+lighthalzen,164,85,0	duplicate(MailBox)	Boîte aux Lettres#lht	888
+lighthalzen,196,320,0	duplicate(MailBox)	Boîte aux Lettres#2lht	888
 
 // Einbroch and Einbech
 //============================================================
-einbroch,231,215,0	duplicate(MailBox)	Mailbox#ein	888
-einbroch,77,202,0	duplicate(MailBox)	Mailbox#2ein	888
-einbech,182,124,0	duplicate(MailBox)	Mailbox#3ein	888
+einbroch,231,215,0	duplicate(MailBox)	Boîte aux Lettres#ein	888
+einbroch,77,202,0	duplicate(MailBox)	Boîte aux Lettres#2ein	888
+einbech,182,124,0	duplicate(MailBox)	Boîte aux Lettres#3ein	888
 
 // Comodo
 //============================================================
-comodo,200,150,0	duplicate(MailBox)	Mailbox#cmd	888
+comodo,200,150,0	duplicate(MailBox)	Boîte aux Lettres#cmd	888
 
 // Umbala
 //============================================================
-umbala,104,155,0	duplicate(MailBox)	Mailbox#um	888
+umbala,104,155,0	duplicate(MailBox)	Boîte aux Lettres#um	888
 
 // Amatsu
 //============================================================
-amatsu,102,146,0	duplicate(MailBox)	Mailbox#ama	888
+amatsu,102,146,0	duplicate(MailBox)	Boîte aux Lettres#ama	888
 
 // Gonryun
 //============================================================
-gonryun,152,117,0	duplicate(MailBox)	Mailbox#gon	888
+gonryun,152,117,0	duplicate(MailBox)	Boîte aux Lettres#gon	888
 
 // Ayothaya
 //============================================================
-ayothaya,205,169,0	duplicate(MailBox)	Mailbox#ayo	888
+ayothaya,205,169,0	duplicate(MailBox)	Boîte aux Lettres#ayo	888
 
 // Louyang
 //============================================================
-louyang,204,100,0	duplicate(MailBox)	Mailbox#lou	888
+louyang,204,100,0	duplicate(MailBox)	Boîte aux Lettres#lou	888
 
 // Hugel
 //============================================================
-hugel,86,168,0	duplicate(MailBox)	Mailbox#hu	111
+hugel,86,168,0	duplicate(MailBox)	Boîte aux Lettres#hu	111
 
 // Rachel
 //============================================================
-rachel,122,146,0	duplicate(MailBox)	Post Box#ra	888
+rachel,122,146,0	duplicate(MailBox)	Boîte Postale#ra	888
 
 // Veins
 //============================================================
-veins,218,123,0	duplicate(MailBox)	Post Box#ve	888
+veins,218,123,0	duplicate(MailBox)	Boîte Postale#ve	888
