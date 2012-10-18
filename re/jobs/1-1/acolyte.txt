@@ -71,7 +71,7 @@ prt_church,184,41,4	script	Cleric#aco	60,{
 		}else{
 			mes "[Père Mareusis]";
 			mes "Voulez-vous vraiment devenir un serviteur de Dieu ?";
-			mes "Voyons voir si vous êtres prêt pour ça ou pas... Hm...";
+			mes "Voyons voir si vous êtes prêt pour ça ou pas... Hm...";
 			next;
 			if (getskilllv("NV_BASIC") < 9) {
 				mes "[Père Mareusis]";
@@ -94,14 +94,14 @@ prt_church,184,41,4	script	Cleric#aco	60,{
 	case 2:
 		mes "[Père Mareusis]";
 		mes "Voulez-vous devenir Acolyte ?";
-		mes "Alors, vous devez remplir les cyou must fulfill the following requirements thinking those are the practices given by God.";
+		mes "Alors, vous devez remplir certaines exigences thinking those are the practices given by God."; //todo
 		next;
-		mes "[Father Mareusis]";
-		mes "First, you have to reach at least Novice Job Level 9 and learn all of the Basic Skills.";
-		mes "This is the most basic thing to do, so you need to regard it as the way of training yourself.";
+		mes "[Père Mareusis]";
+		mes "D'abord, vous devez atteindre au moins, en tant que débutant, le job level 9 ainsi qu'apprendre toutes les compétences de base.";
+		mes "C'est la plus simple des choses à faire, alors considérez ça comme une façon de vous entraîner.";
 		next;
-		mes "[Father Mareusis]";
-		mes "When you think you fulfilled this requirement, then come back to me again. Then you will have a holy job in which you can spread God's will.";
+		mes "[Père Mareusis]";
+		mes "Quand vous estimerez avoir satisfait ces exigences, revenez me voir. Then you will have a holy job in which you can spread God's will."; //todo
 		close;
 	case 3:
 		close;
@@ -109,24 +109,24 @@ prt_church,184,41,4	script	Cleric#aco	60,{
 }
 
 prt_fild03,365,255,2	script	Ascetic#aco	89,{
-	mes "[Father Rubalkabara]";
+	mes "[Père Rubalkabara]";
 	if (BaseJob == Job_Novice) {
 		if (job_acolyte_q == 6) {
-			mes "Please take care. They should know that you've met me by the time you arrive at the Prontera Sanctuary.";
+			mes "Faites attention. Ils pourraient savoir que vous m'avez rencontré lorsque vous êtes venu au Sanctuaire de Prontera.";
 			next;
-			mes "[Father Rubalkabara]";
-			mes "I've sent a carrier pigeon with a message. I hope it will arrive there safely...";
+			mes "[Père Rubalkabara]";
+			mes "J'ai envoyé un pigeon transportant un message. J'espère qu'il y arrivera sans encombres...";
 			close;
 		}
 		if (job_acolyte_q != 0) {
 			if (job_acolyte_q == 2) {
-				mes "Oh...? You must be the one who aspires to become an Acolyte. I've already received news from the Sanctuary that you might be coming.";
+				mes "Oh...? Vous devez être celui qui souhaite devenir Acolyte. J'ai déjà reçu les nouvelles du Sanctuaire qui disaient que vous pourriez arriver.";
 				next;
-				mes "[Father Rubalkabara]";
-				mes "Now, your name was " + strcharinfo(0) + ", right? Excellent, thank you for visiting me.";
+				mes "[Père Rubalkabara]";
+				mes "Maintenant, votre nom est " + strcharinfo(0) + ", c'est ça? Parfait, merci de m'avoir visité.";
 				next;
-				mes "[Father Rubalkabara]";
-				mes "I believe you've been told much about Acolytes from Friar Mareusis. Plus, there's plenty of helpful people in the Prontera Sanctuary.";
+				mes "[Père Rubalkabara]";
+				mes "Je suppose que vous en avez entendu beaucoup à propos des Acolytes par Frère Mareusis. De plus, beaucoup de citoyens apportent leur aide au Sanctuaire de Prontera.";
 				next;
 				mes "[Father Rubalkabara]";
 				mes "I guess there's really no need for me to teach you much. Besides, I'm sure your someone from your generation may have trouble listening to an old man like me. Hahaha~";
