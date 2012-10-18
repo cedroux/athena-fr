@@ -14,6 +14,116 @@
 //= 1.4a Fixed a little Typo error in duplicates. (bugreport:749) [Samuray22]
 //============================================================ 
 
+-	script	Association du Sourire::SmileHelper	92,{
+	mes "[Association du Sourire]";
+	mes ( isday() ? "Bonjour, bonjour" : "Bonsoir, bonsoir" ) + "~";
+	mes "Je fais partie de l'^3355FFAssociation du Sourire^000000.";
+	mes "En quoi puis-je vous aider ?";
+	next;
+	switch(select("^3355FFMr. Smile^000000 ?:Construire le ^3355FFMr. Smile^000000 :S'en aller")) {
+	case 1:
+		mes "[Association du Sourire]";
+		mes "Le Mr.Smile est un évènement national tenu par ^5577FFSa Majesté Tristam le 3ème^000000,";
+		mes "qui a pour but d'encourager les citoyens du Royaume de Rune-Midgard ";
+		mes "à jouer dans une atmosphère plus agréable !";
+		mes "Je fais partie de ^3355FFl'Association du Sourire^000000,";
+		mes "qui dirige l'évènement national au nom du Sourire ";
+		mes "à travers le ^3355FFRoyaume de Rune-Midgard.^000000";
+		next;
+		mes "[Association du Sourire]";
+		mes "Avec de simples petits objets,";
+		mes "je peux vous fournir un";
+		mes "^3355FF' Mr. Smile '^000000.";
+		mes "Voici ce dont j'ai besoin.";
+		next;
+		mes "[Association du Sourire]";
+		mes "^3355FF10 Jellopy^000000";
+		mes "^3355FF10 Fluff^000000";
+		mes "^3355FF10 Clover^000000";
+		next;
+		mes "[Association du Sourire]";
+		mes "Grâce à cet évènement";
+		mes "Tous les citoyens seront enjoués,";
+		mes "et ils se rassembleront,";
+		mes "pour essayer de faire de Ragnarök le jeu le plus amusant du monde !";
+		close;
+	case 2:
+		if (countitem(909) > 9 && countitem(914) > 9 && countitem(705) > 9) {
+			mes "[Association du Sourire]";
+			mes "Félicitations !";
+			mes "Prenez donc ce ^3355FFMr.Smile^000000.";
+			next;
+			delitem 909,10; //Jellopy
+			delitem 914,10; //Fluff
+			delitem 705,10; //Clover
+			getitem 2278,1; //Mr_Smile
+			mes "[Assocation du Sourire]";
+			mes "^3355FFSa Majesté Tristam le 3ème^000000";
+			mes "a promis de faire de son mieux pour rendre Ragnarök meilleur et agréable.";
+			next;
+			mes "Le fait mentionné ci-dessus";
+			mes "a été annoncé par";
+			mes "le Bureau de l'Information Publique du Royaume de Rune-Midgard.";
+			close;
+		}
+		else {
+			mes "[Association du Sourire]";
+			mes "Oh - Malheureusement";
+			mes "Vous n'avez pas apporté ";
+			mes "assez d'objets pour fabriquer le ^3355FFMr. Smile^000000.";
+			mes "Voici la liste des objets nécessaires :";
+			mes "^3355FF10 Jellopy^000000";
+			mes "^3355FF10 Fluff^000000";
+			mes "^3355FF10 Clover^000000";
+			close;
+		}
+	case 3:
+		mes "[Association du Sourire]";
+		mes "Merci de nous avoir visité.";
+		mes "Nous ..";
+		mes "Le Royaume de Rune-Midgard ";
+		mes "faisons tout notre possible pour faire de Ragnarök";
+		mes "un jeu meilleur et plus agréable.";
+		next;
+		mes "[Association du Sourire]";
+		mes "Nous vous demandons sincèrement ";
+		mes "de coopérer.";
+		mes "Le fait mentionné ci-dessus ";
+		mes "a été annoncé par le Bureau de l'Information Publique du Royaume de Rune-Midgard.";
+		close;
+	}
+}
+
+// Additional Smile Assistance staff
+alberta,113,53,4	duplicate(SmileHelper)	Association du Sourire#alb	92
+aldebaran,136,135,4	duplicate(SmileHelper)	Association du Sourire#alde	92
+geffen,119,107,4	duplicate(SmileHelper)	Association du Sourire#gef	92
+moc_ruins,59,154,3	duplicate(SmileHelper)	Association du Sourire#moc	92
+payon,186,104,5	duplicate(SmileHelper)	Association du Sourire#pay	92
+prontera,157,187,4	duplicate(SmileHelper)	Association du Sourire#prt	92
+
+//============================================================ 
+// Old changelog
+//============================================================ 
+//= Fully working. 1.1 Optimized
+//= 1.2 updated Payon coords [Lupus]
+//= 1.3 fixed exploit [Lupus]
+//============================================================ //===== rAthena Script ======================================= 
+//= Mr. Smile Quest
+//===== By: ================================================== 
+//= kobra_k88, Akaru
+//===== Current Version: ===================================== 
+//= 1.4a
+//===== Compatible With: ===================================== 
+//= rAthena SVN
+//===== Description: ========================================= 
+//= [Aegis Conversion]
+//= Trade Clover, Fluff and Jellopy for a Mr. Smile mask.
+//===== Additional Comments: ================================= 
+//= 1.4 Rescripted to Aegis 10.3 standards. [L0ne_W0lf]
+//= 1.4a Fixed a little Typo error in duplicates. (bugreport:749) [Samuray22]
+//============================================================ 
+
 -	script	Smile Assistance::SmileHelper	92,{
 	mes "[Smile Girl]";
 	mes "Hi ~ Hi ~";
