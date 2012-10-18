@@ -31,7 +31,7 @@ prt_church,184,41,4	script	Cleric#aco	60,{
 				}
 				mes "[Père Mareusis]";
 				mes "Bien, je vous souhaite la bienvenue";
-				mes "dans le Valhalla et";
+				mes "au Valhalla et";
 				mes "vous souhaite bonne chance";
 				mes "dans votre nouveau périple.";
 				next;
@@ -39,11 +39,11 @@ prt_church,184,41,4	script	Cleric#aco	60,{
 				jobchange Job_Acolyte_High;
 				skill 156,1,0;
 				mes "[Père Mareusis]";
-				mes "Maintenant, allez de l'avant et partez à la rechercher de ceux qui ont besoin de votre aide. Que Dieu éclaire votre chemin.";
+				mes "Maintenant, allez de l'avant et partez à la recherche de ceux qui ont besoin de votre aide. Que Dieu éclaire votre chemin.";
 				close;
 			}else{
 				mes "[Père Mareusis]";
-				mes "Maintenant, allez de l'avant et partez à la rechercher de ceux qui ont besoin de votre aide. Que Dieu éclaire votre chemin.";
+				mes "Maintenant, allez de l'avant et partez à la recherche de ceux qui ont besoin de votre aide. Que Dieu éclaire votre chemin.";
 				close;
 			}
 		}else{
@@ -51,7 +51,7 @@ prt_church,184,41,4	script	Cleric#aco	60,{
 			mes "Je sens que vous avez enduré une vie pleine d'expériences. Vous avez dû apprendre bien des choses avant d'accéder au Valhalla.";
 			next;
 			mes "[Père Mareusis]";
-			mes "Cependant, je peux vous dire que vous n'êtes pas fait pour être Acolyte. Rappelez vous de qui vous étiez et trouvez votre chemin.";
+			mes "Cependant, je peux vous assurer que vous n'êtes pas fait pour être Acolyte. Rappelez vous de qui vous étiez et trouvez votre chemin.";
 			close;
 		}
 	}
