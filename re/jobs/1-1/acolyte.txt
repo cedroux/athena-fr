@@ -94,7 +94,7 @@ prt_church,184,41,4	script	Cleric#aco	60,{
 	case 2:
 		mes "[Père Mareusis]";
 		mes "Voulez-vous devenir Acolyte ?";
-		mes "Alors, vous devez remplir certaines exigences thinking those are the practices given by God."; //todo
+		mes "Alors, vous devez remplir certaines exigences, comme si elles venaient elles-même de Dieu.";
 		next;
 		mes "[Père Mareusis]";
 		mes "D'abord, vous devez atteindre au moins, en tant que débutant, le niveau job 9 ainsi qu'apprendre toutes les compétences de base.";
@@ -128,17 +128,17 @@ prt_fild03,365,255,2	script	Ascetic#aco	89,{
 				mes "[Père Rubalkabara]";
 				mes "Je suppose que vous en avez entendu beaucoup à propos des Acolytes par Frère Mareusis. De plus, beaucoup de citoyens apportent leur aide au Sanctuaire de Prontera.";
 				next;
-				mes "[Father Rubalkabara]";
-				mes "I guess there's really no need for me to teach you much. Besides, I'm sure your someone from your generation may have trouble listening to an old man like me. Hahaha~";
+				mes "[Père Rubalkabara]";
+				mes "Je suppose que je n'ai plus grand chose à vous apprendre. Par ailleurs, je suis sûr que pour quelqu'un de votre génération ça doit être difficile d'écouter un vieil homme comme moi. Hahaha~";
 				next;
-				mes "[Father Rubalkabara]";
-				mes "Still, lessons may come from the places you'd least expect. God loves to teach his children in strange ways. You'll see.";
+				mes "[Père Rubalkabara]";
+				mes "De plus, les leçons que vous tirerez viendront des choses dont vous vous attendrez le moins. Dieu aime enseigner à ses enfants d'étranges façons. Vous verrez.";
 				next;
-				mes "[Father Rubalkabara]";
-				mes "Well, I'll send the message telling them that you've come to visit me. So, you may now return to the Prontera Sanctuary.";
+				mes "[Père Rubalkabara]";
+				mes "Bien, j'enverrai un message leur informant que vous m'avez bien rendu visite. Donc, vous pouvez à présent retourner au Sanctuaire de Prontera.";
 				next;
-				mes "[Father Rubalkabara]";
-				mes "Farewell.";
+				mes "[Père Rubalkabara]";
+				mes "Adieu.";
 				close2;
 				savepoint "prt_fild03",361,255;
 				set job_acolyte_q,6;
@@ -146,22 +146,22 @@ prt_fild03,365,255,2	script	Ascetic#aco	89,{
 			}
 			else {
 				mes "Oh...";
-				mes "Are you one of the";
-				mes "Acolyte applicants...?";
-				mes "Let's see...";
+				mes "Êtes-vous l'un de ceux";
+				mes "qui souhaitent devenir Acolyte...?";
+				mes "Voyons voir...";
 				next;
-				mes "[Father Rubalkabara]";
-				mes "Your name is " + strcharinfo(0) + "?";
-				mes "I don't think your name";
-				mes "is on my list. Hmmm...";
+				mes "[Père Rubalkabara]";
+				mes "Votre nom est " + strcharinfo(0) + "?";
+				mes "Je ne pense pas que votre nom";
+				mes "soit dans ma liste. Hmmm...";
 				next;
-				mes "[Father Rubalkabara]";
-				mes "Why don't you go back to the Prontera Sanctuary and check again?";
+				mes "[Père Rubalkabara]";
+				mes "Pourquoi n'allez vous pas au Sanctuaire de Prontera et verifiez à nouveau ?";
 				close;
 			}
 		}
 		else {
-			mes "Huh? What brings you here? This is a very dangerous place for a Novice like yourself!";
+			mes "Huh? Qu'est-ce qui vous amène ici ? C'est un endroit très dangeureux pour un débutant comme vous !";
 			close;
 		}
 	}
