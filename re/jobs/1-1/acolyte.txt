@@ -261,29 +261,29 @@ prt_fild00,208,218,6	script	Ascetic#3aco	98,{
 			mes "Quoi ?";
 			next;
 			mes "[Père Yosuke]";
-			mes "Have you any more business with me?! You don't! Go back to the Sanctuary now!";
+			mes "Avez-vous encore quelque chose à voir avec moi ?! Non ! Retournez au Sanctuaire maintenant !";
 			close;
 		}
 		if (job_acolyte_q != 0) {
 			if (job_acolyte_q == 4) {
 				mes "Hey.";
-				mes "Whatever you are,";
-				mes "you look like an";
-				mes "Acolyte applicant.";
-				mes "Right?";
+				mes "Quoi que vous soyez,";
+				mes "vous semblez postuler";
+				mes "pour être Acolyte.";
+				mes "N'est-ce pas ?";
 				next;
-				mes "[Father Yosuke]";
-				mes "Not bad, not bad. You withstood the penance trial pretty well.";
-				mes "So what's your name?";
+				mes "[Père Yosuke]";
+				mes "Pas mal, pas mal. Vous avez plutôt bien résisté à votre période de pénitence.";
+				mes "Donc quel est votre nom ?";
 				next;
-				mes "[Father Yosuke]";
+				mes "[Père Yosuke]";
 				mes "" + strcharinfo(0) + ", huh?";
 				next;
-				mes "[Father Yosuke]";
-				mes "Okay. I'll send a message to the Sanctuary that you, " + strcharinfo(0) + ", came to visit me.";
+				mes "[Père Yosuke]";
+				mes "Okay. J'enverrai un message au Sanctuaire pour dire que vous, " + strcharinfo(0) + ", m'avez rendu visite.";
 				next;
-				mes "[Father Yosuke]";
-				mes "Now go back to the Santuary and finish becoming an Acolyte, kid.";
+				mes "[Père Yosuke]";
+				mes "Retournez à présent au Sanctuaire pour enfin devenir Acolyte, mon enfant.";
 				close2;
 				savepoint "prt_fild00",206,230;
 				set job_acolyte_q,8;
@@ -291,24 +291,24 @@ prt_fild00,208,218,6	script	Ascetic#3aco	98,{
 			}
 			else {
 				mes "Hey.";
-				mes "You look like an Acolyte Applicant. Am I right?";
+				mes "Vous semblez postuler pour être Acolyte. Ai-je tord ?";
 				next;
-				mes "[Father Yosuke]";
-				mes "Not bad at all, you've made it all the way here from Prontera. So what's your name, kid?";
+				mes "[Père Yosuke]";
+				mes "Pas mal du tout, vous avez fait tout le chemin jusqu'ici depuis Prontera. Alors, quel est votre nom mon enfant ?";
 				next;
-				mes "[Father Yosuke]";
-				mes "" + strcharinfo(0) + ", huh? Why isn't your name on my list?";
+				mes "[Père Yosuke]";
+				mes "" + strcharinfo(0) + ", huh? Pourquoi est-ce que votre nom n'est pas sur ma liste ?";
 				next;
-				mes "[Father Yosuke]";
-				mes "You probably made a mistake. Go back to the Santuary, and check with the Bishop.";
+				mes "[Père Yosuke]";
+				mes "Vous avez probablement fait une erreur. Retournez au Sancturaire et vérifiez auprès de l'Évêque..";
 				close;
 			}
 		}
 		else {
-			mes "You...";
-			mes "Novice.";
-			mes "There something";
-			mes "you wanna tell me?";
+			mes "Vous...";
+			mes "Débutant.";
+			mes "Il y a quelque chose";
+			mes "que vous voulez me dire ?";
 			close;
 		}
 	}
@@ -317,13 +317,13 @@ prt_fild00,208,218,6	script	Ascetic#3aco	98,{
 		if (BaseJob == Job_Priest) {
 			mes "Hey...";
 			next;
-			mes "[Father Yosuke]";
-			mes "If you like, come sit here with me and meditate the great truths. God's majesty is truly inspiring...";
+			mes "[Père Yosuke]";
+			mes "Si vous le souhaitez, venez vous asseoir avec moi et méditez sur les grandes vérités. La majesté de Dieu est vraiment inspirante...";
 			close;
 		}
 		else {
-			mes "Do you have anything to say? Because unfortunately for you,";
-			mes "I don't any replies.";
+			mes "Avez-vous quelque chose à dire ? Car malheureusement pour vous,";
+			mes "Je n'ai pas toutes les réponses.";
 			close;
 		}
 	}
