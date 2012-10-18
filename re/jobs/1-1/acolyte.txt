@@ -101,7 +101,7 @@ prt_church,184,41,4	script	Cleric#aco	60,{
 		mes "C'est la plus simple des choses à faire, alors considérez ça comme une façon de vous entraîner.";
 		next;
 		mes "[Père Mareusis]";
-		mes "Quand vous estimerez avoir satisfait ces exigences, revenez me voir. Then you will have a holy job in which you can spread God's will."; //todo
+		mes "Quand vous estimerez avoir satisfait ces exigences, revenez me voir. Vous serez alors chargés de Saintes tâches par lesquelles vous pourrez répandre la volonté de Dieu.";
 		close;
 	case 3:
 		close;
@@ -115,7 +115,7 @@ prt_fild03,365,255,2	script	Ascetic#aco	89,{
 			mes "Faites attention. Ils pourraient savoir que vous m'avez rencontré lorsque vous êtes venu au Sanctuaire de Prontera.";
 			next;
 			mes "[Père Rubalkabara]";
-			mes "J'ai envoyé un pigeon transportant un message. J'espère qu'il y arrivera sans encombres...";
+			mes "J'ai envoyé un pigeon voyageur transportant un message. J'espère qu'il y arrivera sans encombres...";
 			close;
 		}
 		if (job_acolyte_q != 0) {
@@ -156,7 +156,7 @@ prt_fild03,365,255,2	script	Ascetic#aco	89,{
 				mes "soit dans ma liste. Hmmm...";
 				next;
 				mes "[Père Rubalkabara]";
-				mes "Pourquoi n'allez vous pas au Sanctuaire de Prontera et verifiez à nouveau ?";
+				mes "Pourquoi n'allez-vous pas au Sanctuaire de Prontera pour verifier à nouveau ?";
 				close;
 			}
 		}
@@ -168,45 +168,45 @@ prt_fild03,365,255,2	script	Ascetic#aco	89,{
 	else if (BaseJob == Job_Acolyte) callfunc "F_FatherRub";
 	else {
 		if (BaseJob == Job_Priest) {
-			mes "Greetings.";
+			mes "Bonjour.";
 			next;
-			mes "[Father Rubalkabara]";
-			mes "Welcome to the Deep. Feel free to sit and contemplate God's message with me. This place is beautiful, even if danger accompanies its sense of serenity...";
+			mes "[Père Rubalkabara]";
+			mes "Bienvenue en ce lieu. Sentez vous libre de vous asseoir et de contempler le message de Dieu avec moi. Cet endroit est magnifique, même si le danger accompagne sa sérénité...";
 			close;
 		}
 		else {
 			mes "Oh ho...";
-			mes "Have you come into the Deep here for training? Or are you just a Wanderer?";
+			mes "Êtes-vous vous venu pour vous entraîner ? Ou êtes-vous juste vagabond ?";
 			next;
-			mes "[Father Rubalkabara]";
-			mes "Whoever you are, please take care of yourself. The monsters in here are shockingly strong, contrary to their cute appearance.";
+			mes "[Père Rubalkabara]";
+			mes "Qui que vous soyez, faites attention à vous. Les monstres ici sont incroyablement forts, contrairement à ce que peut nous laisser croire leur adorable apparence.";
 			close;
 		}
 	}
 }
 
 moc_fild07,41,355,4	script	Ascetic#2aco	95,{
-	mes "[Mother Mathilda]";
+	mes "[Mère Mathilda]";
 	if (BaseJob == Job_Novice) {
 		if (job_acolyte_q == 7) {
-			mes "I will send a carrier pigeon to the Prontera Sanctuary. When you return, the Priest there should already have received my message.";
+			mes "J'enverrai un pigeon voyageur au Sanctuaire de Prontera. Quand vous y retournez, le Prêtre aura déjà reçu mon message.";
 			next;
 			mes "[Mother Mathilda]";
-			mes "I will pray to God, and hope that you become an Acolyte soon.";
+			mes "Je prierai Dieu, et j'espère que vous deviendrai Acolyte très bientôt.";
 			close;
 		}
 		if (job_acolyte_q != 0) {
 			if (job_acolyte_q == 3) {
-				mes "Ah, you must be one of the Acolyte applicants. I sincerely welcome you.";
+				mes "Ah, vous devez être l'un de ceux qui veulent devenir Acolyte. Je vous souhaite la bienvenue.";
 				next;
-				mes "[Mother Mathilda]";
-				mes "What is your name? " + strcharinfo(0) + "? Let's see... Ah, you're on my list.";
+				mes "[Mère Mathilda]";
+				mes "Quel est votre nom ? " + strcharinfo(0) + "? Voyons voir... Ah, vous êtes sur ma liste.";
 				next;
-				mes "[Mother Mathilda]";
-				mes "I will send a message to the Sanctuary confirming that you, " + strcharinfo(0) + " visited me and completed your penance.";
+				mes "[Mère Mathilda]";
+				mes "J'enverrai un message au Sanctuaire pour confirmer que vous, " + strcharinfo(0) + " m'avez rendu visite et avez terminé votre pénitence.";
 				next;
-				mes "[Mother Mathilda]";
-				mes "Please return to the Prontera Sanctuary and speak to the Priest in charge.";
+				mes "[Mère Mathilda]";
+				mes "Retournez au Sanctuaire de Prontera et parlez au Prêtre qui s'en charge.";
 				close2;
 				savepoint "moc_fild07",35,355;
 				set job_acolyte_q,7;
@@ -214,21 +214,21 @@ moc_fild07,41,355,4	script	Ascetic#2aco	95,{
 			}
 			else {
 				mes "Ah...!";
-				mes "You must be one";
-				mes "of the Acolyte applicants.";
-				mes "I sincerely welcome you.";
+				mes "Vous devez être l'un de ceux";
+				mes "qui souhaite devenir Acolyte.";
+				mes "Je vous souhaite la bienvenue.";
 				next;
-				mes "[Mother Mathilda]";
-				mes "Now, what is your name?";
-				mes "" + strcharinfo(0) + "? Let's see...";
+				mes "[Mère Mathilda]";
+				mes "A présent, quel est votre nom ??";
+				mes "" + strcharinfo(0) + "? Voyons voir...";
 				next;
-				mes "[Mother Mathilda]";
+				mes "[Mère Mathilda]";
 				mes "Hmm...";
-				mes "It seems your name";
-				mes "is not on my list...";
+				mes "Il me semble que votre nom";
+				mes "N'est pas sur ma liste...";
 				next;
-				mes "[Mother Mathilda]";
-				mes "Perhaps you should return to the Prontera Sanctuary and check the destination for your penance trial once again.";
+				mes "[Mère Mathilda]";
+				mes "Vous devriez peut-être retourner au Sanctuaire de Prontera et vérifier la destination de votre pénitence encore une fois.";
 				close;
 			}
 		}
@@ -240,27 +240,27 @@ moc_fild07,41,355,4	script	Ascetic#2aco	95,{
 	else if (BaseJob == Job_Acolyte) callfunc "F_MotherMart";
 	else {
 		if (BaseJob == Job_Priest) {
-			mes "Hello there~";
+			mes "Bonjour~";
 			next;
-			mes "[Mother Mathilda]";
-			mes "How is your practice coming along? I certainly hope you're enjoying living in the grace of God.";
+			mes "[Mère Mathilda]";
+			mes "Comment se passe votre apprentissage ? J'espère vraiment que vous appréciez de vivre dans la grâce de Dieu.";
 			close;
 		}
 		else {
-			mes "May God";
-			mes "be with you...";
+			mes "Que Dieu";
+			mes "soit avec vous...";
 			close;
 		}
 	}
 }
 
 prt_fild00,208,218,6	script	Ascetic#3aco	98,{
-	mes "[Father Yosuke]";
+	mes "[Père Yosuke]";
 	if (BaseJob == Job_Novice) {
 		if (job_acolyte_q == 8) {
-			mes "What?";
+			mes "Quoi ?";
 			next;
-			mes "[Father Yosuke]";
+			mes "[Père Yosuke]";
 			mes "Have you any more business with me?! You don't! Go back to the Sanctuary now!";
 			close;
 		}
