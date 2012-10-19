@@ -151,7 +151,7 @@ prt_fild03,365,255,2	script	Ascetic#aco	89,{
 				mes "Voyons voir...";
 				next;
 				mes "[Père Rubalkabara]";
-				mes "Votre nom est " + strcharinfo(0) + "?";
+				mes "Votre nom est " + strcharinfo(0) + " ?";
 				mes "Je ne pense pas que votre nom";
 				mes "soit dans ma liste. Hmmm...";
 				next;
@@ -200,7 +200,7 @@ moc_fild07,41,355,4	script	Ascetic#2aco	95,{
 				mes "Ah, vous devez être l'un de ceux qui veulent devenir Acolyte. Je vous souhaite la bienvenue.";
 				next;
 				mes "[Mère Mathilda]";
-				mes "Quel est votre nom ? " + strcharinfo(0) + "? Voyons voir... Ah, vous êtes sur ma liste.";
+				mes "Quel est votre nom ? " + strcharinfo(0) + " ? Voyons voir... Ah, vous êtes sur ma liste.";
 				next;
 				mes "[Mère Mathilda]";
 				mes "J'enverrai un message au Sanctuaire pour confirmer que vous, " + strcharinfo(0) + " m'avez rendu visite et avez terminé votre pénitence.";
@@ -220,7 +220,7 @@ moc_fild07,41,355,4	script	Ascetic#2aco	95,{
 				next;
 				mes "[Mère Mathilda]";
 				mes "A présent, quel est votre nom ??";
-				mes "" + strcharinfo(0) + "? Voyons voir...";
+				mes "" + strcharinfo(0) + " ? Voyons voir...";
 				next;
 				mes "[Mère Mathilda]";
 				mes "Hmm...";
