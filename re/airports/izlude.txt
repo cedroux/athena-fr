@@ -11,4 +11,4 @@
 //= Updated to match the new Izlude Map. [Masao]
 //============================================================ 
 
-izlude,204,75,3	duplicate(Airship_Staff_izlude)	Airship Staff#izlude	90
+izlude,202,75,3	duplicate(Airship_Staff_izlude)	Airship Staff#izlude	90
