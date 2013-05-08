@@ -14,6 +14,8 @@
 //= 1.1 Updated warps, savepoints, NPC locations. [Kisuka]
 //= 1.2 Cleaning. [Euphy]
 //= 1.3 Fixed Eden Group Officer's level requirement. [Joseph]
+//===== Translated in French by: =============================
+//= Emerick42
 //============================================================
 
 // Sprakki (Stard of Novice Training Ground, Outside Castle)
@@ -58,11 +60,11 @@ new_1-1,53,114,4	script	Sprakki#nv1	90,{
 		cutin "",255;
 		mes "[Sprakki]";
 		mes "As-tu regardé la Fenêtre de Quêtes ?";
-		mes "Je t'attendrai dans le château après le pont.";
+		mes "Je t'attendrai dans le château après le Pont.";
 		close;
 	} else {
 		mes "[Sprakki]";
-		mes "Je t'attendrai après le pont à l'Est.";
+		mes "Je t'attendrai après le Pont à l'Est.";
 		close;
 	}
 }
@@ -72,34 +74,34 @@ new_1-1,53,114,4	script	Sprakki#nv1	90,{
 new_1-2,100,29,4	script	Sprakki#nv2	90,{
 	if(job_novice_q < 1) {
 		mes "[Sprakki]";
-		mes "Hello there! Welcome to the World of Ragnarok Online. My name is Sprakki and I'm in charge of giving you basic gameplay tips.";
-		mes "Click on the [Next] button or press [Enter] to continue.";
+		mes "Bien le bonjour ! Bienvenue dans le Monde de Ragnarok Online. Je m'appelle Sprakki et je suis en charge de vous apprendre les bases du jeu.";
+		mes "Clique sur le bouton [Next] ou appuie sur [Enter] pour continuer.";
 		next;
 		mes "[Sprakki]";
-		mes "First you need to learn the very basics of controlling your character.";
-		mes "All the basic ^4A4AFFmoves, selection of items, and attacks^000000 use the ^4A4AFFleft click of the mouse^000000.";
+		mes "Tout d'abord tu dois apprendre les basiques pour controller ton personnage.";
+		mes "^4A4AFFBouger, sélectionner des objets et attaquer^000000 utilisent le ^4A4AFFclic gauche de la souris^000000.";
 		next;
 		cutin "tutorial01",3;
 		mes "-! Info !-";
-		mes "Click on the ground to move the character.";
-		mes "Attacking monsters and conversations with the people of this world can be done by simply clicking on them.";
+		mes "Clique sur le sol pour bouger ton personnage.";
+		mes "Tu peux attaquer des monstres ou parler avec les gens de ce monde en leur cliquant simplement dessus.";
 		next;
 		cutin "",255;
 		setquest 7117;
 		set job_novice_q,1;
 		mes "[Sprakki]";
-		mes "Well then, I will give you a quest to talk to me.";
-		mes "After the conversation is over, talk to me again by left-clicking on me.";
+		mes "Ok maintenant je vais te donner une quête pour me parler.";
+		mes "Après que la conversation soit terminée, reparle moi en faisant un clic gauche sur moi.";
 		next;
 		cutin "tutorial02",3;
 		mes "-! Info !-";
-		mes "You've received a quest from Sprakki.";
-		mes "You can check the contents of the quest in the Quest Info Window by pressing the ^4A4AFFAlt + U^000000 keys at the same time.";
+		mes "Tu as reçu une quête de Sprakki.";
+		mes "Tu peux regarder le contenu de cette quête dans la Fenêtre de Quêtes en appuyant simultanément sur les touches ^4A4AFFALT + U^000000.";
 		next;
 		cutin "",255;
 		mes "[Sprakki]";
-		mes "Have you checked the Quest Info Window?";
-		mes "Well, talk to me again.";
+		mes "As-tu regardé la Fenêtre de Quêtes ?";
+		mes "Bien, tu peux me reparler.";
 		close;
 	} else {
 		if(job_novice_q == 1) {
@@ -108,27 +110,27 @@ new_1-2,100,29,4	script	Sprakki#nv2	90,{
 			completequest 7117;
 			set job_novice_q,2;
 			mes "[Sprakki]";
-			mes "Great!";
-			mes "Now you know how to move and talk to others, right?";
+			mes "Bravo !";
+			mes "Maintenant tu sais comment bouger et parler aux autres, n'est-ce pas ?";
 			next;
 		}
 		mes "[Sprakki]";
-		mes "The training Center is prepared for novices just like you.";
-		mes "You are going to be trained to get used to the basics of the Game.";
+		mes "Le Centre d'Entraînement est fait pour des novices comme toi.";
+		mes "Tu vas être entraîné à utiliser les basiques du jeu.";
 		next;
-		select("Begin Training.");
+		select("Commencer l'entraînement.");
 		mes "[Sprakki]";
-		mes "I will guide you to the Novice Training Center.";
-		mes "Inside, Instructor 'Brade' will be waiting to speak to you.";
+		mes "Je vais t'emmener au Centre d'Entraînement des Novices.";
+		mes "À l'intérieur, l'instructeur 'Brade' t'attendras pour te parler.";
 		next;
 		setquest 7118;
 		set job_novice_q,3;
 		mes "[Sprakki]";
-		mes "Instructor 'Brade' will help you afterwards.";
-		mes "Please, Go see him.";
+		mes "L'instructeur 'Brade' t'aidera après ça.";
+		mes "Tu peux aller le voir.";
 		next;
-		mes "^4A4AFF- You received a quest 'Novice Training Ground-1' from Sprakki.^000000";
-		mes "^4A4AFFPlease check the Quest Info Window.-^000000";
+		mes "^4A4AFF- Tu as reçu la quête 'Novice Training Ground-1' de Sprakki.^000000";
+		mes "^4A4AFFTu peux la voir dans la Fenêtre de Quêtes.-^000000";
 		close2;
 		savepoint "new_1-2",100,100;
 		warp "new_1-2",100,100;
@@ -140,8 +142,8 @@ new_1-2,100,29,4	script	Sprakki#nv2	90,{
 //============================================================
 new_1-2,100,105,4	script	Brade#nv	733,{
 	if(job_novice_q < 3) {
-		mes "[Instructor Brade]";
-		mes "How did you get here?";
+		mes "[Instructeur Brade]";
+		mes "Comment es-tu entré ici ?";
 		close2;
 		warp "new_1-1",53,111;
 		end;
@@ -152,26 +154,26 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		getexp 300,10;
 		completequest 7118;
 		set job_novice_q,4;
-		mes "[Instructor Brade]";
-		mes "Great.";
-		mes "You've completed the given quest successfully, so I will reward you with experience points.";
+		mes "[Instructeur Brade]";
+		mes "Bien.";
+		mes "Tu as complété la quête avec succés, alors je vais te donner des points d'expérience.";
 		next;
-		mes "[Instructor Brade]";
-		mes "Experience Points you've earned from hunting or finishing quests can be checked by tracking the EXP Bar, located at the upper-left side of the display.";
+		mes "[Instructeur Brade]";
+		mes "Les Points d'Experience que tu as gagné en chassant ou terminant des quêtes peuvent être consultés via la Barre d'EXP, située en haut à gauche de l'écran.";
 		next;
-		mes "[Instructor Brade]";
-		mes "Sigh... I will just talk roughly.";
-		mes "...I just can't get used to";
-		mes "'politeness' you know.";
-		mes "Don't look at me like that!";
+		mes "[Instructeur Brade]";
+		mes "Hmm... Je vais peut être parler grossièrement.";
+		mes "... Je ne peux juste pas m'habituer à";
+		mes "'la politesse', tu vois.";
+		mes "Ne me regarde pas comme ça !";
 		next;
-		mes "[Instructor Brade]";
-		mes "Ok look alive you maggot.";
-		mes "Next up is items and equipment.";
+		mes "[Instructeur Brade]";
+		mes "Ok t'as l'air vivant moucheron.";
+		mes "Maintenant passons aux objets et équipements.";
 		next;
-		mes "[Instructor Brade]";
-		mes "First, take these.";
-		mes "These are very basic equipments and recovery potions.";
+		mes "[Instructeur Brade]";
+		mes "Premièrement, prend ça.";
+		mes "Ce sont des équipements de base, et des potions de soin.";
 		getitem 2352,1;	// Novice_Plate
 		getitem 2510,1;	// Novice_Hood
 		getitem 2414,1;	// Novice_Boots
@@ -182,53 +184,53 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		setquest 7119;
 		set job_novice_q,5;
 		next;
-		mes "[Instructor Brade]";
-		mes "In the upper left Basic Info Window, press the 'Item' icon to open the Item Window.";
-		mes "The item window has 3 sections...";
+		mes "[Instructeur Brade]";
+		mes "En haut à gauche, appuie sur 'Item' pour ouvrir la Fenêtre des Objets.";
+		mes "La fenêtre des objets a 3 sections...";
 		next;
-		mes "[Instructor Brade]";
-		mes "Consumable items, equipment, and other items.";
-		mes "If you want to use or equip items, double-click on the item or drag them into the Equipment Window.";
+		mes "[Instructeur Brade]";
+		mes "Objets consommables, équipements, et autres objets.";
+		mes "Si tu veux utiliser ou équiper un objet, double-clique sur l'objet ou glisse dans la Fenêtre d'Équipement.";
 		next;
-		mes "[Instructor Brade]";
-		mes "You can see detailed info of each item by right-clicking on the item.";
-		mes "Do that and the info will pop-up in a separate window.";
+		mes "[Instructeur Brade]";
+		mes "Tu peux voir les informations détaillées de chaque objet avec un clic droit dessus.";
+		mes "Une nouvelle fenêtre s'ouvrira séparément.";
 		next;
 		cutin "tutorial04",3;
 		mes "!- Info -!";
-		mes "Double-click on the item to see the detailed information.";
+		mes "Clique droit sur un objet pour voir les informations détaillées.";
 		next;
 		mes "!- Info -!";
-		mes "Right-click on other players to show the Community Menu and you can join a party, request trades, etc.";
+		mes "Clique droit sur d'autres joueurs pour afficher le Menu de Communauté, avec lequel tu peux rejoindre un groupe, faire un échange, etc.";
 		next;
 		cutin "",255;
-		mes "[Instructor Brade]";
-		mes "Why don't you equip the items I gave you earlier?";
-		mes "^4A4AFFDouble-Click^000000 on the item you want to equip. Let us continue after you are done gearing up.";
+		mes "[Instructeur Brade]";
+		mes "Pourquoi n'équiperais-tu pas les objets que je t'ai donné ?";
+		mes "^4A4AFFDouble-clique^000000 sur l'objet que tu veux équiper. Nous continuerons après que tu te sois équipé.";
 		next;
 		cutin "tutorial03",3;
 		mes "!- Info -!";
-		mes "Items can be easily equipped or used by simply clicking on them.";
-		mes "The Hot Key to open the Item Window is Alt + E.";
+		mes "Les objets peuvent être facilement équipés ou utilisés en cliquant dessus.";
+		mes "Le Raccourci pour ouvrir la Fenêtre des Objets est ALT + E.";
 		next;
 		mes "!- Info -!";
-		mes "To check on the items that are currently equipped, use the hot key Alt + Q.";
-		mes "Or, drag the item on to the item slot you want the item to be equipped.";
+		mes "Pour consulter les objets actuellement équipés, utilise le raccourci ALT +Q.";
+		mes "Ensuite, fait glisser l'objet dans l'emplacement dans lequel tu veux l'équiper.";
 		next;
 		mes "!- Info -!";
-		mes "Equip all of the equipment given by Instructor Brade.";
+		mes "Équipe toi de tous les objets donnés par l'instructeur Brade.";
 		close2;
 		cutin "",255;
 		end;
 	}
 	else if(job_novice_q == 4) {
-		mes "[Instructor Brade]";
-		mes "Uh... Where were we? Oh right, let's continue.";
-		mes "It's about items and equipments.";
+		mes "[Instructeur Brade]";
+		mes "Hmm... Où en étions-nous ? Ah oui, continuons.";
+		mes "C'est à propos des objets et équipements.";
 		next;
-		mes "[Instructor Brade]";
-		mes "Take these.";
-		mes "Basic equipments and recovery potions.";
+		mes "[Instructeur Brade]";
+		mes "Prend ça.";
+		mes "Ce sont des équipements de base et des potions de soin.";
 		getitem 2352,1;	// Novice_Plate
 		getitem 2510,1;	// Novice_Hood
 		getitem 2414,1;	// Novice_Boots
@@ -239,41 +241,41 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		setquest 7119;
 		set job_novice_q,5;
 		next;
-		mes "[Instructor Brade]";
-		mes "In the upper left Basic Info Window, press the 'Item' icon to open the Item Window.";
-		mes "The item window is divided into...";
+		mes "[Instructeur Brade]";
+		mes "En haut à gauche de la fenêtre, appuie sur 'Item' pour ouvrir la Fenêtre des Objets.";
+		mes "Cette fenêtre est divisée en...";
 		next;
-		mes "[Instructor Brade]";
-		mes "3 sections: consumable items, equipment and other items.";
-		mes "If you want to use or equip items, double-click on the item or drag them into the Equipment Window.";
+		mes "[Instructeur Brade]";
+		mes "3 parties : les objets consommables, les équipements et les autres objets.";
+		mes "Si tu veux utiliser ou équiper un objet, double-clique sur l'objet ou glisse dans la Fenêtre d'Équipement.";
 		next;
-		mes "[Instructor Brade]";
-		mes "You can see detailed info of each item by right-clicking on the item.";
-		mes "Do that and the info will pop-up in a separate window.";
+		mes "[Instructeur Brade]";
+		mes "Tu peux voir les informations détaillées de chaque objet avec un clic droit dessus.";
+		mes "Une nouvelle fenêtre s'ouvrira séparément.";
 		next;
 		cutin "tutorial04",3;
 		mes "!- Info -!";
-		mes "Double-click on the item to see the detailed information.";
+		mes "Clique droit sur un objet pour voir les informations détaillées.";
 		next;
 		mes "!- Info -!";
-		mes "Right-click on other players to show the Community Menu and you can join a party, request trades, etc.";
+		mes "Clique droit sur d'autres joueurs pour afficher le Menu de Communauté, avec lequel tu peux rejoindre un groupe, faire un échange, etc.";
 		next;
 		cutin "",255;
-		mes "[Instructor Brade]";
-		mes "Why don't you equip the items I gave you earlier?";
-		mes "^4A4AFFDouble-Click^000000 on the item you want to equip. Let us continue after you are done gearing up.";
+		mes "[Instructeur Brade]";
+		mes "Pourquoi n'équiperais-tu pas les objets que je t'ai donné ?";
+		mes "^4A4AFFDouble-clique^000000 sur l'objet que tu veux équiper. Nous continuerons après que tu te sois équipé.";
 		next;
 		cutin "tutorial03",3;
 		mes "!- Info -!";
-		mes "Items can be easily equipped or used by simply clicking on them.";
-		mes "The Hot Key to open the Item Window is Alt + E.";
+		mes "Les objets peuvent être facilement équipés ou utilisés en cliquant dessus.";
+		mes "Le Raccourci pour ouvrir la Fenêtre des Objets est ALT + E.";
 		next;
 		mes "!- Info -!";
-		mes "To check on the items that are currently equipped, use the hot key Alt + Q.";
-		mes "Or, drag the item on to the item slot you want the item to be equipped.";
+		mes "Pour consulter les objets actuellement équipés, utilise le raccourci ALT +Q.";
+		mes "Ensuite, fait glisser l'objet dans l'emplacement dans lequel tu veux l'équiper.";
 		next;
 		mes "!- Info -!";
-		mes "Equip all of the equipment given by Instructor Brade.";
+		mes "Équipe toi de tous les objets donnés par l'instructeur Brade.";
 		close2;
 		cutin "",255;
 		end;
@@ -284,9 +286,9 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 			if (getequipisequiped(.@i)) set .@EquipCheck, .@EquipCheck+1;
 		if(.@EquipCheck >= 4) {
 			if(job_novice_q == 5) {
-				mes "[Instructor Brade]";
-				mes "You are all set.";
-				mes "You are coming along just fine.";
+				mes "[Instructeur Brade]";
+				mes "Tu es entièrement équipé.";
+				mes "Le meilleur arrive.";
 				getexp 300,0;
 				getexp 300,0;
 				getexp 300,0;
@@ -297,108 +299,108 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 				set job_novice_q,6;
 				next;
 				mes "[Instructor Brade]";
-				mes "Here's some Fly Wings and Butterfly Wings as a reward.";
-				mes "You don't need these in the Training Ground, but they will come in handy later.";
+				mes "Voilà quelques Fly Wings et Butterfly Wings en récompense.";
+				mes "Tu n'en as pas besoin au Terrain d'Entraînement, mais elles te serviront plus tard.";
 				next;
 			}
-			mes "[Instructor Brade]";
-			mes "Next, are Hot Keys.";
-			mes "Press the ^4A4AFF12 key^000000 on your keyboard.";
-			mes "A box with 9 slots will pop up.";
+			mes "[Instructeur Brade]";
+			mes "Ensuite, les Raccourcis.";
+			mes "Appuie sur ^4A4AFla touche F12^000000 de ton clavier.";
+			mes "Une boîte à 9 emplacements va apparaître.";
 			next;
-			mes "[Instructor Brade]";
-			mes "Drag on the right corner of the Hot Key Window and you will be able to see the other pages of the Hot Key.";
+			mes "[Instructeur Brade]";
+			mes "Fait glisser le coin droit de la Fenêtre des Raccourcis pour afficher d'autres pages de Raccourcis.";
 			next;
-			mes "[Instructor Brade]";
-			mes "The F1 to F9 keys are the designated hotkeys.";
-			mes "Just drag a skill or an item onto the Hot Key Window and press a corresponding key to use them right away.";
+			mes "[Instructeur Brade]";
+			mes "Les touches de F1 à F9 sont désignées aux raccourcis.";
+			mes "Fait glisser un sort ou un objet sur la Fenêtre de Raccourcis et appuie sur la touche correspondante pour l'utiliser directement.";
 			next;
 			cutin "tutorial05",3;
 			mes "!- Info -!";
-			mes "You can register a skill or an item to the Hot Key Window by just dragging them onto the Hot Key Slot.";
+			mes "Tu peux créer un raccourci sur un sort ou un objet dans la Fenêtre de Raccourcis simplement en le faisant glisser sur un emplacement.";
 			next;
 			mes "!- Info -!";
-			mes "Registered Skills or Items can be used/equipped by just pressing the corresponding key.";
+			mes "Les Capacités ou Objets enregistrés peuvent être utilisés/équipés en appuyant sur la touche correspondante.";
 			next;
 			mes "!- Info -!";
-			mes "You can customize the Hot Key to use any keys you please as the Hot Key by changing the Shortcut configuration in the options menu.";
+			mes "Tu peux personnaliser les Raccourcis pour utiliser n'importe quelle touche en changeant la configuration des Raccourcis dans le menu des options.";
 			next;
 			mes "!- Info -!";
-			mes "Register skills and items that you use often so that you can use them easily";
+			mes "Enregistre les capacités et les objets dont tu te sers souvent pour les utiliser plus facilement.";
 			next;
 			cutin "",255;
-			mes "[Instructor Brade]";
-			mes "The last part is how to use Skills.";
-			mes "But before that, you need to learn something first.";
+			mes "[Instructeur Brade]";
+			mes "La dernière partie consiste à savoir comment utiliser les Capacités.";
+			mes "Mais avant ça, tu dois encore apprendre quelque chose.";
 			next;
 			setquest 7120;
 			set job_novice_q,7;
-			mes "[Instructor Brade]";
-			mes "Somewhere in this room, there's someone named ^4A4AFFJinha^000000.";
-			mes "Find Jinha and learn the ^4A4AFF[First Aid]^000000 skill from him.";
+			mes "[Instructeur Brade]";
+			mes "Quelque part dans cette pièce se trouve une personne nommée ^4A4AFFJinha^000000.";
+			mes "Trouve Jinha et apprend la capacité ^4A4AFF[First Aid]^000000 de lui.";
 			next;
-			mes "[Instructor Brade]";
-			mes "Your lesson is after that.";
-			mes "Go find Jinha and learn the [First Aid] Skill. Then come back to me.";
+			mes "[Instructeur Brade]";
+			mes "Tu auras ta leçon après ça.";
+			mes "Va trouver Jinha et apprend la capacité [First Aid]. Ensuite revient me voir.";
 			close;
 		}else{
-			mes "[Instructor Brade]";
-			mes "Try to put on at least 4 of the equipment I gave you.";
-			mes "Put those shoes on, wear those clothes, and arm yourself with that weapon you maggot.";
+			mes "[Instructeur Brade]";
+			mes "Essaye de mettre au moins 4 des équipements que je t'ai donné.";
+			mes "Met ces chaussures, enfile ces vêtements, et équipe toi avec cette arme, moucheron.";
 			close;
 		}
 	}
 	else if(job_novice_q == 7) {
-		mes "[Instructor Brade]";
-		mes "Somewhere in this room, there's someone named ^4A4AFFJinha^000000.";
-		mes "Find Jinha and learn the ^4A4AFF[First Aid]^000000 skill from him.";
+		mes "[Instructeur Brade]";
+    mes "Quelque part dans cette pièce se trouve une personne nommée ^4A4AFFJinha^000000.";
+    mes "Trouve Jinha et apprend la capacité ^4A4AFF[First Aid]^000000 de lui.";
 		close;
 	}
 	else if(job_novice_q == 8) {
-		mes "[Instructor Brade]";
-		mes "Now you've learned the [First Aid] Skill.";
-		mes "Just as I told you before, by registering the First Aid Skill onto the Hot Key Window, you can use the skill fast and easy.";
+		mes "[Instructeur Brade]";
+		mes "Bien tu as appris la capacité [First Aid].";
+		mes "Comme je te l'avais dit avant, en enregistrant la capacité First Aid dans tes raccourcis, tu peux l'utiliser rapidement et facilement.";
 		next;
-		mes "[Instructor Brade]";
-		mes "And that's it, that's all I can teach you.";
-		mes "You see that exit to the west?";
-		mes "Move on to the next room and there will be another instructor waiting for you.";
+		mes "[Instructeur Brade]";
+		mes "Et voilà, c'est tout ce que je peux t'apprendre.";
+		mes "Tu vois la sortie à l'ouest ?";
+		mes "Va dans la prochaine salle, il y aura un autre instructeur qui t'y attendra.";
 		next;
-		mes "[Instructor Brade]";
-		mes "We will be seeing each other soon enough.";
-		mes "But for now, go to the room to the west and get more information.";
+		mes "[Instructeur Brade]";
+		mes "Nous nous reverrons bientôt.";
+		mes "Mais pour l'instant, va dans la salle à l'ouest pour avoir plus d'informations.";
 		next;
-		mes "[Instructor Brade]";
-		mes "You've come along fine this far.";
-		mes "This is not much, but that this as a reward.";
+		mes "[Instructeur Brade]";
+		mes "Tu as déjà été loin.";
+		mes "Ce n'est pas beaucoup, mais voici une récompense.";
 		getitem 2393,1;	// N_Adventurer's_Suit
 		completequest 7120;
 		set job_novice_q,9;
 		close;
 	}
 	else if(job_novice_q > 8) {
-		mes "[Instructor Brade]";
-		mes "Next step of the Training is done in the room west of here.";
-		mes "If you are lost, I can send you there.";
+		mes "[Instructeur Brade]";
+		mes "La prochaine étape de l'entraînement se fait dans la pièce à l'ouest d'ici.";
+		mes "Si tu es perdu, je peux t'y envoyer.";
 		next;
-		if(select("I can get there by myself.:Please, send me to the next room.") == 2) {
-			mes "[Instructor Brade]";
-			mes "Oh well.";
-			mes "I think it's better than seeing you lost and wandering about.";
+		if(select("Je peux y aller tout seul.:Envoie moi à la prochaine salle.") == 2) {
+			mes "[Instructeur Brade]";
+			mes "Oh d'accord.";
+			mes "Je pense que c'est mieux que de te voir perdu et errant.";
 			mes "Hahahaha...";
 			close2;
 			warp "new_1-2",41,172;
 			end;
 		}
-		mes "[Instructor Brade]";
-		mes "Good. That's the attitude you must have.";
-		mes "You can't just lean on others to help you.";
-		mes "Now, go ahead.";
+		mes "[Instructeur Brade]";
+		mes "Bien ! C'est cette attitude que tu dois avoir.";
+		mes "Tu ne peux pas juste compter sur les autres pour t'aider.";
+		mes "Maintenant, vas-y.";
 		close;
 	}
 	else {
-		mes "[Instructor Brade]";
-		mes "Why are you still here?";
+		mes "[Instructeur Brade]";
+		mes "Pourquoi es-tu toujours ici ?";
 		close2;
 		warp "prontera",156,90;
 		end;
@@ -410,72 +412,72 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 new_1-2,115,120,4	script	Jinha#nv	59,{
 	if(job_novice_q < 7) {
 		mes "[Jinha]";
-		mes "What can I help you with?";
-		mes "Hmm? You haven't followed the curriculum correctly.";
+		mes "Comment puis-je t'aider ?";
+		mes "Hmm ? Tu n'as pas suivi le topo correctement.";
 		next;
 		mes "[Jinha]";
-		mes "You have to see Instructor Brade first before me. I will send you to Instructor Brade.";
+		mes "Tu dois voir l'instructeur Brade avant moi. Je vais t'y envoyer.";
 		close2;
 		warp "new_1-2",100,100;
 		end;
 	}
 	else if(job_novice_q == 7) {
 		mes "[Jinha]";
-		mes "Hello!";
-		mes "How can I help you?";
+		mes "Bonjour !";
+		mes "Comment puis-je t'aider ?";
 		next;
-		select("I want to learn the use the [First Aid] Skill.");
+		select("Je veux apprendre la capacité [First Aid].");
 		mes "[Jinha]";
-		mes "That's right.";
-		mes "First Aid is the skill used to convert SP into HP when you are in danger.";
+		mes "D'accord.";
+		mes "First Aid est une capacité utilisée pour convertir tes SP en HP quand tu es en danger.";
 		next;
 		specialeffect2 58;
 		specialeffect2 234;
 		mes "[Jinha]";
-		mes "It's recovery amount is small.";
-		mes "Still, it will help you not to faint from a critical hit.";
+		mes "Son pouvoir de soin est faible.";
+		mes "Pourtant, il t'aidera à ne pas succomber à un coup critique.";
 		next;
 		skill "NV_FIRSTAID",1,0;	// NV_FIRSTAID
 		set job_novice_q,8;
 		mes "[Jinha]";
-		mes "You can open the Skill Window by pressing the ^4A4AFFskill^000000 button in the Basic Window.";
-		mes "Hot Key is ^4A4AFFALT + S^000000.";
-		mes "Why don't you try the skill?";
+		mes "Tu peux ouvrir la Fenêtre de Capacités en appuyant sur le bouton ^4A4AFFskill^000000 en haut à gauche.";
+		mes "Le Raccourci est ^4A4AFFALT + S^000000.";
+		mes "Pourquoi n'essayerais-tu pas cette capacité ?";
 		next;
 		mes "[Jinha]";
-		mes "Good, now you know how to use the First Aid Skill, you have to move on to the next step.";
-		mes "Go back to Instructor Brade and show him what you've learned here.";
+		mes "Bon, maintenant que tu sais comment utiliser la capacité First Aid, tu dois passer à la prochaine étape.";
+		mes "Retourne voir l'instructeur Brade et montre lui ce que tu as appris.";
 		close;
 	}
 	else if(job_novice_q == 8) {
 		mes "[Jinha]";
-		mes "Didn't you learn the First Aid Skill already?";
-		mes "Have it checked by Instructor Brade.";
-		mes "If you don't know how to get to him, I will send you to him.";
+		mes "Tu n'as pas déjà appris la capacité First Aid ?";
+		mes "Montre la à l'instructeur Brade.";
+		mes "Si tu ne sais pas comment te rendre à lui, je vais t'y envoyer.";
 		next;
-		if(select("I'm good by myself.:Please, send me to him.") == 2) {
+		if(select("J'y vais par mes propres moyens.:Je veux bien que vous m'y envoyiez.") == 2) {
 			mes "[Jinha]";
-			mes "I will send you to Instructor Brade.";
+			mes "Je t'envoie vers l'instructeur Brade.";
 			close2;
 			warp "new_1-2",100,100;
 			end;
 		}
 		mes "[Jinha]";
-		mes "Very Good!";
-		mes "That's the right attitude!";
-		mes "You will be a great adventurer in the future.";
+		mes "Très bien !";
+		mes "Ça c'est la bonne attitude !";
+		mes "Tu deviendras un grand aventurier.";
 		close;
 	}
 	else if(job_novice_q > 8) {
 		mes "[Jinha]";
-		mes "What can I do for you?";
-		mes "Next course will be continued in the West Room.";
-		mes "Go on to the west room.";
+		mes "Que puis-je faire pour toi ?";
+		mes "La prochaine leçon aura lieu dans la pièce à l'Ouest.";
+		mes "Va dans la pièce à l'ouest.";
 		close;
 	}
 	else {
 		mes "[Jinha]";
-		mes "Why are you still here?";
+		mes "Pourquoi es-tu toujours là ?";
 		close2;
 		warp "prontera",156,90;
 		end;
@@ -488,87 +490,87 @@ new_1-2,115,120,4	script	Jinha#nv	59,{
 new_1-2,32,172,4	script	Chocolat#nv	96,{
 	if(job_novice_q < 9) {
 		mes "[Chocolat]";
-		mes "Hmm? Strange.";
-		mes "Let me see that Trainee ID for a sec.";
+		mes "Hmmm ? Étrange.";
+		mes "Laisse moi voir ce numéro d'Entraîné une seconde ?";
 		next;
 		mes "[Chocolat]";
-		mes "You were still on the basic course.";
-		mes "You should go back to Instructor Brade or Jinha.";
+		mes "Tu en es toujours aux cours de base.";
+		mes "Tu dois retourner voir l'instructeur Brade ou Jinha.";
 		next;
 		mes "[Chocolat]";
-		mes "If you don't know how to find them, I can send you to Instructor Brade, How about it?";
+		mes "Si tu ne sais pas comment les trouver, je peux t'envoyer à l'instructeur Brade. Tu en penses quoi ?";
 		next;
-		if(select("I will go myself.:Will you do that for me?") == 2) {
+		if(select("Je vais y aller moi-même.:Tu ferais ça pour moi ?") == 2) {
 			mes "[Chocolat]";
-			mes "Sure.";
-			mes "I will see you later.";
+			mes "Bien sûr.";
+			mes "On se verra plus tard.";
 			close2;
 			warp "new_1-2",100,100;
 			end;
 		}
 		mes "[Chocolat]";
-		mes "Sure. Go out to the door to the right.";
+		mes "D'accord. Sort par la porte de droite.";
 		close;
 	}
 	else if(job_novice_q == 9) {
 		mes "[Chocolat]";
-		mes "I will tell you about the people you will be seeing in Town.";
-		mes "There are many kinds of people in town and some of them will be helpful to know.";
+		mes "Je vais te parler des gens que tu rencontreras en ville.";
+		mes "Il y a de nombreuses sortes de gens en ville, et certains sont intéressants à connaître.";
 		next;
 		mes "[Chocolat]";
-		mes "There are a lot of people in town, but among them, these people are the most important to know.";
+		mes "Il y a beaucoup de monde en ville, mais par dessus tout, ces gens sont importants à connaître.";
 		next;
 		mes "[Chocolat]";
-		mes "They are [Kafra] Agents standing right behind me and their rival company the [Cool Event].";
-		mes "When you visit a town for the first time, you should talk to Information [Soldier].";
+		mes "Il y a les Agents de la [Kafra] juste derrière moi et leurs rivaux de la société [Cool Event].";
+		mes "Quand tu visites une ville pour la première fois, je te conseille de parler au [Soldat] des Informations.";
 		next;
 		mes "[Chocolat]";
-		mes "Well then, let's hear from each of them.";
-		mes "Start by talking to the [Kafra] agent.";
+		mes "Bien maintenant, écoute chacun d'eux.";
+		mes "Commence par parler à l'agent de la [Kafra].";
 		setquest 7121;
 		set job_novice_q,10;
 		close;
 	}
 	else if(job_novice_q == 10) {
 		mes "[Chocolat]";
-		mes "Here, talk to these guys standing behind me.";
-		mes "Start with the [Kafra] gal behind me.";
+		mes "Parle aux gens se tenant derrière moi.";
+		mes "Commence par la jeune fille de la [Kafra] juste là.";
 		close;
 	}
 	else if(job_novice_q == 11) {
 		mes "[Chocolat]";
-		mes "You've learned a lot about Kafra service huh?";
-		mes "From now on, you can use the Kafra Server.";
+		mes "Tu as appris beaucoup de choses à propos des services de la Kafra ?";
+		mes "Maintenant, tu peux utiliser les Serveurs de la Kafra.";
 		next;
 		mes "[Chocolat]";
-		mes "Next is Kafra's rival, [Cool Event] Staff!";
-		mes "[Cool Event] Staff specialize in events.";
-		mes "Well, why don't you talk to him yourself?";
+		mes "Ensuite, les rivaux de la Kafra, le Staff de [Cool Event].";
+		mes "Le Staff de [Cool Event] est spécialisé dans les évènements.";
+		mes "Bien, pourquoi n'irais-tu pas leur parler toi-même ?";
 		close;
 	}
 	else if(job_novice_q == 12) {
 		mes "[Chocolat]";
-		mes "After [Kafra] and [Cool Event], are the Information [Soldier]s.";
-		mes "They can seem insignificant but they can help you greatly when the time comes.";
+		mes "Après la [Kafra] et [Cool Event], il y a les [Soldat]s des Informations.";
+		mes "Ils peuvent paraître insignifiants mais ils pourront t'aider grandement en temps venu.";
 		next;
 		mes "[Chocolat]";
-		mes "I've brought the Information Soldier from the City of Prontera.";
-		mes "Ask him what he actually does in town.";
+		mes "J'ai apporté un Soldat des Informations de la ville de Prontera.";
+		mes "Demande lui ce qu'il fait normalement en ville.";
 		close;
 	}
 	else if(job_novice_q == 13) {
 		mes "[Chocolat]";
-		mes "How was the guide of the Information [Soldier]?";
-		mes "Last is about using [Inn]s.";
-		mes "There's an Inn located in each town.";
+		mes "Comment était le guide du [Soldat] des Informations ?";
+		mes "Le dernier est à propos d'utiliser les [Auberge]s.";
+		mes "Il y a une Auberge dans chaque ville.";
 		next;
 		mes "[Chocolat]";
-		mes "You can rest at Inns or Hotels for a small fee.";
-		mes "Your HP and SP will be recovered completely by resting there.";
-		mes "Can't hurt to use one, eh?";
+		mes "Tu peux te reposer dans les Auberges ou les Hotels pour un faible coût.";
+		mes "Tes HP et SP seront totalement récupérés en t'y reposant.";
+		mes "Ça ne peut pas faire de mal d'essayer, hein ?";
 		next;
 		mes "[Chocolat]";
-		mes "Besides these guys, there's many merchants selling various kind of items, so go check them out.";
+		mes "Derrière ces gens, il y a plusieurs marchands qui vendent différentes sortes d'objets. Va y jeter un oeil.";
 		completequest 7121;
 		getexp 300,0;
 		getexp 300,0;
@@ -581,17 +583,17 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 		set job_novice_q,14;
 		next;
 		mes "[Chocolat]";
-		mes "You've completed all the quests I gave you.";
-		mes "As the reward, I will give you Free Tickets for Kafra Storage and Teleport Service.";
-		mes "They will come in handy.";
+		mes "Tu as terminé toutes les quêtes que je t'avais donné.";
+		mes "En récompense, je vais te donner des Free Tickets pour le stockage en Kafra et le service de téléportation.";
+		mes "Ils te seront utiles.";
 		next;
 		mes "[Chocolat]";
-		mes "That's all for me.";
-		mes "Now, it's time for real combat!";
+		mes "C'est tout pour moi.";
+		mes "Maintenant, c'est l'heure de vrais combats !";
 		next;
 		mes "[Chocolat]";
-		mes "Real Combat Training will be given by Instructor Brade. You met him earlier.";
-		mes "I will send you to the Real Combat Training Field.";
+		mes "L'Entraînement au Combat sera dispensé par l'instructeur Brade. Tu l'as rencontré un peu plus tôt.";
+		mes "Je vais t'envoyer au champ d'Entraînement au Combat.";
 		close2;
 		savepoint "new_1-3",96,21;
 		warp "new_1-3",96,21;
@@ -599,11 +601,11 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 	}
 	else if(job_novice_q > 13) {
 		mes "[Chocolat]";
-		mes "What can I do for you?";
+		mes "Que puis-je faire pour toi ?";
 		next;
 		select("");
 		mes "[Chocolat]";
-		mes "I will send you to the Real Combat Training Field right away.";
+		mes "Je vais t'envoyer au champ d'Entraînement au Combat directement.";
 		close2;
 		savepoint "new_1-3",96,21;
 		warp "new_1-3",96,21;
@@ -611,7 +613,7 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 	}
 	else {
 		mes "[Chocolat]";
-		mes "Why are you still here?";
+		mes "Pourquoi es-tu toujours là ?";
 		close2;
 		warp "prontera",156,90;
 		end;
@@ -621,159 +623,159 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 // ---------- Kafra ----------
 new_1-2,29,176,4	script	Kafra#nv	117,{
 	if(job_novice_q < 10) {
-		mes "[Kafra Agent]";
-		mes "Hello.";
-		mes "I don't think it's my turn yet.";
-		mes "Please talk to 'Chocolat' first.";
+		mes "[Agent de la Kafra]";
+		mes "Bonjour.";
+		mes "Je ne crois pas que ce soit encore mon tour.";
+		mes "Parle à 'Chocolat' d'abord.";
 		close;
 	}
 	else if(job_novice_q == 10) {
-		mes "[Kafra Agent]";
-		mes "Hello.";
-		mes "I've been dispatched by the Kafra Head Office to help Trainees.";
-		mes "The Kafra Corporation is the world's largest company with a long and distinguished history on the Rune Midgard continent.";
-		mes "It's important for you adventurers to be close with us.";
+		mes "[Agent de la Kafra]";
+		mes "Bonjour.";
+		mes "J'ai été envoyée par le Siège Social de la Kafra pour aider les novices.";
+		mes "La Kafra Corporation est la plus grande société mondiale, avec une histoire longue et distinguée sur le continent de Rune Midgard.";
+		mes "C'est important pour vous, les aventuriers, d'être proches de nous.";
 		next;
-		mes "[Kafra Agent]";
-		mes "I will inform you about the Kafra Services which you will be using most frequently, [Save], [Storage], and [Teleport] Services.";
+		mes "[Agent de la Kafra]";
+		mes "Je vais vous expliquer les Services de la Kafra que vous utiliserez le plus fréquement : les services de [Sauvegarde], [Stockage] et [Téléportation].";
 		next;
-		mes "[Kafra Agent]";
-		mes "When you talk to a Kafra Agent and ask for the Save Service, the location of where you will revive, after being defeated in battle, will be changed.";
+		mes "[Agent de la Kafra]";
+		mes "Quand vous parlez à un Agent de la Kafra et demandez une Sauvegarde, l'endroit où vous revivrez, après avoir été tué dans un combat, sera changé.";
 		next;
-		mes "[Kafra Agent]";
-		mes "Your Respawn Point is always the last place where you have saved.";
-		mes "Using a Butterfly Wing will return you to the place where you last saved.";
-		mes "This service is free to use, so feel free to use the Save Service anytime you like.";
+		mes "[Agent de la Kafra]";
+		mes "Votre Point de Réapparition est toujours le dernier endroit où vous avez sauvegardé.";
+		mes "Utiliser une Butterfly Wing vous renverra à l'endroit où vous avez sauvegardé pour la dernière fois.";
+		mes "Ce service est gratuit, alors n'hésitez pas à Sauvegarder dès que vous le souhaitez.";
 		next;
-		mes "[Kafra Agent]";
-		mes "Next is the Storage Service.";
-		mes "You can store and retrieve your items in any town at your convenience.";
+		mes "[Agent de la Kafra]";
+		mes "Ensuite vient le Service de Stockage.";
+		mes "Vous pouvez stocker et récupérer vos objets dans n'importe quelle ville, comme vous le souhaitez.";
 		next;
-		mes "[Kafra Agent]";
-		mes "It's unreasonable to carry all of your items with you when you don't need them right away.";
-		mes "Please use our Storage and keep your items safe and secure.";
+		mes "[Agent de la Kafra]";
+		mes "Ce n'est pas raisonnable de transporter tous vos objets lorsque vous n'en avez pas besoin.";
+		mes "Utilisez donc notre Stockage pour garder vos objets en sûreté.";
 		next;
-		mes "[Kafra Agent]";
-		mes "Our convenient Storage Service is provided to our customers for a small fee which is different from town to town.";
-		mes "However, you must be at least ^4A4AFFBasic Skill Level 6^000000 to use the Storage.";
+		mes "[Agent de la Kafra]";
+		mes "Notre Service de Stockage est proposé à nos clients pour un tarif pouvant varier d'une ville à l'autre.";
+		mes "Cependant, vous devez au moins posséder la ^4A4AFFCapacité de Base au Niveau 6^000000 pour utiliser le Stockage.";
 		next;
-		mes "[Kafra Agent]";
-		mes "There are 7 different item sections of the Storage into which items are organized: Consumable, Kafra (Item Mall), Armor, Weapons, Ammo, Cards, and Etc items.";
+		mes "[Agent de la Kafra]";
+		mes "Les objets du Stockage sont organisés en 7 sections : les Consommables, les objets Kafra, les Armures, les Armes, les Munitions, les Cartes, et les Autres Objets.";
 		next;
-		mes "[Kafra Agent]";
-		mes "There are a maximum of 600 Inventory Slots in Kafra Storage, meaning you can have up to 600 different kinds of total items in Storage.";
+		mes "[Agent de la Kafra]";
+		mes "Il y a un maximum de 600 emplacements dans le Stockage de la Kafra, ce qui signifie que vous pouvez stocker jusqu'à 600 objets différents en même temps.";
 		next;
-		mes "[Kafra Agent]";
-		mes "If you have a Premium Subscription, the maximum Inventory Slots in Kafra Storage is 600!";
-		mes "Remember though, that in the case of Equipment, each item takes up one Inventory Slot.";
-		mes "The maximum number of items that can be placed in Kafra Storage is 30,000.";
+		mes "[Agent de la Kafra]";
+		mes "Si vous avez un Abonnement Premium, le nombre maximum d'emplacements dans le Stockage de la Kafra est de 600 !";
+		mes "Rappelez vous cependant, en cas d'un Équipement, chaque objet prend un Emplacement complet.";
+		mes "Le nombre maximum d'objets qui peuvent être placés dans notre Stockage est de 30,000.";
 		next;
-		mes "[Kafra Agent]";
-		mes "Storage is shared by everyone character on one account.";
-		mes "Storage Fees can vary for each Town.";
-		mes "So please keep that in mind when you are using our storage service.";
+		mes "[Agent de la Kafra]";
+		mes "Le Stockage est partagé par tous les personnages d'un même compte.";
+		mes "Les Tarifs du Stockage peuvent varier pour chaque ville.";
+		mes "Gardez cela en tête lorsque vous utiliserez notre service de stockage.";
 		next;
-		mes "[Kafra Agent]";
-		mes "We also provide you with a Teleport Service to make your trips easier when you are trying to move a long distance.";
+		mes "[Agent de la Kafra]";
+		mes "Nous vous fournissons aussi un Service de Téléportation pour faciliter vos voyages sur longues distances.";
 		next;
-		mes "[Kafra Agent]";
-		mes "With our veteran teleporter's skill, your trip will be safer and more comfortable.";
-		mes "Oh and remember that the places you can teleport to vary from town to town.";
+		mes "[Agent de la Kafra]";
+		mes "Avec nos capacités de téléportation de vétéran, vos voyages seront plus sûrs et plus confortables.";
+		mes "Oh et rappelez vous que les endroits vers lesquels vous pourrez vous téléporter varieront suivant la ville où vous êtes.";
 		next;
-		mes "[Kafra Agent]";
-		mes "This is all for your never ending support. We are working hard to repay our debt to our customers.";
+		mes "[Agent de la Kafra]";
+		mes "Nous faisons tout cela pour vous aider sur du long terme. Nous travaillons dur pour la satisfaction de nos clients.";
 		next;
-		mes "[Kafra Agent]";
-		mes "Do you want to hear another explanation?";
+		mes "[Agent de la Kafra]";
+		mes "Souhaitez-vous entendre d'autres explications ?";
 		set job_novice_q,11;
 		next;
 		goto L_ServiceMenu;
 	}
 	else {
-		mes "[Kafra Agent]";
-		mes "Kafra Service at your service";
-		mes "What can I do for you?";
+		mes "[Agent de la Kafra]";
+		mes "Services de la Kafra à votre service.";
+		mes "Que puis-je faire pour vous être utile ?";
 		next;
-		select("About Kafra Service");
-		mes "[Kafra Agent]";
-		mes "I will explain about the Kafra Service.";
-		mes "Which service do you want to be informed about?";
+		select("À propos des Services de la Kafra");
+		mes "[Agent de la Kafra]";
+		mes "Je vais vous donner des explications sur les Services de la Kafra.";
+		mes "De quels services souhaitez vous des renseignements ?";
 		next;
 		goto L_ServiceMenu;
 	}
 	
 	L_ServiceMenu:
 		while(1) {
-			switch(select("About Save:About Storage:About Teleport:About Cart:No More.")) {
+			switch(select("À propos des Sauvegardes:À propos du Stockage:À propos de la Téléportation:À propos des Chariots:Rien de plus.")) {
 			case 1:
-				mes "[Kafra Agent]";
-				mes "When you are killed in battle, you can revive in the location you saved with this service.";
-				mes "If you save at a Kafra in a village, you can revive in the village you saved.";
+				mes "[Agent de la Kafra]";
+				mes "Lorsque vous mourrez au combat, vous pouvez revivre à l'endroit où vous avez sauvegardé via ce service.";
+				mes "Si vous avez sauvegardé à une Kafra dans un village, vous réapparaîtrez à ce village.";
 				next;
-				mes "[Kafra Agent]";
-				mes "Saved location is always where you saved last, and by using a Butterfly Wing, you can teleport directly to your saved point.";
-				mes "So feel free to use this service.";
+				mes "[Agent de la Kafra]";
+				mes "L'endroit sauvegardé est toujours le dernier endroit où vous avez sauvegardé. Utiliser une Butterfly Wing vous téléportera directement à votre point de sauvegarde.";
+				mes "Utilisez donc ce service autant que vous le souhaitez.";
 				next;
 				break;
 			case 2:
-				mes "[Kafra Agent]";
-				mes "Next is the Storage Service.";
-				mes "You can store and retrieve your items in any town at your convenience.";
-				next;
-				mes "[Kafra Agent]";
-				mes "It's unreasonable to carry all of your items with you when you don't need them right away.";
-				mes "Please use our Storage and keep your items safe and secure.";
-				next;
-				mes "[Kafra Agent]";
-				mes "Our convenient Storage Service is provided to our customers for a small fee which is different from town to town.";
-				mes "However, you must be at least ^4A4AFFBasic Skill Level 6^000000 to use the Storage.";
-				next;
-				mes "[Kafra Agent]";
-				mes "There are 7 different item sections of the Storage into which items are organized: Consumable, Kafra (Item Mall), Armor, Weapons, Ammo, Cards, and Etc items.";
-				next;
-				mes "[Kafra Agent]";
-				mes "There are a maximum of 600 Inventory Slots in Kafra Storage, meaning you can have up to 600 different kinds of total items in Storage.";
-				next;
-				mes "[Kafra Agent]";
-				mes "If you have a Premium Subscription, the maximum Inventory Slots in Kafra Storage is 600!";
-				mes "Remember though, that in the case of Equipment, each item takes up one Inventory Slot.";
-				mes "The maximum number of items that can be placed in Kafra Storage is 30,000.";
-				next;
-				mes "[Kafra Agent]";
-				mes "Storage is shared by everyone character on one account.";
-				mes "Storage Fees can vary for each Town.";
-				mes "So please keep that in mind when you are using our storage service.";
+        mes "[Agent de la Kafra]";
+        mes "Ensuite vient le Service de Stockage.";
+        mes "Vous pouvez stocker et récupérer vos objets dans n'importe quelle ville, comme vous le souhaitez.";
+        next;
+        mes "[Agent de la Kafra]";
+        mes "Ce n'est pas raisonnable de transporter tous vos objets lorsque vous n'en avez pas besoin.";
+        mes "Utilisez donc notre Stockage pour garder vos objets en sûreté.";
+        next;
+        mes "[Agent de la Kafra]";
+        mes "Notre Service de Stockage est proposé à nos clients pour un tarif pouvant varier d'une ville à l'autre.";
+        mes "Cependant, vous devez au moins posséder la ^4A4AFFCapacité de Base au Niveau 6^000000 pour utiliser le Stockage.";
+        next;
+        mes "[Agent de la Kafra]";
+        mes "Les objets du Stockage sont organisés en 7 sections : les Consommables, les objets Kafra, les Armures, les Armes, les Munitions, les Cartes, et les Autres Objets.";
+        next;
+        mes "[Agent de la Kafra]";
+        mes "Il y a un maximum de 600 emplacements dans le Stockage de la Kafra, ce qui signifie que vous pouvez stocker jusqu'à 600 objets différents en même temps.";
+        next;
+        mes "[Agent de la Kafra]";
+        mes "Si vous avez un Abonnement Premium, le nombre maximum d'emplacements dans le Stockage de la Kafra est de 600 !";
+        mes "Rappelez vous cependant, en cas d'un Équipement, chaque objet prend un Emplacement complet.";
+        mes "Le nombre maximum d'objets qui peuvent être placés dans notre Stockage est de 30,000.";
+        next;
+        mes "[Agent de la Kafra]";
+        mes "Le Stockage est partagé par tous les personnages d'un même compte.";
+        mes "Les Tarifs du Stockage peuvent varier pour chaque ville.";
+        mes "Gardez cela en tête lorsque vous utiliserez notre service de stockage.";
 				next;
 				break;
 			case 3:
-				mes "[Kafra Agent]";
-				mes "We also provide you with a Teleport Service to make your trips easier when you are trying to move a long distance.";
-				next;
-				mes "[Kafra Agent]";
-				mes "With our veteran teleporter's skill, your trip will be safer and more comfortable.";
-				mes "Oh and remember that the places you can teleport to vary from town to town.";
-				next;
-				mes "[Kafra Agent]";
-				mes "This is all for your never ending support. We are working hard to repay our debt to our customers.";
+        mes "[Agent de la Kafra]";
+        mes "Nous vous fournissons aussi un Service de Téléportation pour faciliter vos voyages sur longues distances.";
+        next;
+        mes "[Agent de la Kafra]";
+        mes "Avec nos capacités de téléportation de vétéran, vos voyages seront plus sûrs et plus confortables.";
+        mes "Oh et rappelez vous que les endroits vers lesquels vous pourrez vous téléporter varieront suivant la ville où vous êtes.";
+        next;
+        mes "[Agent de la Kafra]";
+        mes "Nous faisons tout cela pour vous aider sur du long terme. Nous travaillons dur pour la satisfaction de nos clients.";
 				next;
 				break;
 			case 4:
-				mes "[Kafra Agent]";
-				mes "The Kafra corporation provides Cart rental services to customers engaged in commercial business.";
-				mes "Originally this cart rental service had been only provided by the merchant guild in Alberta.";
+				mes "[Agent de la Kafra]";
+				mes "La Kafra Corporation peut fournir un service de Location de Chariots à ses clients ayant une activité commerciale.";
+				mes "Auparavant, ce service de location de chariots était uniquement fournit par la guilde des marchands d'Alberta.";
 				next;
-				mes "[Kafra Agent]";
-				mes "However, since we took over this service, our merchant customers have been able to rent carts from almost anywhere.";
-				mes "The cart rental service is available only for job classes engaged in commercial business such as ^4A4AFFMerchants, Blacksmiths, Alchemists, and Super Novices^000000.";
+				mes "[Agent de la Kafra]";
+				mes "Cependant depuis que nous avons pris la main sur ce service, nos clients marchands ont la possibilité de louer leur chariots depuis presque partout.";
+				mes "Le service de location de chariots est uniquement disponible pour les classes ayant une activité commerciale, comme les ^4A4AFFMerchants, Blacksmiths, Alchemists, et Super Novices^000000.";
 				next;
-				mes "[Kafra Agent]";
-				mes "Of course you should learn the 'Pushcart' skill beforehand, otherwise you will not be able to rent a cart from us.";
-				mes "The rental fee varies by town, please keep that in mind.";
+				mes "[Agent de la Kafra]";
+				mes "Bien sûr vous devez apprendre la capacité 'Pushcart' en premier, sinon vous ne pourrez pas nous louer un chariot.";
+				mes "Les tarifs de location peuvent varier selon la ville, gardez bien cela en tête.";
 				next;
 				break;
 			case 5:
-				mes "[Kafra Agent]";
-				mes "I hope you are satisfied with my explanation about the Kafra Service.";
+				mes "[Agent de la Kafra]";
+				mes "J'espère que vous êtes satisfait de mes explications sur les Services fournis par la Kafra.";
 				close;
 			}
 		}
@@ -2030,32 +2032,32 @@ new_5-3,103,50,4	duplicate(NvBrutus)	Level 5 Trainer#nv5	84
 
 // Random Stuff (Guards & Bulletin Board)
 //============================================================
-new_1-1,66,114,4	script	Bulletin Board#nv	111,{
+new_1-1,66,114,4	script	Panneau d'affichage#nv	111,{
 	mes "^FF0000=================================^000000";
-	mes "^FF0000 ^000000 ^E40CAA[Welcome]^CC0000 to ^FF9000Novice^7FFF00 Training ^00FF00Grounds ^E40CAA[Welcome]^FF0000^000000";
+	mes "^FF0000^000000^E40CAA[Bienvenue]^CC0000 au ^00FF00Terrain d'Entraînement ^CC0000des ^FF9000Novices ^E40CAA[Bienvenue]^FF0000^000000";
 	mes "^FF0000=================================^000000";
 	close;
 }
 
-new_1-1,144,116,2	script	Guard#nv1	105,{
-	mes "[Training Grounds Guard]";
-	mes "Welcome to the Training Grounds.";
-	mes "You are now in the outer court yard. Please go inside the castle to begin your training.";
+new_1-1,144,116,2	script	Guarde#nv1	105,{
+	mes "[Guarde du Terrain d'Entraînement]";
+	mes "Bienvenue au Terrain d'Entraînement.";
+	mes "Tu es dans la cour extérieure. Entre dans le château pour commencer ton entraînement.";
 	close;
 }
 
-new_1-1,144,107,2	script	Guard#nv2	105,{
-	mes "[Training Grounds Guard]";
+new_1-1,144,107,2	script	Guarde#nv2	105,{
+	mes "[Guarde du Terrain d'Entraînement]";
 	if(rand(2)) {
-		mes "Come in!";
-		mes "I would like to welcome you to the Training Grounds!";
+		mes "Entre !";
+		mes "J'aimerais te souhaiter la bienvenue au Terrain d'Entraînement !";
 		next;
-		mes "[Training Grounds Guard]";
-		mes "In here, you can prepare yourself for your future adventures throughout the Ragnarok world!";
+    mes "[Guarde du Terrain d'Entraînement]";
+		mes "Ici tu peux te préparer pour tes futures aventures dans le monde de Ragnarok !";
 	}
 	else {
-		mes "Go, Novice, go!";
-		mes "Fight, and grow stronger! Look towards a brighter tomorrow!";
+		mes "Fonce, Novice, fonce !";
+		mes "Bat toi, et devient fort ! Regarde vers un avenir plus radieux !";
 	}
 	close;
 }
