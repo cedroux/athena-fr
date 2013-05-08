@@ -21,48 +21,48 @@
 new_1-1,53,114,4	script	Sprakki#nv1	90,{
 	if(job_novice_q < 1) {
 		mes "[Sprakki]";
-		mes "Hello there! Welcome to the World of Ragnarok Online. My name is Sprakki and I'm in charge of giving you basic gameplay tips.";
-		mes "Click on the [Next] button or press [Enter] to continue.";
+		mes "Bien le bonjour ! Bienvenue dans le Monde de Ragnarok Online. Je m'appelle Sprakki et je suis en charge de vous apprendre les bases du jeu.";
+		mes "Clique sur le bouton [Next] ou appuie sur [Enter] pour continuer.";
 		next;
 		mes "[Sprakki]";
-		mes "First you need to learn the very basics of controlling your character.";
-		mes "All the basic ^4A4AFFmoves, selection of items, and attacks^000000 use the ^4A4AFFleft click of the mouse^000000.";
+		mes "Tout d'abord tu dois apprendre les basiques pour controller ton personnage.";
+		mes "^4A4AFFBouger, sélectionner des objets et attaquer^000000 utilisent le ^4A4AFFclic gauche de la souris^000000.";
 		next;
 		cutin "tutorial01",3;
 		mes "-! Info !-";
-		mes "Click on the ground to move the character.";
-		mes "Attacking monsters and conversations with the people of this world can be done by simply clicking on them.";
+		mes "Clique sur le sol pour bouger ton personnage.";
+		mes "Tu peux attaquer des monstres ou parler avec les gens de ce monde en leur cliquant simplement dessus.";
 		next;
 		cutin "",255;
 		mes "[Sprakki]";
-		mes "First off, try moving around.";
-		mes "Do you see that wooden bridge to the right?";
+		mes "D'abord, essaye de bouger.";
+		mes "Tu vois ce pont en bois à droite ?";
 		next;
 		setquest 7117;
 		set job_novice_q,1;
 		mes "[Sprakki]";
-		mes "Walk over that bridge and there's a castle used as the Training Center.";
-		mes "I will be waiting for you inside of that Castle. Please come to the castle by yourself.";
+		mes "Traverse ce pont et tu verras un château. C'est notre Centre d'Entraînement.";
+		mes "Je vais t'attendre à l'intérieur de ce Château. Rejoins-y moi par toi-même.";
 		next;
 		cutin "tutorial02",3;
 		mes "-! Info !-";
-		mes "You've received a quest from Sprakki.";
-		mes "You can check the contents of the quest in the Quest Info Window.";
+		mes "Tu as reçu une quête de Sprakki.";
+		mes "Tu peux regarder le contenu de cette quête dans la Fenêtre de Quêtes.";
 		next;
 		mes "[Sprakki]";
-		mes "I will wait inside the Training Center across the bridge.";
+		mes "Je t'attendrai à l'intérieur du Centre d'Entraînement après le pont.";
 		next;
 		mes "-! Info !-";
-		mes "You can open the Quest Info Window by pressing the ^4A4AFFALT + U^000000 keys at the same time.";
+		mes "Tu peux ouvrir la Fenêtre de Quêtes en appuyant simultanément sur les touches ^4A4AFFALT + U^000000.";
 		next;
 		cutin "",255;
 		mes "[Sprakki]";
-		mes "Have you checked the Quest Info Window?";
-		mes "I'll be waiting in the castle across the bridge.";
+		mes "As-tu regardé la Fenêtre de Quêtes ?";
+		mes "Je t'attendrai dans le château après le pont.";
 		close;
 	} else {
 		mes "[Sprakki]";
-		mes "I will be waiting for you across the Bridge to the east.";
+		mes "Je t'attendrai après le pont à l'Est.";
 		close;
 	}
 }
