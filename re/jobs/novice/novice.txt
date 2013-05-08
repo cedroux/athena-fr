@@ -978,7 +978,7 @@ function	script	F_NvErase	{
 }
 
 // ---------------------------- Swordman Guide -------------------------------
--	script  Guide Swordman#nv::NvSwd	728,{
+-	script	Guide Swordman#nv::NvSwd	728,{
 	if(job_novice_q < 16) {
 		mes "[Guildien Swordman]";
 		mes "Je ne vous aiderai pas jusqu'à ce que vous ayez suivi les instructions de Brade.";
