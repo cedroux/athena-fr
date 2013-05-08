@@ -522,7 +522,7 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 		next;
 		mes "[Chocolat]";
 		mes "Il y a les Agents de la [Kafra] juste derrière moi et leurs rivaux de la société [Cool Event].";
-		mes "Quand tu visites une ville pour la première fois, je te conseille de parler au [Soldat] des Informations.";
+		mes "Quand tu visites une ville pour la première fois, je te conseille de parler aux [Soldat]s.";
 		next;
 		mes "[Chocolat]";
 		mes "Bien maintenant, écoute chacun d'eux.";
@@ -543,29 +543,29 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 		mes "Maintenant, tu peux utiliser les Serveurs de la Kafra.";
 		next;
 		mes "[Chocolat]";
-		mes "Ensuite, les rivaux de la Kafra, le Staff de [Cool Event].";
-		mes "Le Staff de [Cool Event] est spécialisé dans les évènements.";
+		mes "Ensuite, les rivaux de la Kafra, l'Équipe de [Cool Event].";
+		mes "L'Équipe de [Cool Event] est spécialisée dans les évènements.";
 		mes "Bien, pourquoi n'irais-tu pas leur parler toi-même ?";
 		close;
 	}
 	else if(job_novice_q == 12) {
 		mes "[Chocolat]";
-		mes "Après la [Kafra] et [Cool Event], il y a les [Soldat]s des Informations.";
+		mes "Après la [Kafra] et [Cool Event], il y a les [Soldat]s.";
 		mes "Ils peuvent paraître insignifiants mais ils pourront t'aider grandement en temps venu.";
 		next;
 		mes "[Chocolat]";
-		mes "J'ai apporté un Soldat des Informations de la ville de Prontera.";
+		mes "J'ai demandé à un Soldat de la ville de Prontera de venir.";
 		mes "Demande lui ce qu'il fait normalement en ville.";
 		close;
 	}
 	else if(job_novice_q == 13) {
 		mes "[Chocolat]";
-		mes "Comment était le guide du [Soldat] des Informations ?";
+		mes "Comment était le guide du [Soldat] ?";
 		mes "Le dernier est à propos d'utiliser les [Auberge]s.";
 		mes "Il y a une Auberge dans chaque ville.";
 		next;
 		mes "[Chocolat]";
-		mes "Tu peux te reposer dans les Auberges ou les Hotels pour un faible coût.";
+		mes "Tu peux te reposer dans les Auberges ou les Hôtels pour un faible coût.";
 		mes "Tes HP et SP seront totalement récupérés en t'y reposant.";
 		mes "Ça ne peut pas faire de mal d'essayer, hein ?";
 		next;
@@ -782,39 +782,39 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 }
 
 // ---------- Cool Event Staff ----------
-new_1-2,32,176,4	script	Cool Event Staff#nv	874,{
+new_1-2,32,176,4	script	Membre de Cool Event#nv	874,{
 	if(job_novice_q < 11) {
-		mes "[Cool Event Staff]";
-		mes "This is not my turn.";
-		mes "You finished talking to Kafra yet?";
+		mes "[Membre de Cool Event]";
+		mes "Ce n'est pas mon tour.";
+		mes "As-tu fini de parler avec l'employée de la Kafra ?";
 		close;
 	}
 	else if(job_novice_q == 11) {
-		mes "[Cool Event Staff]";
-		mes "Hello.";
-		mes "We are working hard to provide events on Rune Midgard similar to the Kafra service.";
+		mes "[Membre de Cool Event]";
+		mes "Bonjour.";
+		mes "Nous travaillons dur pour offrir des services similaires à ceux de la Kafra dans tout Rune Midgard.";
 		next;
-		mes "[Cool Event Staff]";
-		mes "Our staff is here to support you with [storage], [save], and [teleport] services.";
+		mes "[Membre de Cool Event]";
+		mes "Nos équipes sont là pour vous aider avec des services de [stockage], de [sauvegarde] et de [téléportation].";
 		next;
-		mes "[Cool Event Staff]";
-		mes "If there's no Kafra around you, we're around to help you.";
+		mes "[Membre de Cool Event]";
+		mes "S'il n'y a pas d'employé Kafra proche de vous, nous sommes là pour vous aider.";
 		next;
-		mes "[Cool Event Staff]";
-		mes "We are working hard on a network of Events to make your life better.";
-		mes "I hope that you can meet our staff in Alberta.";
+		mes "[Membre de Cool Event]";
+		mes "Nous travaillons dur sur un réseau d'Évènements pour améliorer votre vie quotidienne.";
+		mes "J'espère que vous pourrez rencontrer notre équipe à Alberta.";
 		next;
-		mes "[Cool Event Staff]";
-		mes "Who knows, we might meet outside of this academy.";
+		mes "[Membre de Cool Event]";
+		mes "Qui sait, peut être que nous nous reverrons en dehors de cette académie.";
 		next;
-		mes "[Cool Event Staff]";
-		mes "Mostly all of us wear red coats in the places that the Kafra Staff don't work for.";
+		mes "[Membre de Cool Event]";
+		mes "La plupart d'entre nous portent des manteaux rouges et sont dans des endroits où les membres de la Kafra ne travaillent pas.";
 		set job_novice_q,12;
 		close;
 	}
 	else {
-		mes "[Cool Event Staff]";
-		mes "Most of our services are similar to those of Kafra.";
+		mes "[Membre de Cool Event]";
+		mes "La plupart de nos services sont similaires à ceux de la Kafra.";
 		close;
 	}
 }
