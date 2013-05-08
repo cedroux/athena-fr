@@ -7,7 +7,7 @@
 //===== Compatible With: =====================================
 //= rAthena SVN
 //===== Description: ========================================= 
-//= [Aegis Conversion]
+//= [Official Conversion]
 //= Pickup and write mail from/to players in game.
 //===== Additional Comments: =================================
 //= 1.0 First version, place holders only. [L0ne_W0lf]
@@ -29,21 +29,24 @@
 	mes "Les services-postaux sont disponibles pour 130 Zenys.";
 	mes "Désirez-vous utiliser ces services ?";
 	next;
-	mes "[Boîte aux Lettres]";
-	if (select("Oui.:Non.") == 1) {
+	switch(select("Oui.:Non.")) {
+	case 1:
+		mes "[Boîte aux Lettres]";
 		if (Zeny < 130) {
 			mes "Vous n'avez pas assez d'argent pour utiliser ce service.";
 			mes "La consultation du courrier coûte 130 Zenys";
 			close;
 		}
 		mes "Merci d'avoir utilisé les services-postaux.";
-		set Zeny,(Zeny - 130);
+		set Zeny, Zeny - 130;
 		close2;
 		openmail;
 		end;
+	case 2:
+		mes "[Boîte aux Lettres]";
+		mes "Merci d'avoir utilisé les services-postaux.";
+		close;
 	}
-	mes "Merci d'avoir utilisé les services-postaux.";
-	close;
 }
 
 // Prontera
