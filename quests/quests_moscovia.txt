@@ -3,7 +3,7 @@
 //===== By: ================================================== 
 //= Kisuka
 //===== Current Version: ===================================== 
-//= 2.0
+//= 2.0b
 //===== Compatible With: ===================================== 
 //= rAthena SVN
 //===== Description: ========================================= 
@@ -22,6 +22,8 @@
 //= 1.8 Fixed some condition checks. [Gepard]
 //= 1.9 Corrected NPC counting mobs for the wrong NPC. (bugreport:4736) [L0ne_W0lf]
 //= 2.0 Optimized. [Joseph]
+//= 2.0a Bug fixes. [Euphy]
+//= 2.0b Bug fixes. [Lemongrass]
 //============================================================ 
 
 //============================================================================
@@ -268,7 +270,14 @@ moscovia,135,52,0	script	Bulletin Board#npc	837,{
 // Mr. Ibanoff - Docks
 //----------------------------------------------------------------------------
 moscovia,135,49,5	script	Mr. Ibanoff#npc	964,{
-	if (mos_whale_edq == 1 || mos_whale_edq == 2) {
+	if (mos_whale_edq == 0) {
+		mes "[Mr. Ibanoff]";
+		mes "You are also an adventurer from another province. I also was a great adventurer.";
+		next;
+		mes "[Mr. Ibanoff]";
+		mes "Uf...I just want to be 20 years younger, so I can travel here and there with invigorating youth such as you... Time is an enemy. Hahahahaha!";
+		close;
+	} else if (mos_whale_edq == 1 || mos_whale_edq == 2) {
 		mes "["+strcharinfo(0)+"]";
 		mes "Hello. Are you Mr. Ibanoff?";
 		next;
@@ -740,13 +749,6 @@ moscovia,135,49,5	script	Mr. Ibanoff#npc	964,{
 		mes "You should ride a ship now? Let's ready to leave hurry up.";
 		set mos_whale_edq,19;
 		close;
-	} else {
-		mes "[Mr. Ibanoff]";
-		mes "You are also an adventurer from another province. I also was a great adventurer.";
-		next;
-		mes "[Mr. Ibanoff]";
-		mes "Uf...I just want to be 20 years younger, so I can travel here and there with invigorating youth such as you... Time is an enemy. Hahahahaha!";
-		close;
 	}
 	if ((gettime(3) >= 0 && gettime(3) < 3) || (gettime(3) >= 6 && gettime(3) < 9) || (gettime(3) >= 12 && gettime(3) < 15) || (gettime(3) >= 18 && gettime(3) < 21))  {
 		mes "[Mr. Ibanoff]";
@@ -846,7 +848,7 @@ mosk_ship,98,110,3	script	Mr. Ibanoff#npc2	964,{
 		close;
 	}
 	else if (mos_whale_edq == 8 || mos_whale_edq == 10) callsub S_D_1,3,91,92,93,94;
-	else if (mos_whale_edq >= 91 && mos_whale_edq <= 94) callsub S_D_2,91,0;
+	else if (mos_whale_edq >= 91 && mos_whale_edq <= 94) callsub S_D_2,(mos_whale_edq-91);
 	else if (mos_whale_edq == 11) {
 		mes "[Mr. Ibanoff]";
 		mes "Look... Beyond the sea!";
@@ -898,8 +900,8 @@ mosk_ship,98,110,3	script	Mr. Ibanoff#npc2	964,{
 		close;
 	}
 	else if (mos_whale_edq == 23 || mos_whale_edq == 25) callsub S_D_1,5,241,242,243,244;
-	else if (mos_whale_edq == 241 || mos_whale_edq == 243 || mos_whale_edq == 244) callsub S_D_2,1,1;
-	else if (mos_whale_edq == 242) callsub S_D_2,1,2;
+	else if (mos_whale_edq == 241 || mos_whale_edq == 243 || mos_whale_edq == 244) callsub S_D_2,0;
+	else if (mos_whale_edq == 242) callsub S_D_2,1;
 	else if (mos_whale_edq == 26) {
 		mes "[Mr. Ibanoff]";
 		mes "Look there!";
@@ -947,14 +949,14 @@ mosk_ship,98,110,3	script	Mr. Ibanoff#npc2	964,{
 	end;
 
 S_D_1:
-	if (rand(1,4) == 3) {
+	if (rand(1,getarg(0)) == 3) {
 		set .@ship2,rand(4);
-		setarray .@d$,"East","West","South","North";
+		setarray .@d$[0],"East","West","South","North";
 		mes "[Mr. Ibanoff]";
 		mes "Hm. The sea currents have changed.";
 		mes "Adjust the rudder forward to the";
 		mes .@d$[.@ship2]+", to follow the currents.";
-		set mos_whale_edq,getarg(.@ship2);
+		set mos_whale_edq,getarg(.@ship2+1);
 		close;
 	}
 	mes "[Mr. Ibanoff]";
@@ -967,14 +969,13 @@ S_D_1:
 	close;
 	
 S_D_2:
-		setarray .@d$[getarg(0)],"East","West","South","North";
-		mes "[Mr. Ibanoff]";
-		mes "Hey!";
-		mes "Did you not hear me?";
-		mes "Change the rudder forward to the";
-		if (getarg(1)) mes .@d$[getarg(1)]+", and follow the currents!";
-		else mes .@d$[mos_whale_edq]+", and follow the currents!";
-		close;
+	setarray .@d$[0],"East","West","South","North";
+	mes "[Mr. Ibanoff]";
+	mes "Hey!";
+	mes "Did you not hear me?";
+	mes "Change the rudder forward to the";
+	mes .@d$[getarg(0)]+", and follow the currents!";
+	close;
 }
 
 //----------------------------------------------------------------------------
@@ -1096,30 +1097,10 @@ mosk_ship,101,111,4	script	rudder#ship	111,{
 		mes "We should make sure to kill any";
 		mes "monsters onboard.";
 		close;
-	} else if (mos_whale_edq == 22 && $@mos1_edq > 0) {
-		mes "[Mr. Ibanoff]";
-		mes "We should make sure to kill any";
-		mes "monsters onboard.";
-		close;
-	} else if (mos_whale_edq == 23 && $@mos1_edq > 0) {
-		mes "[Mr. Ibanoff]";
-		mes "We should make sure to kill any";
-		mes "monsters onboard.";
-		close;
-	} else if (mos_whale_edq == 25 && $@mos1_edq > 0) {
-		mes "[Mr. Ibanoff]";
-		mes "We should make sure to kill any";
-		mes "monsters onboard.";
-		close;
 	} else if (mos_whale_edq == 25 && $@mos1_edq == 0) {
 		mes "[Mr. Ibanoff]";
 		mes "You can adjust the rudder,";
 		mes "under my direction.";
-		close;
-	} else if (mos_whale_edq > 239 && mos_whale_edq < 250 && $@mos1_edq > 0) {
-		mes "[Mr. Ibanoff]";
-		mes "We should make sure to kill any";
-		mes "monsters onboard.";
 		close;
 	} else if (mos_whale_edq == 26) {
 		mes "[Mr. Ibanoff]";
@@ -2022,7 +2003,7 @@ mosk_in,131,92,3	script	Csar Alexsay III#npc	965,{
 		mes "Stay here as long as you want, and";
 		mes "enjoy yourself to the fullest this summer.";
 		close;
-	} if (mos_whale_edq < 16) {
+	} else if (mos_whale_edq < 16) {
 		mes "[Csar Alexsay III]";
 		mes "Welcome to Moscovia!";
 		mes "I am the ruler, Csar Aleksay III, of Moscovia.";
@@ -2033,7 +2014,7 @@ mosk_in,131,92,3	script	Csar Alexsay III#npc	965,{
 	} else if (mos_whale_edq == 16) {
 		mes "[Csar Alexsay III]";
 		mes "A foreign traveler...?";
-		mes " Do you have something to tell me?";
+		mes "Do you have something to tell me?";
 		next;
 		mes "[Csar Alexsay III]";
 		mes "If it is not important,";
@@ -4401,7 +4382,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	970,{
 		mes "[Baba Yaga, the Horrible]";
 		mes "Let me see...where the season spell...";
 		next;
-		mes "rummaging..";
+		mes "rummaging...";
 		next;
 		mes "[Baba Yaga, the Horrible]";
 		mes "Ah, here it is... I found it!";
@@ -11294,7 +11275,7 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	111,{
 				mes "One! Two! Three!!";
 				next;
 				if (.@rucard_game01 == 1) {
-					cutin "Poring_Card.bmp",4;
+					cutin "포링카드",4; // Poring Card
 					emotion 0;
 					emotion 5,1;
 					next;
@@ -11306,8 +11287,10 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	111,{
 					cutin "",255;
 					next;
 				} else {
-					if (.@rucard_game01 == 2) cutin "?↔Ð??┢??┢?.bmp",4;
-					else cutin "▲Ø?o???┢??┢?.bmp",4;
+					if (.@rucard_game01 == 2)
+						cutin "엔젤링카드",4; // Angeling Card
+					else
+						cutin "고스트링카드",4; // Ghostring Card
 					emotion 0;
 					emotion 23,1;
 					next;
@@ -11328,7 +11311,7 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	111,{
 				mes "One! Two! Three!!";
 				next;
 				if (.@rucard_game01 == 2) {
-					cutin "?↔Ð??┢??┢?.bmp",4;
+					cutin "고스트링카드",4; // Angeling Card
 					emotion 0;
 					emotion 5,1;
 					next;
@@ -11340,8 +11323,10 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	111,{
 					cutin "",255;
 					next;
 				} else {
-					if (.@rucard_game01 == 1) cutin "Poring_Card.bmp",4;
-					else cutin "▲Ø?o???┢??┢?.bmp",4;
+					if (.@rucard_game01 == 1)
+						cutin "포링카드",4; // Poring Card
+					else
+						cutin "고스트링카드",4; // Ghostring Card
 					emotion 0;
 					emotion 23,1;
 					next;
@@ -11362,7 +11347,7 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	111,{
 				mes "One! Two! Three!!";
 				next;
 				if (.@rucard_game01 == 3) {
-					cutin "▲Ø?o???┢??┢?.bmp",4;
+					cutin "고스트링카드",4; // Ghostring Card
 					emotion 0;
 					emotion 5,1;
 					next;
@@ -11374,8 +11359,10 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	111,{
 					cutin "",255;
 					next;
 				} else {
-					if (.@rucard_game01 == 1) cutin "Poring_Card.bmp",4;
-					else cutin "?↔Ð??┢??┢?.bmp",4;
+					if (.@rucard_game01 == 1)
+						cutin "포링카드",4; // Poring Card
+					else
+						cutin "고스트링카드",4; // Angeling Card
 					emotion 0;
 					emotion 23,1;
 					next;
