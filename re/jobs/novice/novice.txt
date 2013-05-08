@@ -213,7 +213,7 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		mes "Le Raccourci pour ouvrir la Fenêtre des Objets est ALT + E.";
 		next;
 		mes "!- Info -!";
-		mes "Pour consulter les objets actuellement équipés, utilise le raccourci ALT +Q.";
+		mes "Pour consulter les objets actuellement équipés, utilise le raccourci ALT + Q.";
 		mes "Ensuite, fait glisser l'objet dans l'emplacement dans lequel tu veux l'équiper.";
 		next;
 		mes "!- Info -!";
@@ -270,7 +270,7 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		mes "Le Raccourci pour ouvrir la Fenêtre des Objets est ALT + E.";
 		next;
 		mes "!- Info -!";
-		mes "Pour consulter les objets actuellement équipés, utilise le raccourci ALT +Q.";
+		mes "Pour consulter les objets actuellement équipés, utilise le raccourci ALT + Q.";
 		mes "Ensuite, fait glisser l'objet dans l'emplacement dans lequel tu veux l'équiper.";
 		next;
 		mes "!- Info -!";
@@ -658,7 +658,7 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 		next;
 		mes "[Agent de la Kafra]";
 		mes "Si vous avez un Abonnement Premium, le nombre maximum d'emplacements dans le Stockage de la Kafra est de 600 !";
-		mes "Rappelez vous cependant, en cas d'un Équipement, chaque objet prend un Emplacement complet.";
+		mes "Rappelez vous cependant qu'en cas d'un Équipement, l'objet prend un Emplacement complet.";
 		mes "Le nombre maximum d'objets qui peuvent être placés dans notre Stockage est de 30,000.";
 		next;
 		mes "[Agent de la Kafra]";
@@ -667,7 +667,7 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 		mes "Gardez cela en tête lorsque vous utiliserez notre service de stockage.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Nous vous fournissons aussi un Service de Téléportation pour faciliter vos voyages sur longues distances.";
+		mes "Nous vous fournissons aussi un Service de Téléportation pour faciliter vos voyages sur de longues distances.";
 		next;
 		mes "[Agent de la Kafra]";
 		mes "Avec nos capacités de téléportation de vétéran, vos voyages seront plus sûrs et plus confortables.";
@@ -726,7 +726,7 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
         		next;
         		mes "[Agent de la Kafra]";
         		mes "Si vous avez un Abonnement Premium, le nombre maximum d'emplacements dans le Stockage de la Kafra est de 600 !";
-        		mes "Rappelez vous cependant, en cas d'un Équipement, chaque objet prend un Emplacement complet.";
+						mes "Rappelez vous cependant qu'en cas d'un Équipement, l'objet prend un Emplacement complet.";
         		mes "Le nombre maximum d'objets qui peuvent être placés dans notre Stockage est de 30,000.";
         		next;
         		mes "[Agent de la Kafra]";
@@ -737,7 +737,7 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 				break;
 			case 3:
 				mes "[Agent de la Kafra]";
-				mes "Nous vous fournissons aussi un Service de Téléportation pour faciliter vos voyages sur longues distances.";
+				mes "Nous vous fournissons aussi un Service de Téléportation pour faciliter vos voyages sur de longues distances.";
 				next;
 				mes "[Agent de la Kafra]";
 				mes "Avec nos capacités de téléportation de vétéran, vos voyages seront plus sûrs et plus confortables.";
@@ -753,7 +753,7 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 				mes "Auparavant, ce service de location de chariots était uniquement fournit par la guilde des marchands d'Alberta.";
 				next;
 				mes "[Agent de la Kafra]";
-				mes "Cependant depuis que nous avons pris la main sur ce service, nos clients marchands ont la possibilité de louer leur chariots depuis presque partout.";
+				mes "Cependant depuis que nous avons pris la main sur ce service, nos clients marchands ont la possibilité de louer leur chariot depuis presque partout.";
 				mes "Le service de location de chariots est uniquement disponible pour les classes ayant une activité commerciale, comme les ^4A4AFFMerchants, Blacksmiths, Alchemists, et Super Novices^000000.";
 				next;
 				mes "[Agent de la Kafra]";
@@ -816,7 +816,7 @@ new_1-2,35,176,4	script	Soldat#nv	105,{
 	else if(job_novice_q == 12) {
 		mes "[Soldat]";
 		mes "Il y a des Soldats dans chaque ville pour vous guider vers les endroits utiles.";
-		mes "Demandez nous où vous souhaiteriez aller, et nous vous ferons une marque sur votre mini-carte avec un  ^4A4AFF+^000000.";
+		mes "Demandez nous où vous souhaiteriez aller, et nous vous indiquerons la direction à l'aide d'un ^4A4AFF+^000000 sur votre mini-carte.";
 		mes "N'hésitez pas à nous poser des questions.";
 		next;
 		mes "[Soldat]";
@@ -839,7 +839,7 @@ new_1-2,35,176,4	script	Soldat#nv	105,{
 	}
   mes "[Soldat]";
   mes "Il y a des Soldats dans chaque ville pour vous guider vers les endroits utiles.";
-  mes "Demandez nous où vous souhaiteriez aller, et nous vous ferons une marque sur votre mini-carte avec un  ^4A4AFF+^000000.";
+	mes "Demandez nous où vous souhaiteriez aller, et nous vous indiquerons la direction à l'aide d'un ^4A4AFF+^000000 sur votre mini-carte.";
   mes "N'hésitez pas à nous poser des questions.";
   next;
   mes "[Soldat]";
@@ -996,7 +996,7 @@ function	script	F_NvErase	{
 			mes "[Guildien Swordman]";
 			mes "Nous possédons une grande force physique.";
 			mes "Donc naturellement nous pouvons équiper des armes et armures lourdes.";
-			mes "La plupart des armes de classes, exceptées les arcs et les bâtons, sont équipables par notre classe.";
+			mes "La plupart des armes de classes, excepté les arcs et les bâtons, sont équipables par notre classe.";
 			next;
 			mes "[Guildien Swordman]";
 			mes "La seule faiblesse du Swordman est qu'il ne peut pas utiliser de sort magique.";
@@ -1010,7 +1010,7 @@ function	script	F_NvErase	{
 			mes "Et nous sommes imbattables quand il s'agit de combat un-contre-un au corps à corps.";
 			next;
 			mes "[Guildien Swordman]";
-			mes "Quelqu'un qui choisit d'êre Swordman jouera le rôle de tank. Il est de notre devoir d'aider les faibles.";
+			mes "Quelqu'un qui choisit d'être Swordman jouera le rôle de tank. Il est de notre devoir d'aider les faibles.";
 			next;
 			mes "[Guildien Swordman]";
 			mes "En tant que Swordman, vous pourrez choisir d'être ^8C2121Knight^000000 ou ^8C2121Crusader^000000 en seconde classe.";
