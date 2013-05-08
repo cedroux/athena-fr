@@ -1,4 +1,4 @@
-//===== rAthena Script =======================================
+﻿//===== rAthena Script =======================================
 //= New Novice Training Grounds
 //===== By: ==================================================
 //= Kisuka
@@ -64,8 +64,6 @@ new_1-1,53,114,4	script	Sprakki#nv1	90,{
 		mes "As-tu regardé la Fenêtre de Quêtes ?";
 		mes "Je t'attendrai dans le château après le Pont.";
 		close;
-
-
 	}
 	mes "[Sprakki]";
 	mes "Je t'attendrai après le Pont à l'Est.";
@@ -116,50 +114,28 @@ new_1-2,100,29,4	script	Sprakki#nv2	90,{
 		mes "Bravo !";
 		mes "Maintenant tu sais comment bouger et parler aux autres, n'est-ce pas ?";
 		next;
-		mes "[Sprakki]";
-		mes "Le Centre d'Entraînement est fait pour des novices comme toi.";
-		mes "Tu vas être entraîné à utiliser les basiques du jeu.";
-
-		next;
-		select("Commencer l'entraînement.");
-		mes "[Sprakki]";
-		mes "Je vais t'emmener au Centre d'Entraînement des Novices.";
-		mes "À l'intérieur, l'instructeur 'Brade' t'attendras pour te parler.";
-		next;
-		setquest 7118;
-		set job_novice_q,3;
-		mes "[Sprakki]";
-		mes "L'instructeur 'Brade' t'aidera après ça.";
-		mes "Tu peux aller le voir.";
-		next;
-		mes "^4A4AFF- Tu as reçu la quête 'Novice Training Ground-1' de Sprakki.^000000";
-		mes "^4A4AFFTu peux la voir dans la Fenêtre de Quêtes.-^000000";
-		close2;
-		savepoint "new_1-2",100,100;
-		warp "new_1-2",100,100;
-		end;
-	}
-	mes "[Sprakki]";
-	mes "The training Center is prepared for novices just like you.";
-	mes "You are going to be trained to get used to the basics of the Game.";
-	next;
-	select("Begin Training.");
-	mes "[Sprakki]";
-	mes "I will guide you to the Novice Training Center.";
-	mes "Inside, Instructor 'Brade' will be waiting to speak to you.";
-	next;
-	setquest 7118;
-	set job_novice_q,3;
-	mes "[Sprakki]";
-	mes "Instructor 'Brade' will help you afterwards.";
-	mes "Please, Go see him.";
-	next;
-	mes "^4A4AFF- You received a quest 'Novice Training Ground-1' from Sprakki.^000000";
-	mes "^4A4AFFPlease check the Quest Info Window.-^000000";
-	close2;
-	savepoint "new_1-2",100,100;
-	warp "new_1-2",100,100;
-	end;
+  }
+  mes "[Sprakki]";
+  mes "Le Centre d'Entraînement est fait pour des novices comme toi.";
+  mes "Tu vas être entraîné à utiliser les basiques du jeu.";
+  next;
+  select("Commencer l'entraînement.");
+  mes "[Sprakki]";
+  mes "Je vais t'emmener au Centre d'Entraînement des Novices.";
+  mes "À l'intérieur, l'instructeur 'Brade' t'attendras pour te parler.";
+  next;
+  setquest 7118;
+  set job_novice_q,3;
+  mes "[Sprakki]";
+  mes "L'instructeur 'Brade' t'aidera après ça.";
+  mes "Tu peux aller le voir.";
+  next;
+  mes "^4A4AFF- Tu as reçu la quête 'Novice Training Ground-1' de Sprakki.^000000";
+  mes "^4A4AFFTu peux la voir dans la Fenêtre de Quêtes.-^000000";
+  close2;
+  savepoint "new_1-2",100,100;
+  warp "new_1-2",100,100;
+  end;
 }
 
 // Instructor Brade
@@ -366,7 +342,6 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 			mes "Tu auras ta leçon après ça.";
 			mes "Va trouver Jinha et apprend la capacité [First Aid]. Ensuite revient me voir.";
 			close;
-
 		}
 		mes "[Insucteur Brade]";
 		mes "Essaye de mettre au moins 4 des équipements que je t'ai donné.";
@@ -421,12 +396,12 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		mes "Maintenant, vas-y.";
 		close;
 	}
-
 	mes "[Instcteur Brade]";
 	mes "Pourquoi es-tu toujours ici ?";
 	close2;
 	warp "prontera",156,90;
-	end;}
+	end;
+}
 
 // Instructor Jinha
 //============================================================
@@ -496,12 +471,12 @@ new_1-2,115,120,4	script	Jinha#nv	59,{
 		mes "Va dans la pièce à l'ouest.";
 		close;
 	}
-
 	mes "[Jinha]";
 	mes "Why"Pourquoi es-tu toujours là ?";
 	close2;
 	warp "pontera",156,90;
-	end;}
+	end;
+}
 
 // People/Services in Ragnarok
 //============================================================
