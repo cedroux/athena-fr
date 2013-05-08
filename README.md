@@ -8,6 +8,7 @@ _________________________________________________
 Détails
 =======
 * Ne sont volontairement pas traduits :
+ * Les noms des classes
  * Les noms d'objets
  * Les noms des sorts
  * Les noms des monstres
