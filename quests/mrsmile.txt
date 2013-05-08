@@ -95,12 +95,12 @@
 }
 
 // Additional Smile Assistance staff
-alberta,113,53,4	duplicate(SmileHelper)	Association du Sourire#alb	92
-aldebaran,136,135,4	duplicate(SmileHelper)	Association du Sourire#alde	92
-geffen,119,107,4	duplicate(SmileHelper)	Association du Sourire#gef	92
-moc_ruins,59,154,3	duplicate(SmileHelper)	Association du Sourire#moc	92
-payon,186,104,5	duplicate(SmileHelper)	Association du Sourire#pay	92
-prontera,157,187,4	duplicate(SmileHelper)	Association du Sourire#prt	92
+alberta,113,53,4	duplicate(SmileHelper)	Association du Sourire#1	92
+aldebaran,136,135,4	duplicate(SmileHelper)	Association du Sourire#2	92
+geffen,119,107,4	duplicate(SmileHelper)	Association du Sourire#3	92
+moc_ruins,59,154,3	duplicate(SmileHelper)	Association du Sourire#4	92
+payon,186,104,5	duplicate(SmileHelper)	Association du Sourire#5	92
+prontera,157,187,4	duplicate(SmileHelper)	Association du Sourire#6	92
 
 //============================================================ 
 // Old changelog
