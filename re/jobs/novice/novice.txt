@@ -1046,12 +1046,12 @@ function	script	F_NvErase	{
 			next;
 			mes "[Guildien Swordman]";
 			mes "Je pense que vous avez assez de niveaux de Job bien sûr ?";
-			mes "Voulez-vous arréter votre entraînement et aller à la Guilde des Swordman ?";
+			mes "Voulez-vous arréter votre entraînement et aller à la Guilde des Swordmans ?";
 			next;
-			if(select("Je vais reconsidérer la question.:Je vais aller à la Guilde des Swordman.") == 2) {
+			if(select("Je vais reconsidérer la question.:Je vais aller à la Guilde des Swordmans.") == 2) {
 				mes "[Guildien Swordman]";
 				mes "Je vois.";
-				mes "Alors je vais terminer votre entraînement et vous envoyer à la Guilde des Swordman.";
+				mes "Alors je vais terminer votre entraînement et vous envoyer à la Guilde des Swordmans.";
 				close2;
 				callfunc "F_NvErase",1;
 				savepoint "izlude",94,103;
@@ -1070,12 +1070,12 @@ function	script	F_NvErase	{
 				mes "Hmmm. Voyons.";
 				mes "Voilà ! Chassez quelques uns de ces Picky aux alentours.";
 				next;
-				mes "^4d4dffVous avez reçu une requête de chasse d'un membre de la Guilde des Swordman.";
+				mes "^4d4dffVous avez reçu une requête de chasse d'un membre de la Guilde des Swordmans.";
 				mes "Vous pouvez consulter le contenu de cette quête dans la fenêtre de quêtes.^000000";
 				setquest 7123;
 				next;
 				mes "[Guildien Swordman]";
-				mes "Utilisez la capacité 'Bash' du manuel des Swordman.";
+				mes "Utilisez la capacité 'Bash' du manuel des Swordmans.";
 				mes "Ouvrez l'Arbre des Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre en appuyant sur le bouton '-' en haut à droite pour voir les capacités de Swordman disponibles.";
 				next;
 				mes "[Guildien Swordman]";
@@ -1116,7 +1116,7 @@ function	script	F_NvErase	{
 		case 4:
 			mes "[Guildien Swordman]";
 			mes "Si vous avez des questions à propos de la classe Swordman, n'hésitez pas.";
-			mes "La Guilde des Swordman attend des novices comme vous.";
+			mes "La Guilde des Swordmans attend des novices comme vous.";
 			close;
 	}
 }
@@ -1899,67 +1899,67 @@ new_5-3,100,50,4	duplicate(NvPotato)	Marchand#nv5	93
 
 // Trainer (Real Combat Training)
 //============================================================
--	script	Level 1 Trainer#nv::NvBrutus	84,{
-	mes "[Trainer Brutus]";
-	mes "These monsters are all weak and easy to kill. But be careful, a lot of them are aggressive and out for blood!";
+-	script	Entraîneur Niveau 1#nv::NvBrutus	84,{
+	mes "[Entraîneur Brutus]";
+	mes "Ces monstres sont tous faibles et faciles à tuer. Mais prenez garde, beaucoup d'entres eux sont agressifs et cherchent du sang !";
 	next;
-	mes "[Trainer Brutus]";
-	mes "If you think monsters here are too weak for you, I can send you to another training ground where the monsters are stronger than the ones over here.";
+	mes "[Entraîneur Brutus]";
+	mes "Si vous pensez que les monstres ici sont trop faibles pour vous, je peux vous envoyer sur un autre terrain d'entraînement où les monstres sont plus fort qu'ici.";
 	next;
-	mes "[Trainer Brutus]";
-	mes "So would you like to try?";
+	mes "[Entraîneur Brutus]";
+	mes "Alors, souhaitez-vous essayer ?";
 	next;
-	switch(select("Send me to another Level:What monsters are there?:Cancel")) {
+	switch(select("Envoyez-moi vers un autre Niveau.:Quels monstres y a-t-il ici ?:Annuler")) {
 	case 1:
-		mes "[Trainer Brutus]";
-		mes "I see, then let me guide you to another level. Which level do you want to go to?";
+		mes "[Entraîneur Brutus]";
+		mes "Je vois, laissez moi vous guider vers un autre niveau. À quel niveau voulez-vous aller ?";
 		next;
 		for(set .@i,1; .@i<6; set .@i,.@i+1) {
 			if (!compare(strnpcinfo(2),"nv"+.@i))
-				set .@menu$, .@menu$+"Send me to Level "+.@i;
+				set .@menu$, .@menu$+"Envoyez-moi au Niveau "+.@i;
 			set .@menu$, .@menu$+":";
 		}
 		set .@i, select(.@menu$+"Cancel");
 		if (.@i < 7) warp "new_"+.@i+"-3",96,21;
 		close;
 	case 2:
-		mes "[Trainer Brutus]";
-		mes "You seem eager to fight.";
-		mes "The monster levels increase with each level of the training grounds.";
+		mes "[Entraîneur Brutus]";
+		mes "Vous semblez pressé de vous battre.";
+		mes "Le niveau des monstres augmente à chaque niveau des terrains d'entraînement.";
 		next;
-		mes "[Trainer Brutus]";
-		mes "Level 1 has the weakest monsters.";
-		mes "There you'll find Poring, Drops, Lunatics, Fabres, and Chonchons.";
+		mes "[Entraîneur Brutus]";
+		mes "Le niveau 1 a les monstres les plus faibles.";
+		mes "Vous y trouverez des Porings, des Drops, des Lunatics, des Fabres et des Chonchons.";
 		next;
-		mes "[Trainer Brutus]";
-		mes "Level 2 is more challenging.";
-		mes "There you'll find Condors, Pickys, Willows, Fabres, and Roda Frogs.";
+		mes "[Entraîneur Brutus]";
+		mes "Le niveau 2 est un peu plus dur.";
+		mes "Vous y trouverez des Condors, des Pickys, des Willows, des Fabres et des Roda Frogs.";
 		next;
-		mes "[Trainer Brutus]";
-		mes "Level 3 is pretty much the same as Level 2.";
-		mes "There you'll find Condors, Pickys, Willows, Fabres, and Roda Frogs.";
+		mes "[Entraîneur Brutus]";
+		mes "Le niveau 3 est à peu près le même que le niveau 2.";
+		mes "Vous y trouverez des Condors, des Pickys, des Willows, des Fabres et des Roda Frogs.";
 		next;
-		mes "[Trainer Brutus]";
-		mes "Level 4 has stronger monsters.";
-		mes "There you'll find Rockers, Spores, and Fabres.";
+		mes "[Entraîneur Brutus]";
+		mes "Le niveau 4 a les monstres les plus forts.";
+		mes "Vous y trouverez des Rockers, des Spores et des Fabres.";
 		next;
-		mes "[Trainer Brutus]";
-		mes "Level 5 is the same as Level 4.";
-		mes "There you'll find Rockers, Spores, and Fabres.";
+		mes "[Entraîneur Brutus]";
+		mes "Le niveau 5 est le même que le niveau 4.";
+		mes "Vous y trouverez des Rockers, des Spores et des Fabres.";
 		close;
 	case 3:
-		mes "[Trainer Brutus]";
-		mes "Hmm...?";
-		mes "Are you worried about going to more challenging places? That's understandable, since you're still a new adventurer. Good luck~";
+		mes "[Entraîneur Brutus]";
+		mes "Hmmm...?";
+		mes "Êtes vous inquiet d'aller à des niveaux plus difficiles ? C'est compréhensible, étant donné que tu n'es qu'un jeune aventurier. Bonne chance !";
 		close;
 	}
 }
 
-new_1-3,103,50,4	duplicate(NvBrutus)	Level 1 Trainer#nv1	84
-new_2-3,103,50,4	duplicate(NvBrutus)	Level 2 Trainer#nv2	84
-new_3-3,103,50,4	duplicate(NvBrutus)	Level 3 Trainer#nv3	84
-new_4-3,103,50,4	duplicate(NvBrutus)	Level 4 Trainer#nv4	84
-new_5-3,103,50,4	duplicate(NvBrutus)	Level 5 Trainer#nv5	84
+new_1-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 1#nv1	84
+new_2-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 2#nv2	84
+new_3-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 3#nv3	84
+new_4-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 4#nv4	84
+new_5-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 5#nv5	84
 
 // Random Stuff (Guards & Bulletin Board)
 //============================================================
