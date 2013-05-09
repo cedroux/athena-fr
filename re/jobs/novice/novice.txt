@@ -1713,56 +1713,56 @@ new_5-3,117,41,4	duplicate(NvAco)	Guide Acolyte#nv5	95
 // ---------------------------- Bruce (Extended Jobs) -----------------------
 -	script	Bruce#nv::NvBruce	57,{
 	mes "[Bruce]";
-	mes "Hello?";
-	mes "I'm here to guide you about extra jobs and special classes.";
+	mes "Bonjour ?";
+	mes "Je suis le guide des classes extra et spéciales.";
 	next;
 	mes "[Bruce]";
-	mes "For special classes, there are Taekwon, Ninja, Super Novice, and Gunslinger.";
-	mes "Which job description do you want to hear?";
+	mes "Pour les classes spéciales, il s'agit de Taekwon, Ninja, Super Novice et Gunslinger.";
+	mes "Quelle classe souhaitez-vous que je vous décrive ?";
 	next;
 	while(1) {
-		switch(select("Taekwon:Ninja:Super Novice:Gunslinger:End the conversation.")) {
+		switch(select("Taekwon:Ninja:Super Novice:Gunslinger:Terminer la conversation.")) {
 		case 1:
 			mes "[Bruce]";
-			mes "It's a job that usually uses a lot of kicking skills.";
-			mes "It belongs to special class and later you can change your job into Taekwon Master which has much stronger attack skills.";
+			mes "C'est une classe qui utilise habituellement beaucoup de capacités de coups de pieds.";
+			mes "Elle appartient aux classes spéciales. Plus tard vous pourrez changer votre classe pour Taekwon Master, qui possède des capacités d'attaque bien plus puissantes.";
 			next;
 			mes "[Bruce]";
-			mes "There is a secondary class to choose from called Soul Linker which also has strong attacks.";
-			mes "You can decide that later when you get stronger.";
+			mes "Il y a une seconde possibilité de classe dénommée Soul Linker, et qui a aussi de plus fortes attaques.";
+			mes "Vous pourrez décider cela plus tard, quand vous serez meilleur.";
 			next;
 			break;
 		case 2:
 			mes "[Bruce]";
-			mes "Ninja's specialty is rapid movement.";
-			mes "They specialize in using throwing weapons.";
+			mes "La spécialité des Ninja est le mouvement rapide.";
+			mes "Ils sont spécialisés dans l'utilisation d'armes de jet.";
 			next;
 			mes "[Bruce]";
-			mes "Ninjas are kind of a hybrid class that can use various dodge skills with the capability of both physical and magical attacks depending on their preference.";
+			mes "Les Ninjas sont une sorte de classe hybride, qui peut utiliser différentes capacités d'esquive, avec la possibilité d'attaques physiques ou magiques, selon leur préférence.";
 			next;
 			break;
 		case 3:
 			mes "[Bruce]";
-			mes "The biggest attraction of the stronger Novice, called Super Novice, is their pull to mediocrity.";
-			mes "They are the proverbial Jack-of-all-Trades but Master of none.";
+			mes "Le plus gros attrait de ces Super Novices, juste des Novices plus puissants, est leur attirance pour la médiocrité.";
+			mes "Ce sont des gens à tout faire, mais qui ne maîtrisent rien.";
 			next;
 			mes "[Bruce]";
-			mes "Super Novices can learn most of the 1st job class skills.";
-			mes "If you become a Super Novice, you cannot change your job, which is too bad, but you can grow as a very individual character.";
+			mes "Les Super Novices peuvent apprendre la plupart des capacités des premières classes.";
+			mes "Si vous devenez Super Novice, vous ne pourrez malheureusement pas changer de classe, mais vous pourrez facilement évoluer seul.";
 			next;
 			break;
 		case 4:
 			mes "[Bruce]";
-			mes "You can job change directly from Novice to a special class which is optimized for a long-distance attack with guns.";
+			mes "Vous pouvez passer directement de Novice vers une classe spécialisée dans les attaques longues distances avec des pistolets.";
 			next;
 			mes "[Bruce]";
-			mes "Gunslingers use all kinds of guns made in 'Einbroch', the city of steel.";
-			mes "I recommend this for those who want to become powerful sharpshooters.";
+			mes "Les Gunslingers utilisent toutes sortes de pistolets fabriqués à 'Einbroch', la ville d'acier.";
+			mes "Je les recommande pour ceux qui veulent devenir de puissants tireurs d'élite.";
 			next;
 			break;
 		case 5:
 			mes "[Bruce]";
-			mes "If you need more information, you can always go to";
+			mes "Si vous avez besoin de plus d'informations, vous pouvez toujours aller visiter";
 			mes "'iro.ragnarokonline.com'";
 			close;
 		}
