@@ -1544,95 +1544,92 @@ new_4-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv4	97
 new_5-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv5	97
 
 // ---------------------------- Archer Guide --------------------------------
--	script	Archer Guide#nv::NvArc	727,{
+-	script	Guide Archer#nv::NvArc	727,{
 	if(job_novice_q < 16) {
-		mes "[Archer Guide]";
-		mes "You are still in the process of training with sir Brade.";
+		mes "[Guildien Archer]";
+		mes "Vous avez un entraînement en cours avec sir Brade.";
 		close;
 	}
-	mes "[Archer Guide]";
-	mes "What can I help you with?";
+	mes "[Guildien Archer]";
+	mes "Comment puis-je vous être utile ?";
 	next;
-	switch(select("Tell me about Archers:I want to be an Archer:Cancel")) {
+	switch(select("Parlez-moi des Archers.:Je veux devenir Archer.:Annuler")) {
 	case 1:
-		mes "[Archer Guide]";
-		mes "Archers have specialized skills by using a Bow and have a variety of powerful skills.";
-		mes "Archers are good at staying back and picking off their targets.";
+		mes "[Guildien Archer]";
+		mes "Les Archers ont des capacités spéciales utilisant des Arcs et ont une collection de capacités puissantes.";
+		mes "Les Archers sont efficaces à rester derrière et évincer leurs cibles.";
 		next;
-		mes "[Archer Guide]";
-		mes "Archers don't have great vitality so they have to keep their distance from enemies.";
+		mes "[Guildien Archer]";
+		mes "Les Archers n'ont pas une grande vitalité, c'est pour ça qu'ils doivent rester à distance de leurs ennemis.";
 		next;
-		mes "[Archer Guide]";
-		mes "On the other hand, Archers are attentive and have incredibly accurate eyes.";
-		mes "So once they are ready to attack, they can kill enemies before they're even aware of their presence.";
+		mes "[Guildien Archer]";
+		mes "D'un autre côté, les Archers sont attentifs et ont une précision incroyable.";
+		mes "Dès qu'ils sont prêts à attaquer, ils peuvent tuer leurs ennemis avant même que ceux-ci ne soient au courant de leur présence.";
 		next;
-		mes "[Archer Guide]";
-		mes "^8C2121Archers can transform to many second jobs like a Hunter.^000000";
-		mes "^8C2121Besides Hunters, Archers can transform to a Bard, if they are male.^000000";
-		mes "^8C2121They can transform to a Dancer, if they are female.^000000";
+		mes "[Guildien Archer]";
+		mes "^8C2121Les Archers peuvent devenir des Hunters en seconde classe.^000000";
+		mes "^8C2121Mis à part les Hunters, les Archers peuvent devenir Bard, si ce sont des hommes.^000000";
+		mes "^8C2121Si ce sont des femmes, ils peuvent devenir Dancer.^000000";
 		if(countitem(2822) == 0 && (getequipid(EQI_ACC_L) != 2822 || getequipid(EQI_ACC_R) != 2822)) {
 			next;
-			mes "[Archer Guide]";
-			mes "Do you want to register to test skill experience?";
-			mes "Would you like to test Archer skills?";
+			mes "[Guildien Archer]";
+			mes "Souhaitez-vous vous enregistrer pour expérimenter de nouvelles capacités ?";
+			mes "Voulez-vous essayer les capacités d'Archer.";
 			next;
-			if(select("I want to test Archer skills.:I don't want to test it.") == 2) {
-				mes "[Archer Guide]";
-				mes "Hum. Do you think so.";
-				mes "Ok, I agree with you. Choosing a job is very important in our life.";
-				mes "Just talk to me whenever you want to experience Archer skills.";
+			if(select("Je veux essayer les capacités d'Archer.:Non, je ne veux pas.") == 2) {
+				mes "[Guildien Archer]";
+				mes "Hmmm, êtes vous certain ?";
+				mes "Bien, d'accord. Choisir une classe est quelque chose de très important dans une vie.";
+				mes "Reparlez moi si vous souhaitez finalement essayer les capacités d'Archer.";
 				close;
 			}
-			mes "[Archer Guide]";
-			mes "Here is the Archer manual.";
-			mes "I will take the other job manuals from you while you test the Archer manual out.";
-			next;
-			mes "[Archer Guide]";
-			mes "I will take the other job manuals from you while you test the Archer manual out.";
+			mes "[Guildien Archer]";
+			mes "Voici le manuel d'Archer.";
+			mes "Je vais avant récupérer les autres manuels de classe.";
 			callfunc "F_NvErase";
 			getitem 2822,1;	// Archer_Manual
 			next;
-			mes "[Archer Guide]";
-			mes "Make sure to equip the Skill Manual by double-clicking it in the Inventory Window.";
-			mes "Open your Skill Tree by pressing ^4A4AFFAlt + S^000000 and minimize the window by pressing the '-' button on the top right corner of the window to see the available skills.";
+			mes "[Guildien Archer]";
+			mes "Équipez bien votre manuel de Capacités en double-cliquant dessus dans votre inventaire.";
+			mes "Ouvrez votre Arbre de Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre des Capacités en cliquant sur le bouton '-' situé en haut à droite pour voir les capacités disponibles.";
 		}
 		close;
 	case 2:
-		mes "[Archer Guide]";
-		mes "You want to be an Archer?";
-		mes "Ok, then, I will send you to the Archer Guild right away.";
+		mes "[Guildien Archer]";
+		mes "Vous voulez être un Archer ?";
+		mes "Bien, alors je vais vous envoyer à la Guilde des Archers de ce pas.";
 		next;
-		mes "[Archer Guide]";
-		mes "Wait, have you checked your Job level?";
-		mes "Do you want to complete the Novice training arena and go to the Archer Guild right now?";
+		mes "[Guildien Archer]";
+		mes "Attendez, avez-vous vérifié votre niveau de Job ?";
+		mes "Voulez-vous terminer votre entraînement de Novice et aller à la Guilde des Archers maintenant ?";
 		next;
-		if(select("I will think about it again.:Yes, I want to go to the Archer Guild's union.") == 2) {
-			mes "[Archer Guide]";
-			mes "Welcome!!";
-			mes "I will send you to the Archer Guild after you complete your Novice training.";
+		if(select("Je vais y réfléchir encore.:Oui je veux aller à la Guilde des Archers.") == 2) {
+			mes "[Guildien Archer]";
+			mes "Bienvenue !!";
+			mes "Je vais vous envoyer à la Guilde des Archers après avoir terminé votre entraînement de Novice.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "payon",256,242;
 			warp "payon_in02",64,65;
 			end;
 		}
-		mes "[Archer Guide]";
-		mes "Test out all the jobs if you have to but choose Archer because we're the best.";
-		mes "We are always welcome to have you!";
+		mes "[Guildien Archer]";
+		mes "Essayez toutes les classes si vous en avez besoin, mais choisissez de devenir Archer, parce que nous sommes les meilleurs.";
+		mes "Ce sera toujours un plaisir de vous avoir avec nous !";
 		close;
 	case 3:
-		mes "[Archer Guide]";
-		mes "If you have any questions about Archers, feel free to ask me.";
-		mes "I think you could be a strong Archer young Novice.";
+		mes "[Guildien Archer]";
+		mes "Si vous avez quelques questions à propos des Archers, n'hésitez pas à me les poser.";
+		mes "Je pense que vous feriez un puissant archer, jeune novice.";
 		close;
 	}
 }
 
-new_1-3,113,41,4	duplicate(NvArc)	Archer Guide#nv1	727
-new_2-3,113,41,4	duplicate(NvArc)	Archer Guide#nv2	727
-new_3-3,113,41,4	duplicate(NvArc)	Archer Guide#nv3	727
-new_4-3,113,41,4	duplicate(NvArc)	Archer Guide#nv4	727
-new_5-3,113,41,4	duplicate(NvArc)	Archer Guide#nv5	727
+new_1-3,113,41,4	duplicate(NvArc)	Guide Archer#nv1	727
+new_2-3,113,41,4	duplicate(NvArc)	Guide Archer#nv2	727
+new_3-3,113,41,4	duplicate(NvArc)	Guide Archer#nv3	727
+new_4-3,113,41,4	duplicate(NvArc)	Guide Archer#nv4	727
+new_5-3,113,41,4	duplicate(NvArc)	Guide Archer#nv5	727
 
 // ---------------------------- Acolyte Guide -------------------------------
 -	script	Acolyte Guide#nv::NvAco	95,{
