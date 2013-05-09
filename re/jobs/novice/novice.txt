@@ -1397,155 +1397,151 @@ new_4-3,105,41,4	duplicate(NvThf)	Guide Thief#nv4	118
 new_5-3,105,41,4	duplicate(NvThf)	Guide Thief#nv5	118
 
 // ---------------------------- Merchant Guide ------------------------------
--	script	Merchant Guide#nv::NvMer	97,{
+-	script	Guide Merchant#nv::NvMer	97,{
 	if(job_novice_q < 16) {
-		mes "[Merchant Guildsman]";
-		mes "You are still in the process of training with sir Brade.";
+		mes "[Guildien Merchant]";
+		mes "Vous êtes toujours en entraînement avec sir Brade.";
 		close;
 	}
-	mes "[Merchant Guildsman]";
-	mes "What can I help you with?";
+	mes "[Guildien Merchant]";
+	mes "Comment puis-je vous aider ?";
 	next;
-	switch(select("Tell me about Merchants:I want to be a Merchant.:Give me a Quest.:Cancel")) {
+	switch(select("Parlez moi des Merchants.:Je souhaite devenir un Merchant.:Donnez moi une quête.:Annuler")) {
 	case 1:
-		mes "[Merchant Guildsman]";
-		mes "Merchant? Simply put, they sell goods and make money.";
-		mes "That's the main focus for any Merchant.";
+		mes "[Guildien Merchant]";
+		mes "Des Merchants ? Basiquement, ils vendent des objets et gagnent de l'argent.";
+		mes "C'est le but principal de tous les Merchants.";
 		next;
-		mes "[Merchant Guildsman]";
-		mes "We have special skills for making money.";
-		mes "We can buy goods at a lower price and sell them at a higher price.";
+		mes "[Guildien Merchant]";
+		mes "Nous avons une capacité spéciale pour gagner de l'argent.";
+		mes "Nous pouvons acheter des objets à des prix plus bas, et les revendre à des prix plus hauts.";
 		next;
-		mes "[Merchant Guildsman]";
-		mes "Also Merchants can have Carts that we can store lots of items in.";
+		mes "[Guildien Merchant]";
+		mes "Les Merchants peuvent aussi avoir des Chariots, qui leur permettent d'y ranger de nombreux objets.";
 		next;
-		mes "[Merchant Guildsman]";
-		mes "^8C2121Merchants can transform to a Blacksmith or an Alchemist^000000 as their second job.";
+		mes "[Guildien Merchant]";
+		mes "^8C2121Les Merchants peuvent ensuite devenir des Blacksmiths ou des Alchemists^000000 en seconde classe.";
 		if(countitem(2823) == 0 && (getequipid(EQI_ACC_L) != 2823 || getequipid(EQI_ACC_R) != 2823)) {
 			next;
-			mes "[Merchant Guildsman]";
-			mes "Do you wan to see what it's like to be a Merchant?";
+			mes "[Guildien Merchant]";
+			mes "Voulez-vous voir comment est la vie de Merchant ?";
 			next;
-			if(select("I want to test Merchant skills.:I don't want to test it.") == 2) {
-				mes "[Merchant Guildsman]";
-				mes "Hum. Do you think so?";
-				mes "Ok, I agree with you. Choosing a job is very important in our life.";
-				mes "Just talk to me whenever you want to experience Merchant skills.";
+			if(select("Je veux essayer les capacités de Merchant.:Je ne souhaite pas essayer.") == 2) {
+				mes "[Guildien Merchant]";
+				mes "Hmmm, êtes vous sûr ?";
+				mes "Bien, d'accord. Choisir une classe est quelque chose de très important dans une vie.";
+				mes "Reparlez-moi si vous souhaitez essayer les capacités de Merchant.";
 				close;
 			}
-			mes "[Merchant Guildsman]";
-			mes "Here is the Merchant skill manual.";
-			mes "I will take other job manuals from you while I'm at it.";
-			next;
-			mes "[Merchant Guildsman]";
-			mes "Here is the Merchant skill manual.";
-			mes "I will take other job manuals from you while I'm at it.";
+			mes "[Guildien Merchant]";
+			mes "Voici un manuel des capacités de Merchant.";
+			mes "Je vais vous reprendre les autres manuels de classe en même temps.";
 			callfunc "F_NvErase";
 			getitem 2823,1;	// Merchant_Manual
 			next;
-			mes "[Merchant Guildsman]";
-			mes "Make sure to equip the Skill Manual by double-clicking it in the Inventory Window.";
-			mes "Open your Skill Tree by pressing ^4A4AFFAlt + S^000000 and minimize the window by pressing the '-' button on the top right corner of the window to see the available skills.";
+			mes "[Guildien Merchant]";
+			mes "Équipez bien votre manuel de Capacités en double-cliquant dessus dans votre inventaire.";
+			mes "Ouvrez votre Arbre de Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre des Capacités en cliquant sur le bouton '-' situé en haut à droite pour voir les capacités disponibles.";
 		}
 		close;
-
 	case 2:
-		mes "[Merchant Guildsman]";
-		mes "You want to be a Merchant?";
-		mes "Ok, then, I will send you to the Merchant Guild's union right away.";
+		mes "[Guildien Merchant]";
+		mes "Vous souhaitez devenir un Merchant ?";
+		mes "Bien, je vais vous envoyer à la Guilde des Merchants alors.";
 		next;
-		mes "[Merchant Guildsman]";
-		mes "Wait, have you checked your Job level?";
-		mes "Do you want to complete your Novice training and go straight to the Merchant Guild's union?";
+		mes "[Guildien Merchant]";
+		mes "Attendez, avez-vous vérifié votre niveau de Job ?";
+		mes "Voulez-vous terminer votre entraînement de Novice et aller directement à la Guilde des Merchants.";
 		next;
-		if(select("I will think about it again.:Yes, I want to go to the Merchant Guild's union.") == 2) {
-			mes "[Merchant Guildsman]";
-			mes "Welcome!!";
-			mes "I will send you to the Merchant Guild's union after you complete your Novice training.";
+		if(select("Je vais y réfléchir encore.:Oui, je veux aller à la Guilde des Merchants.") == 2) {
+			mes "[Guildien Merchant]";
+			mes "Bienvenue !!";
+			mes "Je vais vous envoyer à la Guilde des Merchants juste après avoir finalisé votre entraînement de Novice.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "alberta",29,231;
 			warp "alberta_in",62,44;
 			end;
 		}
-		mes "[Merchant Guildsman]";
-		mes "Ok, I hope you consider being a Merchant.";
-		mes "We are always welcome to have you!";
+		mes "[Guildien Merchant]";
+		mes "Bien, j'espère que vous songez à devenir un Merchant.";
+		mes "Nous serons toujours ravis de vous avoir avec nous !";
 		close;
 	case 3:
 		set .@quest, checkquest(7126);
 		if (.@quest == -1) {
-			mes "[Merchant Guildsman]";
-			mes "Huh? Quest??";
-			mes "Humm... What would be suited for you...?";
-			mes "Ok, then bring me ^5d5dff300 zeny^000000 by selling some of your items to the Potato Merchant.";
+			mes "[Guildien Merchant]";
+			mes "Hein ? Une quête ??";
+			mes "Hmmm... Ceci devrait vous convenir...";
+			mes "Bien, apportez moi ^5d5dff300 zeny^000000 en revendant quelques objets au Marchand de Patates.";
 			next;
-			mes "[Merchant Guildsman]";
-			mes "If you equipped the Merchant manual you have the ability to use the 'Overcharge' and 'Discount' skills.";
+			mes "[Guildien Merchant]";
+			mes "Si vous avez équipé le manuel de Merchant, vous profiterez des effets des capacités 'Overcharge' et 'Discount'.";
 			setquest 7126;
 			next;
-			mes "I will wait for you here.";
-			mes "Good luck!";
+			mes "[Guildien Merchant]";
+			mes "Je vous attendrai ici.";
+			mes "Bonne chance !";
 			close;
 		}
 		else if (.@quest == 1) {
 			if (Zeny > 299) {
-				mes "[Merchant Guildsman]";
-				mes "Excellent!";
-				mes "Zeny is the currency of Rune-Midgard.";
-				mes "You can make zeny by selling loot as well as through making smart business decisions.";
+				mes "[Guildien Merchant]";
+				mes "Excellent !";
+				mes "Le Zeny est la monnaie de Rune Midgard.";
+				mes "Vous pouvez récupérer des zenys en vendant les objets récupérés aux marchands ou en revendant intelligement aux autres joueurs.";
 				next;
-				mes "[Merchant Guildsman]";
-				mes "We can use extremely powerful skills with zeny!";
-				mes "Mammonite! That is our ultimate attack skill!!";
-				mes "We basically paste money on the weapon and then strike the enemy. Death by Zeny! Nyahahahaha!";
+				mes "[Guildien Merchant]";
+				mes "Nous pouvons utiliser des capacités très puissantes avec nos zenys !";
+				mes "Mammonite ! C'est notre capacité d'attaque ultime !!";
+				mes "Pour faire court, nous collons de l'argent sur notre arme puis nous attaquons. La Mort par les Zenys ! Mouahahahaha !";
 				next;
-				mes "[Merchant Guildsman]";
-				mes "By the way, you have done an excellent job. So, I should give you something... What would be good?";
-				mes "Alright! What about Phracon?";
-				mes "Phracon is a metallic element which you can use for refining weapons.";
+				mes "[Guildien Merchant]";
+				mes "Au fait, vous avez fait un excellent travail. Donc je devrais vous donner quelque chose... Qu'est-ce qui serait bien ?";
+				mes "Ah, je sais ! Pourquoi pas des Phracons ?";
+				mes "Le Phracon est un élément métalique qui peut être utilisé pour perfectionner des armes.";
 				completequest 7126;
 				getitem 1010,7; // Phracon
 				getexp 5000,100;
 				close;
 			}
-			mes "[Merchant Guildsman]";
-			mes "Zeny is the currency of Rune-Midgard.";
-			mes "You can make zeny by selling loot as well as through making smart business decisions.";
+			mes "[Guildien Merchant]";
+			mes "Le Zeny est la monnaie de Rune Midgard.";
+			mes "Vous pouvez récupérer des zenys en vendant les objets récupérés aux marchands ou en revendant intelligement aux autres joueurs.";
 			next;
-			mes "[Merchant Guildsman]";
-			mes "You can get loot by killing monsters. After hunting monsters, you can sell those loot to make a profit!";
-			mes "What a valuable job it is! Isn't it?";
+			mes "[Guildien Merchant]";
+			mes "Vous pouvez obtenir des objets en tuant des monstres. Ensuite, il vous suffit de revendre ces objets pour faire du profit !";
+			mes "C'est vraiment une classe intéressante, n'est-ce pas ?";
 			next;
-			mes "[Merchant Guildsman]";
-			mes "Why don't you try to be a Merchant? Making money is not easy but it will be a great experience!";
+			mes "[Guildien Merchant]";
+			mes "Pourquoi n'essayeriez-vous pas d'être Merchant ? Faire de l'argent n'est pas simple, mais c'est une très bonne expérience.";
 			close;
 		}
 		else if (.@quest == 2) {
-			mes "[Merchant Guildsman]";
-			mes "You have already completed the quest.";
-			mes "Once you enter the main world, you can get various exciting quests there!";
+			mes "[Guildien Merchant]";
+			mes "Vous avez déjà réalisé cette quête.";
+			mes "Une fois que vous entrerez dans le monde principal, vous y trouverez de nombreuses quêtes très excitantes !";
 			next;
-			mes "[Merchant Guildsman]";
-			mes "I think you're strong enough now to change your job right? Hahahaha don't waste too much time here Novice.";
+			mes "[Guildien Merchant]";
+			mes "Je pense que vous êtes assez fort pour changer votre classe maintenant ? Hahahaha, ne perdez pas plus de temps ici Novice.";
 			close;
 		}
-		mes "[Merchant Guildsman]";
-		mes "I'm sorry but I don't have any quests to give you right now.";
+		mes "[Guildien Merchant]";
+		mes "Je suis désolé mais je n'ai aucune quête pour vous.";
 		close;
 	case 4:
-		mes "[Merchant Guildsman]";
-		mes "If you have any questions about Merchants, feel free to ask me.";
-		mes "I think you could be a rich Merchant. AhHahaha.";
+		mes "[Guildien Merchant]";
+		mes "Si vous avez des questions à propos des Merchants, posez-les moi.";
+		mes "Je pense que vous pourriez être un riche Merchant. Ahahaha.";
 		close;
 	}
 }
 
-new_1-3,109,41,4	duplicate(NvMer)	Merchant Guide#nv1	97
-new_2-3,109,41,4	duplicate(NvMer)	Merchant Guide#nv2	97
-new_3-3,109,41,4	duplicate(NvMer)	Merchant Guide#nv3	97
-new_4-3,109,41,4	duplicate(NvMer)	Merchant Guide#nv4	97
-new_5-3,109,41,4	duplicate(NvMer)	Merchant Guide#nv5	97
+new_1-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv1	97
+new_2-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv2	97
+new_3-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv3	97
+new_4-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv4	97
+new_5-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv5	97
 
 // ---------------------------- Archer Guide --------------------------------
 -	script	Archer Guide#nv::NvArc	727,{
