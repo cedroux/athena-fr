@@ -1632,89 +1632,83 @@ new_4-3,113,41,4	duplicate(NvArc)	Guide Archer#nv4	727
 new_5-3,113,41,4	duplicate(NvArc)	Guide Archer#nv5	727
 
 // ---------------------------- Acolyte Guide -------------------------------
--	script	Acolyte Guide#nv::NvAco	95,{
+-	script	Guide Acolyte#nv::NvAco	95,{
 	if(job_novice_q < 16) {
-		mes "[Prontera Acolyte]";
-		mes "You look like you are not done with Instructor Brade's lessons.";
+		mes "[Acolyte de Prontera]";
+		mes "Vous n'avez pas l'air d'en avoir fini avec les leçons de l'instructeur Brade.";
 		close;
 	}
-	mes "[Prontera Acolyte]";
-	mes "What can I do for you?";
+	mes "[Acolyte de Prontera]";
+	mes "De quelle manière puis-je vous être utile ?";
 	next;
-	switch(select("What is an Acolyte?:Job change to Acolyte:Cancel")) {
+	switch(select("Qu'est-ce qu'un Acolyte ?:Changer de classe pour Acolyte.:Annuler")) {
 	case 1:
-		mes "[Prontera Acolyte]";
-		mes "An Acolyte is someone who worships the goddess Freya sacrificing themselves to help others.";
+		mes "[Acolyte de Prontera]";
+		mes "Un Acolyte est quelqu'un qui vénère la déesse Freya et se sacrifie pour aider les autres.";
 		next;
-		mes "[Prontera Acolyte]";
-		mes "Acolytes use supportive skills to make combat easier.";
-		mes "It is essential to have an Acolyte in any successful party.";
+		mes "[Acolyte de Prontera]";
+		mes "Les Acolytes utilisent des capacités de support pour rendre le combat plus facile.";
+		mes "C'est essentiel d'avoir un Acolyte pour le succès d'un groupe.";
 		next;
-		mes "[Prontera Acolyte]";
-		mes "^8C2121As an Acolyte, you can upgrade your future job to Priest or Monk.^000000";
-		next;
-		mes "[Prontera Acolyte]";
+		mes "[Acolyte de Prontera]";
+		mes "^8C2121En tant qu'Acolyte, vous pourrez changer de classe vers Priest ou Monk.^000000";
 		if(countitem(2821) == 0 && (getequipid(EQI_ACC_L) != 2821 || getequipid(EQI_ACC_R) != 2821)) {
 			next;
-			mes "[Prontera Acolyte]";
-			mes "If you want, I can give you a skill manual to experience what it is like to be an Acolyte.";
-			mes "Would you like to experience the skills of an Acolyte?";
+			mes "[Acolyte de Prontera]";
+			mes "Si vous le souhaitez, je peux vous donner un manuel de capacités pour expérimenter les sensations d'être un Acolyte.";
+			mes "Voudriez-vous essayer les capacités d'Acolyte ?";
 			next;
-			if(select("Yes, please.:No I'm not interested.") == 2) {
-				mes "[Prontera Acolyte]";
-				mes "Hum. Do you think so.";
-				mes "Ok, I agree with you. Choosing a job is very important in our life.";
-				mes "Just talk to me whenever you want to know about Acolytes.";
+			if(select("Oui, s'il vous plait.:Non je ne suis pas intéressé.") == 2) {
+				mes "[Acolyte de Prontera]";
+				mes "Hmmm, êtes vous sûr ?";
+				mes "Bien, d'accord. Choisir une classe est quelque chose de très important dans une vie.";
+				mes "N'hésitez pas à revenir me voir si vous voulez plus d'informations sur les Acolytes.";
 				close;
 			}
-			mes "[Prontera Acolyte]";
-			mes "Here you go, the instruction manual of an Acolyte.";
-			mes "I will take away those other job's manuals while you study this one.";
-			next;
-			mes "[Prontera Acolyte]";
-			mes "Here you go, the instruction manual of an Acolyte.";
-			mes "I will take away those other job's manuals while you study this one.";
+			mes "[Acolyte de Prontera]";
+			mes "Et voilà pour vous, un manuel d'instructions d'Acolyte.";
+			mes "Je vais vous reprendre ces autres manuels de classe pendant que vous étudiez celui-ci.";
 			callfunc "F_NvErase";
 			getitem 2821,1;	// Acolyte_Manual
 			next;
-			mes "[Prontera Acolyte]";
-			mes "Make sure to equip the Skill Manual by double-clicking it in the Inventory Window.";
-			mes "Open your Skill Tree by pressing ^4A4AFFAlt + S^000000 and minimizing the window by pressing the '-' button on the top right corner of the window to see the available skills.";
+			mes "[Acolyte de Prontera]";
+			mes "Équipez bien votre manuel de Capacités en double-cliquant dessus dans votre inventaire.";
+			mes "Ouvrez votre Arbre de Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre des Capacités en cliquant sur le bouton '-' situé en haut à droite pour voir les capacités disponibles.";
 		}
 		close;
 	case 2:
-		mes "[Prontera Acolyte]";
-		mes "Of course, I assume you have enough job levels to become an Acolyte right?";
-		mes "Would you like to quit the Training Process and go to the Cathedral of Prontera?";
+		mes "[Acolyte de Prontera]";
+		mes "Bien sûr, je pars du principe que vous avez assez de niveau de Job pour devenir Acolyte ?";
+		mes "Voulez-vous quitter l'entraînement et aller à la Cathédrale de Prontera ?";
 		next;
-		if(select("Let me reconsider.:I will go to the Cathedral.") == 2) {
-			mes "[Prontera Acolyte]";
-			mes "That's great.";
-			mes "Then I will completely end the Training Process and send you to the Cathedral of Prontera.";
+		if(select("Laissez-moi y repenser.:Je veux aller à la Cathédrale.") == 2) {
+			mes "[Acolyte de Prontera]";
+			mes "C'est très bien.";
+			mes "Alors je vais définitivement terminer votre entraînement et vous envoyer à la Cathédrale de Prontera.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "prontera",117,72;
 			warp "prt_church",172,19;
 			end;
 		}
-		mes "[Prontera Acolyte]";
-		mes "You should try out each job's manuals.";
-		mes "Go through them throughly and decide carefully.";
-		mes "Of course, I will welcome you anytime.";
+		mes "[Acolyte de Prontera]";
+		mes "Vous devriez essayer chacun des manuels de classe.";
+		mes "Essayez les minutieusement, et choississez soigneusement.";
+		mes "Bien sûr, je vous accepterai tout le temps.";
 		close;
 	case 3:
-		mes "[Prontera Acolyte]";
-		mes "If you have any questions about Acolytes, please ask me anytime.";
-		mes "Our God, Odin awaits adventurers like you";
+		mes "[Acolyte de Prontera]";
+		mes "Si vous aviez d'autres questions à propos des Acolytes, demandez moi dès que vous le souhaitez.";
+		mes "Notre Dieu, Odin, attends des aventuriers comme vous.";
 		close;
 	}
 }
 
-new_1-3,117,41,4	duplicate(NvAco)	Acolyte Guide#nv1	95
-new_2-3,117,41,4	duplicate(NvAco)	Acolyte Guide#nv2	95
-new_3-3,117,41,4	duplicate(NvAco)	Acolyte Guide#nv3	95
-new_4-3,117,41,4	duplicate(NvAco)	Acolyte Guide#nv4	95
-new_5-3,117,41,4	duplicate(NvAco)	Acolyte Guide#nv5	95
+new_1-3,117,41,4	duplicate(NvAco)	Guide Acolyte#nv1	95
+new_2-3,117,41,4	duplicate(NvAco)	Guide Acolyte#nv2	95
+new_3-3,117,41,4	duplicate(NvAco)	Guide Acolyte#nv3	95
+new_4-3,117,41,4	duplicate(NvAco)	Guide Acolyte#nv4	95
+new_5-3,117,41,4	duplicate(NvAco)	Guide Acolyte#nv5	95
 
 // ---------------------------- Bruce (Extended Jobs) -----------------------
 -	script	Bruce#nv::NvBruce	57,{
