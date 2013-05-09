@@ -987,7 +987,7 @@ function	script	F_NvErase	{
 	mes "[Guildien Swordman]";
 	mes "Puis-je vous aider ?";
 	next;
-	switch(select("À propos de la Classe Swordman.:Changer sa Classe pour Swordman.:Avez-vous des quêtes ?:Cancel.")) {
+	switch(select("À propos de la Classe Swordman.:Changer sa Classe pour Swordman.:Avez-vous des quêtes ?:Annuler.")) {
 		case 1:
 			mes "[Guildien Swordman]";
 			mes "Littéralement, un Swordman est quelqu'un spécialisé dans le maniement de l'épée.";
@@ -1128,147 +1128,143 @@ new_4-3,97,41,4	duplicate(NvSwd)	Guide Swordman#nv4	728
 new_5-3,97,41,4	duplicate(NvSwd)	Guide Swordman#nv5	728
 
 // ---------------------------- Mage Guide ----------------------------------
--	script	Mage Guide#nv::NvMag	123,{
+-	script	Guide Mage#nv::NvMag	123,{
 	if(job_novice_q < 16) {
-		mes "[Mage Guild Member]";
-		mes "You are still in the process of training with Instructor Brade.";
+		mes "[Guildien Mage]";
+		mes "Vous êtes encore en entraînement avec l'instructeur Brade.";
 		close;
 	}
-	mes "[Mage Guild Member]";
-	mes "What can I help you with?";
+	mes "[Guildien Mage]";
+	mes "Comment puis-je vous aider ?";
 	next;
-	switch(select("Tell me about Mages:I want to be a Mage:Give me a Quest:Cancel")) {
+	switch(select("Parlez moi des Mages.:Je voudrais être un Mage.:Donnez moi une Quête.:Annuler")) {
 	case 1:
-		mes "[Mage Guild Member]";
-		mes "Mages are those who can use magic when they need to protect their friends.";
-		mes "Mages can curse enemies using the elements of fire, water, earth and thunder magic.";
+		mes "[Guildien Mage]";
+		mes "Les Mages peuvent utiliser la magie quand ils ont besoin de protéger leurs amis.";
+		mes "Nous pouvons maudire nos ennemis en utilisant les éléments magiques du feu, de l'eau, de la terre et de la foudre.";
 		next;
-		mes "[Mage Guild Member]";
-		mes "However they cannot equip other weapons but staffs and books.";
-		mes "Because they are too delicate to carry heavy weapons.";
+		mes "[Guildien Mage]";
+		mes "Par contre nous ne pouvont pas équiper des armes autres que des bâtons des livres.";
+		mes "Parce que nous sommes trop faibles pour porter des armes lourdes.";
 		next;
-		mes "[Mage Guild Member]";
-		mes "But they can cover this weakness by their remarkable magic skills.";
-		mes "That is why many people want to become a Mage!";
+		mes "[Guildien Mage]";
+		mes "Mais nous surpassons cette faiblesse par nos remarquables capacités magiques.";
+		mes "C'est pour cela que tant de gens souhaitent devenir Mage !";
 		next;
-		mes "[Mage Guild Member]";
-		mes "Mages have to be in their guild for guild's power and honor.";
-		mes "This is one of the reasons why Mages are popular in any parties and guilds.";
-		mes "Why don't you become a Mage?";
+		mes "[Guildien Mage]";
+		mes "Les Mages sont dévoués à leur guilde pour leur faire gagner pouvoir et honneur.";
+		mes "C'est l'une des raisons pour lesquelles les Mages sont si populaires en groupe ou en guilde.";
+		mes "Pourquoi ne deviendriez-vous pas un Mage ?";
 		next;
-		mes "[Mage Guild Member]";
-		mes "^8C2121Mages can transform to Wizards or Sages as their second job.^000000";
+		mes "[Guildien Mage]";
+		mes "^8C2121Les Mages peuvent devenir des Wizards ou des Sages en seconde classe.^000000";
 		if(countitem(2824) == 0 && (getequipid(EQI_ACC_L) != 2824 || getequipid(EQI_ACC_R) != 2824)) {
 			next;
-			mes "[Mage Guild Member]";
-			mes "Do you want to register to experience how it is to be a Mage?";
-			mes "Would you like to test Mage skills?";
+			mes "[Guildien Mage]";
+			mes "Voulez-vous expérimenter ce qu'est être un Mage ?";
+			mes "Souhaiteriez-vous essayer les capacités de Mage ?";
 			next;
-			if(select("I want to test Mage skills.:I don't want to test it.") == 2) {
-				mes "[Mage Guild Member]";
-				mes "Hum. Do you think so.";
-				mes "Ok, I agree with you. Choosing a job is very important in our life.";
-				mes "Just talk to me whenever you want to experience Mage skills.";
+			if(select("Je veux essayer les capacités de Mage.:Je ne veux pas les essayer.") == 2) {
+				mes "[Guildien Mage]";
+				mes "Hum. Vous êtes certain ?";
+				mes "Ok, je suis d'accord. Choisir une classe est quelque chose de très important dans une vie.";
+				mes "Reparlez moi lorsque vous souhaiterez expérimenter les capacités de Mage.";
 				close;
 			}
-			mes "[Mage Guild Member]";
-			mes "Here is the Mage Manual.";
-			mes "I will take the other job registration forms and manuals from you.";
-			next;
-			mes "[Mage Guild Member]";
-			mes "Here is the Mage Manual.";
-			mes "I will take the other job registration forms and manuals from you.";
+			mes "[Guildien Mage]";
+			mes "Voici le Manuel de Mage.";
+			mes "Je vais juste récupérer les manuels des autres classes avant.";
 			callfunc "F_NvErase";
 			getitem 2824,1;	// Mage_Manual
 			next;
-			mes "[Mage Guild Member]";
-			mes "After equipping the Manual, open your Skill menu by pressing ALT+S.";
-			mes "Make sure to minimize your Skill tree by clicking the '-' button on the top right corner of the Skill Tree Window.";
+			mes "[Guildien Mage]";
+			mes "Après avoir équipé le Manuel, ouvrez le menu de Capacités en appuyant sur ALT + S.";
+			mes "Soyez sûr d'avoir minimisé l'arbre des Capacités en cliquant sur le bouton '-' en haut à droite de la fenêtre de Capacités.";
 		}
 		close;
 	case 2:
-		mes "[Mage Guild Member]";
-		mes "You want to be a Mage?";
-		mes "Ok, then, I will send you to the Mage Guild union in Geffen right away.";
+		mes "[Guildien Mage]";
+		mes "Vous souhaitez devenir un Mage ?";
+		mes "Bien, alors je vais vous envoyer à la Guilde des Mages à Geffen directement.";
 		next;
-		mes "[Mage Guild Member]";
-		mes "Wait, have you checked your Job level?";
-		mes "Do you want to complete your Novice training and go straight to the Mage Guild's union?";
+		mes "[Guildien Mage]";
+		mes "Une seconde, avez-vous vérifié votre niveau de Job ?";
+		mes "Voulez-vous terminer votre entraînement de Novice et aller à la Guilde des Mages ?";
 		next;
-		if(select("I will think about it again.:Yes, complete my training.") == 2) {
-			mes "[Mage Guild Member]";
-			mes "Welcome!!";
-			mes "I will send you to the Mage Guilds union after you complete your Novice training.";
+		if(select("Je vais y réfléchir encore.:Oui, terminons mon entraînement.") == 2) {
+			mes "[Guildien Mage]";
+			mes "Bienvenue !!";
+			mes "Je vais vous envoyer à la Guilde des Mages après avoir validé votre entraînement de Novice.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "geffen",119,38;
 			warp "geffen_in",163,98;
 			end;
 		}
-		mes "[Mage Guild Member]";
-		mes "Please test what Mage skills are all about before you decide.";
-		mes "We are always welcome to have you!";
+		mes "[Guildien Mage]";
+		mes "Essayez toutes les capacités de Mage avant de vous décider.";
+		mes "Nous serons toujours heureux de vous avoir avec nous !";
 		close;
 	case 3:
 		set .@quest, checkquest(7124);
 		if (.@quest == -1) {
-			mes "[Mage Guild Member]";
-			mes "Huh? Quest?";
-			mes "Hmm... What would be suited for you...?";
-			mes "Would you like to hunt Lunatics by using Bolt skills?";
+			mes "[Guildien Mage]";
+			mes "Hein ? Une quête ?";
+			mes "Hmmm... Qu'est-ce qui pourrais être bien pour vous...?";
+			mes "Que pensez-vous de chasser des Lunatics avec les capacités Bolt ?";
 			next;
-			mes "^4d4dffYou have received a Hunting quest from the Mage Guide.";
-			mes "You can get more information about the quest from the quest window.^000000";
+			mes "^4d4dffVous avez reçu une quête de Chasse du Guide Mage.";
+			mes "Vous pouvez obtenir plus d'information en ouvrant la fenêtre de quêtes.^000000";
 			setquest 7124;
 			next;
-			mes "[Mage Guild Member]";
-			mes "You are able to use 'Fire Bolt' skill that is shown on the Mage manual.";
-			mes "I will wait for you here.";
-			mes "Good luck!";
+			mes "[Guildien Mage]";
+			mes "Vous devriez être capable d'utiliser la capacité 'Fire Bolt' décrite dans le Manuel de Mage.";
+			mes "Je vais vous attendre ici.";
+			mes "Bonne chance !";
 			close;
 		}
 		else if (.@quest == 1) {
 			if (checkquest(7124,HUNTING) == 2) {
-				mes "[Mage Guild Member]";
-				mes "You have done excellent job.";
-				mes "So, did you find any interests about Mages?";
-				mes "Alright. I will give something...";
-				mes "Here are Novice Butterfly Wings, please take them.";
+				mes "[Guildien Mage]";
+				mes "Excellent travail.";
+				mes "Alors, être Mage vous a plu ?";
+				mes "Bien. Je vais vous donner quelque chose...";
+				mes "Voici des Novice Butterfly Wings, prenez-les.";
 				completequest 7124;
 				getitem 12324, 30;	// N_Butterfly_Wing
 				getexp 5000,100;
 				close;
 			}
-			mes "[Mage Guild Member]";
-			mes "The quest is that you have to";
-			mes "hunt Lunatics and bring 5 clovers.";
+			mes "[Guildien Mage]";
+			mes "La quête consiste à chasser des";
+			mes "Lunatics et me rapporter 5 Clovers.";
 			close;
 		}
 		else if (.@quest == 2) {
-			mes "[Mage Guild Member]";
-			mes "You have already completed the quest.";
-			mes "Once you enter the main world, you can get various exciting quests there!";
+			mes "[Guildien Mage]";
+			mes "Vous avez déjà terminé la quête.";
+			mes "Vous pourrez avoir de nombreuses et excitantes quêtes lorsque vous vous découvrirez le monde extérieur !";
 			next;
-			mes "[Mage Guild Member]";
-			mes "This should be enough for your training.";
+			mes "[Guildien Mage]";
+			mes "Je pense que c'est tout pour votre entraînement.";
 			close;
 		}
-		mes "[Mage Guild Member]";
-		mes "I'm sorry but I don't have any quests to give you right now.";
+		mes "[Guildien Mage]";
+		mes "Je suis désolé mais je n'ai aucune quête à vous donner pour le moment.";
 		close;
 	case 4:
-		mes "[Mage Guild Member]";
-		mes "If you have any questions about Mages, feel free to ask me.";
-		mes "I think you could be a intelligent Mage...";
+		mes "[Guildien Mage]";
+		mes "Si vous avez des questions à propos des Mages, n'hésitez pas à me les poser.";
+		mes "Je pense que vous pourriez être un Mage très intelligent...";
 		close;
 	}
 }
 
-new_1-3,101,41,4	duplicate(NvMag)	Mage Guide#nv1	123
-new_2-3,101,41,4	duplicate(NvMag)	Mage Guide#nv2	123
-new_3-3,101,41,4	duplicate(NvMag)	Mage Guide#nv3	123
-new_4-3,101,41,4	duplicate(NvMag)	Mage Guide#nv4	123
-new_5-3,101,41,4	duplicate(NvMag)	Mage Guide#nv5	123
+new_1-3,101,41,4	duplicate(NvMag)	Guide Mage#nv1	123
+new_2-3,101,41,4	duplicate(NvMag)	Guide Mage#nv2	123
+new_3-3,101,41,4	duplicate(NvMag)	Guide Mage#nv3	123
+new_4-3,101,41,4	duplicate(NvMag)	Guide Mage#nv4	123
+new_5-3,101,41,4	duplicate(NvMag)	Guide Mage#nv5	123
 
 // ---------------------------- Thief Guide ---------------------------------
 -	script	Thief Guide#nv::NvThf	118,{
