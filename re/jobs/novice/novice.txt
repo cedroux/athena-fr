@@ -1778,91 +1778,91 @@ new_5-3,121,41,4	duplicate(NvBruce)	Bruce#nv5	57
 //============================================================================
 // Eden Group Officer (Real Combat Training)
 //============================================================================
--	script	Eden Group Officer#nv::NvEdn	-1,{
+-	script	Officier Eden Group#nv::NvEdn	-1,{
 	if(BaseLevel < 10) {
-		mes "[Eden Group Officer]";
-		mes "Hello, I am a representative of the Eden Group.";
-		mes "We are here to assist adventurers in Rune Midgard.";
+		mes "[Officier de l'Eden Group]";
+		mes "Bonjour, je suis un représentant de l'Eden Group.";
+		mes "Nous sommes ici pour assister tous les aventuriers de Rune Midgard.";
 		next;
-		mes "[Eden Group Officer]";
-		mes "We have agents all over the world waiting to send you to our secret headquarters where you can get some useful quests.";
+		mes "[Officier de l'Eden Group]";
+		mes "Nous avons des agents tout autour du monde qui attendent de vous envoyer dans nos quartiers secrets, d'où vous pourrez récupérer différentes quêtes très utiles.";
 		next;
-		mes "[Eden Group Officer]";
-		mes "If you take our quests we even give you weapons and equipment so be sure to visit us once you are done with your training.";
+		mes "[Officier de l'Eden Group]";
+		mes "Si vous prenez nos quêtes, nous vous donnerons même des armes et des équipements. Alors pensez à venir nous rendre visite au moins un fois quand vous aurez terminé cet entraînement.";
 		next;
-		mes "[Eden Group Officer]";
-		mes "Speak to me again once you have reached Base Level 10 and I will send you out of the training grounds.";
-		mes "Have you taken the quests from all of the Guides yet?";
+		mes "[Officier de l'Eden Group]";
+		mes "Reparlez moi lorsque vous aurez atteint le niveau de Base 10 et je vous ferai sortir de ce terrain d'entraînement.";
+		mes "Avez vous pris toutes les quêtes des différents Guides ?";
 		close;
 	}else{
-		mes "[Eden Group Officer]";
-		mes "Great! You are ready to take on the challenges of the world.";
-		mes "What would you like to do?";
+		mes "[Officier de l'Eden Group]";
+		mes "Bien ! Vous êtes maintenant prêt à affronter les difficultés de ce monde.";
+		mes "Que souhaiteriez-vous faire ?";
 		next;
-		switch(select("I want to leave the training grounds:Tell me about the towns.:Cancel")) {
+		switch(select("Je veux quitter le terrain d'entraînement.:Parlez-moi des villes.:Annuler")) {
 		case 1:
-			mes "[Eden Group Officer]";
-			mes "Looks like you are ready.";
-			mes "I guess you have made up your mind, huh?";
+			mes "[Officier de l'Eden Group]";
+			mes "Vous semblez être prêt.";
+			mes "Je suppose que vous avez fait votre choix, hein ?";
 			next;
-			mes "[Eden Group Officer]";
-			mes "If you know what job you want to change to, you should ask the ^4A4AFFJob Guides^000000 to send you out of the training grounds.";
-			mes "What town would you like to go to?";
+			mes "[Officier de l'Eden Group]";
+			mes "Si vous savez vers quelle classe vous vous dirigez, vous devriez demander aux ^4A4AFFGuides des Classes^000000 de vous faire sortir du terrain d'entraînement.";
+			mes "Vers quelle ville souhaiteriez-vous aller ?";
 			next;
-			switch(select("Prontera:Morocc:Payon:Alberta:Geffen:Cancel")) {
+			switch(select("Prontera:Morocc:Payon:Alberta:Geffen:Annuler")) {
 			case 1:
-				mes "[Eden Group Officer]";
-				mes "Prontera, the Capital city of the Rune-Midgarts Kingdom.";
-				mes "Take care and may Freya bless you on your journey.";
+				mes "[Officier de l'Eden Group]";
+				mes "Prontera, la Capitale du Royaume de Rune Midgard.";
+				mes "Prenez soin de vous, puisse Freya bénir votre périple.";
 				callsub S_Warp,"prontera",121,77,121,76;
 			case 2:
-				mes "[Eden Group Officer]";
-				mes "The desert city of Morocc was recently destroyed.";
-				mes "I will send you to the camp where the survivors are.";
+				mes "[Officier de l'Eden Group]";
+				mes "La ville désertique de Morocc a été récemment détruite.";
+				mes "Je vais vous envoyer au camp des survivants.";
 				callsub S_Warp,"moc_ruins",71,157,70,158;
 			case 3:
-				mes "[Eden Group Officer]";
-				mes "Just north of Payon you'll find the Archer Village.";
-				mes "Good luck on your journeys.";
+				mes "[Officier de l'Eden Group]";
+				mes "Vous trouverez le Village des Archers juste au nord de Payon.";
+				mes "Bonne chance pour votre périple.";
 				callsub S_Warp,"payon",167,68,172,111;
 			case 4:
-				mes "[Eden Group Officer]";
-				mes "Alberta, the Port City.";
-				mes "It's the main hub of all trades.";
-				mes "If you want to travel to other civilizations, Alberta is the only outlet.";
+				mes "[Officier de l'Eden Group]";
+				mes "Alberta, la Ville Portuaire.";
+				mes "C'est le principal centre d'échange.";
+				mes "Si vous souhaitez voyager vers d'autres civilisations, Alberta est la seule possibilité.";
 				callsub S_Warp,"alberta",115,57,116,58;
 			case 5:
-				mes "[Eden Group Officer]";
-				mes "Geffen, is known as the Magical City of Rune Midgard.";
-				mes "I will send you near the Fountains.";
-				mes "Goddess Freya bless you.";
+				mes "[Officier de l'Eden Group]";
+				mes "Geffen, connue comme Cité Magique de Rune Midgard.";
+				mes "Je vais vous envoyer à côté de la Fontaine.";
+				mes "Puisse la Déesse Freya vous bénir.";
 				callsub S_Warp,"geffen",118,36,128,66;
 			case 6:
-				mes "[Eden Group Officer]";
-				mes "If you're still not sure what job you want, talk to the Job Guides for more help.";
+				mes "[Officier de l'Eden Group]";
+				mes "Si vous n'êtes pas certain de la classe que vous voulez, parlez aux Guides des Classes pour plus d'aide.";
 				close;
 			}
 		case 2:
-			mes "[Eden Group Officer]";
-			mes "Prontera is the main capital of the Rune-Midgard Kingdom. Here you will find Merchants selling their items and is a favorite gathering point of adventurers.";
+			mes "[Officier de l'Eden Group]";
+			mes "Prontera est la Capitale du Royaume de Rune Midgard. Vous y trouverez des Merchants vendant leurs objets. C'est aussi un des points de rassemblement favoris des aventuriers.";
 			next;
-			mes "[Eden Group Officer]";
-			mes "The Acolyte Guild is here at the Prontera Church located to the northwest. The Swordman Guild can be found at Izlude, a town just southeast of Prontera.";
+			mes "[Officier de l'Eden Group]";
+			mes "La Guilde des Acolytes est située dans la Cathédrale de Prontera, au nord-ouest. La Guilde des Swordmans est à Izlude, une ville juste au sud-est de Prontera.";
 			next;
-			mes "[Eden Group Officer]";
-			mes "Morocc is a city located in the desert that was recently destroyed due to an evil monster named Satan Morroc. The Thief Guild has been working to restore it to it's former glory.";
+			mes "[Officier de l'Eden Group]";
+			mes "Morocc est une cité située dans le désert, et qui a récemment été détruite par un monstre diabolique du nom de Satan Morroc. La Guilde des Thiefs travaille dur pour lui rendre sa gloire d'antan.";
 			next;
-			mes "[Eden Group Officer]";
-			mes "Payon is where the Archer Guild has made it's home. You can also find the Kafra Shop Employees selling their Item Mall items near the center of this city.";
+			mes "[Officier de l'Eden Group]";
+			mes "Payon est la maison de la Guilde des Archers. Vous pourrez aussi y trouver des Magasins de la Kafra y vendant leurs objets proche du centre de la ville.";
 			next;
-			mes "[Eden Group Officer]";
-			mes "Alberta is the trading hub of Rune Midgard. The Merchant Guild is located here and the docks have ships that will take you to different island cities.";
+			mes "[Officier de l'Eden Group]";
+			mes "Alberta est le centre d'échange de Rune Midgard. La Guilde des Merchants y est située et les docks sont remplis de bâteaux allant vers différentes îles.";
 			next;
-			mes "[Eden Group Officer]";
-			mes "Geffen is known as the magical city of Rune Midgard. The Mage Guild is located here and research for new magic is always being conducted at their headquarters.";
+			mes "[Officier de l'Eden Group]";
+			mes "Geffen est connue comme Cité Magique de Rune Midgard. La Guilde des Mages y est présente, et des recherches sur de nouvelles magies y sont faites dans leurs quartiers.";
 			next;
-			mes "[Eden Group Officer]";
-			mes "If you wish to be sent directly to the Job Guilds, then speak to the Job Guides and tell them that you want to change your job.";
+			mes "[Officier de l'Eden Group]";
+			mes "Si vous souhaitez être envoyé directement dans les batiments de Guilde, parlez aux Guides de Classes et dites leur que vous souhaitez changer de classe.";
 			close;
 		case 3:
 			close;
@@ -1881,21 +1881,21 @@ OnTouch:
 	end;
 }
 
-new_1-3,97,50,4	duplicate(NvEdn)	Eden Group Officer#nv1	729,5,5
-new_2-3,97,50,4	duplicate(NvEdn)	Eden Group Officer#nv2	729,5,5
-new_3-3,97,50,4	duplicate(NvEdn)	Eden Group Officer#nv3	729,5,5
-new_4-3,97,50,4	duplicate(NvEdn)	Eden Group Officer#nv4	729,5,5
-new_5-3,97,50,4	duplicate(NvEdn)	Eden Group Officer#nv5	729,5,5
+new_1-3,97,50,4	duplicate(NvEdn)	Officier Eden Group#nv1	729,5,5
+new_2-3,97,50,4	duplicate(NvEdn)	Officier Eden Group#nv2	729,5,5
+new_3-3,97,50,4	duplicate(NvEdn)	Officier Eden Group#nv3	729,5,5
+new_4-3,97,50,4	duplicate(NvEdn)	Officier Eden Group#nv4	729,5,5
+new_5-3,97,50,4	duplicate(NvEdn)	Officier Eden Group#nv5	729,5,5
 
 // Merchant (Real Combat Training)
 //============================================================
--	shop	Merchant#nv::NvPotato	93,516:15
+-	shop	Marchand#nv::NvPotato	93,516:15
 
-new_1-3,100,50,4	duplicate(NvPotato)	Merchant#nv1	93
-new_2-3,100,50,4	duplicate(NvPotato)	Merchant#nv2	93
-new_3-3,100,50,4	duplicate(NvPotato)	Merchant#nv3	93
-new_4-3,100,50,4	duplicate(NvPotato)	Merchant#nv4	93
-new_5-3,100,50,4	duplicate(NvPotato)	Merchant#nv5	93
+new_1-3,100,50,4	duplicate(NvPotato)	Marchand#nv1	93
+new_2-3,100,50,4	duplicate(NvPotato)	Marchand#nv2	93
+new_3-3,100,50,4	duplicate(NvPotato)	Marchand#nv3	93
+new_4-3,100,50,4	duplicate(NvPotato)	Marchand#nv4	93
+new_5-3,100,50,4	duplicate(NvPotato)	Marchand#nv5	93
 
 // Trainer (Real Combat Training)
 //============================================================
