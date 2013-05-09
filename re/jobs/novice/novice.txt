@@ -1267,139 +1267,134 @@ new_4-3,101,41,4	duplicate(NvMag)	Guide Mage#nv4	123
 new_5-3,101,41,4	duplicate(NvMag)	Guide Mage#nv5	123
 
 // ---------------------------- Thief Guide ---------------------------------
--	script	Thief Guide#nv::NvThf	118,{
+-	script	Guide Thief#nv::NvThf	118,{
 	if(job_novice_q < 16) {
-		mes "[Thief Guild Member]";
-		mes "You look like you are not done with Instructor Brade's lessons.";
+		mes "[Guildien Thief]";
+		mes "Vous n'avez pas l'air d'avoir terminé les leçons de l'instructeur Brade.";
 		close;
 	}
-	mes "[Thief Guild Member]";
-	mes "How can I help you?";
+	mes "[Guildien Thief]";
+	mes "De quelle manière puis-je vous aider ?";
 	next;
-	switch(select("About the Thief Class.:I want to be a Thief.:Got any Quests?:Cancel.")) {
+	switch(select("À propos de la Classe Thief.:Je veux devenir Thief.:Avez-vous des quêtes ?:Annuler.")) {
 	case 1:
-		mes "[Thief Guild Member]";
-		mes "Thieves are experts at using Dagger class weapons.";
-		mes "They strike quickly and easily evade attacks from their enemies.";
+		mes "[Guildien Thief]";
+		mes "Les Thiefs sont experts en maniement des Dagues.";
+		mes "Ils peuvent frapper très rapidement et facilement esquiver les attaques de leurs ennemis.";
 		next;
-		mes "[Thief Guild Member]";
-		mes "Thieves can learn skills that allow them to hide from their enemies or steal items from monsters.";
-		mes "They are also feared for their use of poison, which slowly weakens their enemies.";
+		mes "[Guildien Thief]";
+		mes "Les Thiefs peuvent apprendre des capacités pour sa cacher de leurs ennemis ou même voler des objets aux monstres.";
+		mes "Ils sont aussi craints pour leur utilisation du poison, qui affaiblit petit à petit leurs ennemis.";
 		next;
-		mes "[Thief Guild Member]";
-		mes "In jeopardy, or in the case that thieves do not want to reveal themselves, they can use their skill to hide themselves easily.";
+		mes "[Guildien Thief]";
+		mes "En cas de danger, ou s'ils ne veulent pas être vus, ils peuvent utiliser leur capacité pour se cacher très facilement.";
 		next;
-		mes "[Thief Guild Member]";
-		mes "Thieves can change their jobs to ^8C2121Assassins^000000 or ^8C2121Rogues.^000000";
+		mes "[Guildien Thief]";
+		mes "Les Thiefs peuvent ensuite devenir ^8C2121Assassins^000000 ou ^8C2121Rogues.^000000";
 		if(countitem(2820) == 0 && (getequipid(EQI_ACC_L) != 2820 || getequipid(EQI_ACC_R) != 2820)) {
 			next;
-			mes "[Thief Guild Member]";
-			mes "If you want, I'll give you a Thief skill manual.";
-			mes "Would you like to experience the skills of a Thief?";
+			mes "[Guildien Thief]";
+			mes "Si vous le voulez, je peux vous donner un Manuel des capacités de Thief.";
+			mes "Souhaiteriez-vous essayer les capacités de Thief ?";
 			next;
-			if(select("Yes, I would.:No, I don't.") == 2) {
-				mes "[Thief Guild Member]";
-				mes "Oh, are you sure?";
-				mes "Class selection is very important so please consider it carefully.";
-				mes "If you want to ask about Thieves, please talk to me any time.";
+			if(select("Oui, avec plaisir.:Non merci.") == 2) {
+				mes "[Guildien Thief]";
+				mes "Oh, êtes vous certain ?";
+				mes "Le choix d'une Classe est très important, alors réfléchissez-y bien.";
+				mes "Si vous souhaitez en savoir plus sur les Thiefs, n'hésitez pas à revenir quand vous voulez.";
 				close;
 			}
-			mes "[Thief Guild Member]";
-			mes "Here, please take the Thief manual.";
-			mes "I'll just take the other class manuals while I'm at it.";
-			next;
-			mes "[Thief Guild Member]";
-			mes "Here, please take the Thief manual.";
-			mes "I'll just take the other class manuals while I'm at it.";
+			mes "[Guildien Thief]";
+			mes "Voilà, prenez ce manuel de Thief.";
+			mes "Je vais juste récupérer vos autres manuels de classe pendant que j'y suis.";
 			callfunc "F_NvErase";
 			getitem 2820,1;	// Thief_Manual
 			next;
-			mes "[Thief Guild Member]";
-			mes "Make sure to equip the Skill Manual by double-clicking it in the Inventory Window.";
-			mes "Open your Skill Tree by pressing ^4A4AFFAlt + S^000000 and minimize the window by pressing the '-' button on the top right corner of the window to see the available skills.";
+			mes "[Guildien Thief]";
+			mes "Équipez bien votre manuel de Capacités en double-cliquant dessus dans votre inventaire.";
+			mes "Ouvrez votre Arbre de Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre des Capacités en cliquant sur le bouton '-' situé en haut à droite pour voir les capacités disponibles.";
 		}
 		close;
-
 	case 2:
-		mes "[Thief Guild Member]";
-		mes "Do you really want to be a Thief?";
-		mes "If so, I will send you to the Thief Guild immediately.";
+		mes "[Guildien Thief]";
+		mes "Vous souhaitez vraiment devenir un Thief ?";
+		mes "Si c'est le cas, je vais vous envoyer immédiatement à la Guilde des Thiefs.";
 		next;
-		mes "[Thief Guild Member]";
-		mes "You already reached the required job level, didn't you?";
-		mes "Do you want to finish the Novice training and go to the Thief Guild?";
+		mes "[Guildien Thief]";
+		mes "Vous avez déjà atteint le niveau de Job requis, n'est-ce pas ?";
+		mes "Voulez-vous finir votre entraînement de Novice et aller à la Guilde des Thiefs.";
 		next;
-		if(select("Let me consider it again.:Yes, I do.") == 2) {
-			mes "[Thief Guild Member]";
-			mes "Ok, I see.";
-			mes "Welcome. Then your Novice training is totally complete and you will be sent to the Thief Guild immediately.";
+		if(select("Laissez moi y réfléchir.:Oui je veux y aller.") == 2) {
+			mes "[Guildien Thief]";
+			mes "Bien, je vois.";
+			mes "Bienvenue. Maintenant que votre entraînement de Novice est terminé, je vais vous envoyer à la Guilde des Thiefs.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "morocc",150,100;
 			warp "moc_prydb1",99,185;
 			end;
 		}
-		mes "[Thief Guild Member]";
-		mes "Have you tried all of the class manuals yet?";
-		mes "If you're undecided what job to take on I suggest you try talking to all the Guides first.";
+		mes "[Guildien Thief]";
+		mes "Avez vous déjà essayé notre manuel de classe ?";
+		mes "Si vous ne savez pas encore quelle classe choisir, je ne peux que vous conseiller de parler aux Guides des différentes classes.";
 		close;
 	case 3:
 		set .@quest, checkquest(7127);
 		if (.@quest == -1) {
-			mes "[Thief Guild Member]";
-			mes "Quests?";
-			mes "Hmm, what will be good for you?";
-			mes "How about hunting some Willows.";
+			mes "[Guildien Thief]";
+			mes "Des quêtes ?";
+			mes "Hmmm, qu'est-ce qui vous conviendrait ?";
+			mes "Que dites vous de chasser quelques Willows ?";
 			next;
-			mes "[Thief Guild Member]";
-			mes "You can't cheat this so make sure to kill 5 Willows. When you're done come and talk to me again.";
-			mes "If you talk to Trainer Brutus, he can send you to a more difficult training ground where there are Willows to hunt.";
+			mes "[Guildien Thief]";
+			mes "Vous ne pouvez pas tricher ici, alors soyez certain d'avoir tué 5 Willows. Quand vous aurez fini, revenez me parler.";
+			mes "Si vous parlez à l'Entraîneur Brutus, il pourra vous envoyer à des terrains de difficulté supérieure, où vous pourrez chasser des Willows.";
 			setquest 7127;
 			next;
-			mes "[Thief Guild Member]";
-			mes "If you equip the Thief manual, you can have the effect of the skill, Double Attack.";
-			mes "Double Attack and Hide are the main skills of the Thief.";
+			mes "[Guildien Thief]";
+			mes "Si vous équipez le manuel de Thief, vous aurez accès à la capacité Double Attack.";
+			mes "Double Attack et Hide sont les principales capacités des Thiefs.";
 			close;
 		}
 		else if (.@quest == 1) {
 			if (checkquest(7127,HUNTING) == 2) {
-				mes "[Thief Guild Member]";
-				mes "You are very strong.";
-				mes "These are not many but let me give you a reward for your effort.";
+				mes "[Guildien Thief]";
+				mes "Vous êtes vraiment fort.";
+				mes "Ce n'est pas beaucoup, mais laissez moi vous offrir ceci en récompense de vos efforts.";
 				completequest 7127;
 				getitem 12323, 50; // N_Fly_Wing
 				getexp 5000,100;
 				close;
 			}
-			mes "[Thief Guild Member]";
-			mes "Hunt 5 Willows and then come talk to me to finish your quest.";
+			mes "[Guildien Thief]";
+			mes "Chassez 5 willows et revenez me parler pour terminer votre quête.";
 			close;
 		}
 		else if (.@quest == 2) {
-			mes "[Thief Guild Member]";
-			mes "I think you finished that quest already, right?";
-			mes "You'll experience more of these quests as you grow as an adventurer in the world.";
+			mes "[Guildien Thief]";
+			mes "Je crois que vous avez déjà fait cette quête.";
+			mes "Vous trouverez d'autres quêtes lors de vos aventures dans ce monde.";
 			next;
-			mes "[Thief Guild Member]";
-			mes "Your training is now complete.";
-			mes "If you choose to become a Thief I wish you goodluck.";
+			mes "[Guildien Thief]";
+			mes "Votre entraînement est maintenant terminé.";
+			mes "Si vous choisissez de devenir un Thief, je vous souhaite bonne chance.";
 			close;
 		}
-		mes "[Thief Guild Member]";
-		mes "I'm sorry but I don't have any quests to give you right now.";
+		mes "[Guildien Thief]";
+		mes "Je suis désolé mais je n'ai aucune quête pour vous pour le moment.";
 		close;
 	case 4:
-		mes "[Thief Guild Member]";
-		mes "If you have something to ask about the Thief job, feel free to ask me.";
+		mes "[Guildien Thief]";
+		mes "Si vous avez des questions à propos de la classe Thief, n'hésitez pas à me demander.";
 		close;
 	}
 }
 
-new_1-3,105,41,4	duplicate(NvThf)	Thief Guide#nv1	118
-new_2-3,105,41,4	duplicate(NvThf)	Thief Guide#nv2	118
-new_3-3,105,41,4	duplicate(NvThf)	Thief Guide#nv3	118
-new_4-3,105,41,4	duplicate(NvThf)	Thief Guide#nv4	118
-new_5-3,105,41,4	duplicate(NvThf)	Thief Guide#nv5	118
+new_1-3,105,41,4	duplicate(NvThf)	Guide Thief#nv1	118
+new_2-3,105,41,4	duplicate(NvThf)	Guide Thief#nv2	118
+new_3-3,105,41,4	duplicate(NvThf)	Guide Thief#nv3	118
+new_4-3,105,41,4	duplicate(NvThf)	Guide Thief#nv4	118
+new_5-3,105,41,4	duplicate(NvThf)	Guide Thief#nv5	118
 
 // ---------------------------- Merchant Guide ------------------------------
 -	script	Merchant Guide#nv::NvMer	97,{
