@@ -1,4 +1,4 @@
-//===== rAthena Script =======================================
+ï»¿//===== rAthena Script =======================================
 //= New Novice Training Grounds
 //===== By: ==================================================
 //= Kisuka
@@ -16,8 +16,6 @@
 //= 1.3 Fixed Eden Group Officer's level requirement. [Joseph]
 //= 1.4 Fixed checkquest to check quest accordingly. [Joseph]
 //= 1.4a Added 'npcskill' command. [Euphy]
-//===== Translated in French by: =============================
-//= Emerick42
 //============================================================
 
 // Sprakki (Stard of Novice Training Ground, Outside Castle)
@@ -30,7 +28,7 @@ new_1-1,53,114,4	script	Sprakki#nv1	90,{
 		next;
 		mes "[Sprakki]";
 		mes "Tout d'abord tu dois apprendre les basiques pour controller ton personnage.";
-		mes "^4A4AFFBouger, sélectionner des objets et attaquer^000000 utilisent le ^4A4AFFclic gauche de la souris^000000.";
+		mes "^4A4AFFBouger, sÃ©lectionner des objets et attaquer^000000 utilisent le ^4A4AFFclic gauche de la souris^000000.";
 		next;
 		cutin "tutorial01",3;
 		mes "-! Info !-";
@@ -40,33 +38,33 @@ new_1-1,53,114,4	script	Sprakki#nv1	90,{
 		cutin "",255;
 		mes "[Sprakki]";
 		mes "D'abord, essaye de bouger.";
-		mes "Tu vois ce pont en bois à droite ?";
+		mes "Tu vois ce pont en bois Ã  droite ?";
 		next;
 		setquest 7117;
 		set job_novice_q,1;
 		mes "[Sprakki]";
-		mes "Traverse ce pont et tu verras un château. C'est notre Centre d'Entraînement.";
-		mes "Je vais t'attendre à l'intérieur de ce Château. Rejoins-y moi par toi-même.";
+		mes "Traverse ce pont et tu verras un chÃ¢teau. C'est notre Centre d'EntraÃ®nement.";
+		mes "Je vais t'attendre Ã  l'intÃ©rieur de ce ChÃ¢teau. Rejoins-y moi par toi-mÃªme.";
 		next;
 		cutin "tutorial02",3;
 		mes "-! Info !-";
-		mes "Tu as reçu une quête de Sprakki.";
-		mes "Tu peux regarder le contenu de cette quête dans la Fenêtre de Quêtes.";
+		mes "Tu as reÃ§u une quÃªte de Sprakki.";
+		mes "Tu peux regarder le contenu de cette quÃªte dans la FenÃªtre de QuÃªtes.";
 		next;
 		mes "[Sprakki]";
-		mes "Je t'attendrai à l'intérieur du Centre d'Entraînement après le pont.";
+		mes "Je t'attendrai Ã  l'intÃ©rieur du Centre d'EntraÃ®nement aprÃ¨s le pont.";
 		next;
 		mes "-! Info !-";
-		mes "Tu peux ouvrir la Fenêtre de Quêtes en appuyant simultanément sur les touches ^4A4AFFALT + U^000000.";
+		mes "Tu peux ouvrir la FenÃªtre de QuÃªtes en appuyant simultanÃ©ment sur les touches ^4A4AFFALT + U^000000.";
 		next;
 		cutin "",255;
 		mes "[Sprakki]";
-		mes "As-tu regardé la Fenêtre de Quêtes ?";
-		mes "Je t'attendrai dans le château après le Pont.";
+		mes "As-tu regardÃ© la FenÃªtre de QuÃªtes ?";
+		mes "Je t'attendrai dans le chÃ¢teau aprÃ¨s le Pont.";
 		close;
 	}
 	mes "[Sprakki]";
-	mes "Je t'attendrai après le Pont à l'Est.";
+	mes "Je t'attendrai aprÃ¨s le Pont Ã  l'Est.";
 	close;
 }
 
@@ -80,7 +78,7 @@ new_1-2,100,29,4	script	Sprakki#nv2	90,{
 		next;
 		mes "[Sprakki]";
 		mes "Tout d'abord tu dois apprendre les basiques pour controller ton personnage.";
-		mes "^4A4AFFBouger, sélectionner des objets et attaquer^000000 utilisent le ^4A4AFFclic gauche de la souris^000000.";
+		mes "^4A4AFFBouger, sÃ©lectionner des objets et attaquer^000000 utilisent le ^4A4AFFclic gauche de la souris^000000.";
 		next;
 		cutin "tutorial01",3;
 		mes "-! Info !-";
@@ -91,17 +89,17 @@ new_1-2,100,29,4	script	Sprakki#nv2	90,{
 		setquest 7117;
 		set job_novice_q,1;
 		mes "[Sprakki]";
-		mes "Ok maintenant je vais te donner une quête pour me parler.";
-		mes "Après que la conversation soit terminée, reparle moi en faisant un clic gauche sur moi.";
+		mes "Ok maintenant je vais te donner une quÃªte pour me parler.";
+		mes "AprÃ¨s que la conversation soit terminÃ©e, reparle moi en faisant un clic gauche sur moi.";
 		next;
 		cutin "tutorial02",3;
 		mes "-! Info !-";
-		mes "Tu as reçu une quête de Sprakki.";
-		mes "Tu peux regarder le contenu de cette quête dans la Fenêtre de Quêtes en appuyant simultanément sur les touches ^4A4AFFALT + U^000000.";
+		mes "Tu as reÃ§u une quÃªte de Sprakki.";
+		mes "Tu peux regarder le contenu de cette quÃªte dans la FenÃªtre de QuÃªtes en appuyant simultanÃ©ment sur les touches ^4A4AFFALT + U^000000.";
 		next;
 		cutin "",255;
 		mes "[Sprakki]";
-		mes "As-tu regardé la Fenêtre de Quêtes ?";
+		mes "As-tu regardÃ© la FenÃªtre de QuÃªtes ?";
 		mes "Bien, tu peux me reparler.";
 		close;
 	}
@@ -116,22 +114,22 @@ new_1-2,100,29,4	script	Sprakki#nv2	90,{
 		next;
   }
   mes "[Sprakki]";
-  mes "Le Centre d'Entraînement est fait pour des novices comme toi.";
-  mes "Tu vas être entraîné à utiliser les basiques du jeu.";
+  mes "Le Centre d'EntraÃ®nement est fait pour des novices comme toi.";
+  mes "Tu vas Ãªtre entraÃ®nÃ© Ã  utiliser les basiques du jeu.";
   next;
-  select("Commencer l'entraînement.");
+  select("Commencer l'entraÃ®nement.");
   mes "[Sprakki]";
-  mes "Je vais t'emmener au Centre d'Entraînement des Novices.";
-  mes "À l'intérieur, l'instructeur 'Brade' t'attendras pour te parler.";
+  mes "Je vais t'emmener au Centre d'EntraÃ®nement des Novices.";
+  mes "Ã€ l'intÃ©rieur, l'instructeur 'Brade' t'attendras pour te parler.";
   next;
   setquest 7118;
   set job_novice_q,3;
   mes "[Sprakki]";
-  mes "L'instructeur 'Brade' t'aidera après ça.";
+  mes "L'instructeur 'Brade' t'aidera aprÃ¨s Ã§a.";
   mes "Tu peux aller le voir.";
   next;
-  mes "^4A4AFF- Tu as reçu la quête 'Novice Training Ground-1' de Sprakki.^000000";
-  mes "^4A4AFFTu peux la voir dans la Fenêtre de Quêtes.-^000000";
+  mes "^4A4AFF- Tu as reÃ§u la quÃªte 'Novice Training Ground-1' de Sprakki.^000000";
+  mes "^4A4AFFTu peux la voir dans la FenÃªtre de QuÃªtes.-^000000";
   close2;
   savepoint "new_1-2",100,100;
   warp "new_1-2",100,100;
@@ -143,7 +141,7 @@ new_1-2,100,29,4	script	Sprakki#nv2	90,{
 new_1-2,100,105,4	script	Brade#nv	733,{
 	if(job_novice_q < 3) {
 		mes "[Instructeur Brade]";
-		mes "Comment es-tu entré ici ?";
+		mes "Comment es-tu entrÃ© ici ?";
 		close2;
 		warp "new_1-1",53,111;
 		end;
@@ -156,23 +154,23 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		set job_novice_q,4;
 		mes "[Instructeur Brade]";
 		mes "Bien.";
-		mes "Tu as complété la quête avec succès, alors je vais te donner des points d'expérience.";
+		mes "Tu as complÃ©tÃ© la quÃªte avec succÃ¨s, alors je vais te donner des points d'expÃ©rience.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Les Points d'Expérience que tu as gagnés en chassant ou terminant des quêtes peuvent être consultés via la Barre d'EXP, située en haut à gauche de l'écran.";
+		mes "Les Points d'ExpÃ©rience que tu as gagnÃ©s en chassant ou terminant des quÃªtes peuvent Ãªtre consultÃ©s via la Barre d'EXP, situÃ©e en haut Ã  gauche de l'Ã©cran.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Hmm... Je vais peut être parler grossièrement.";
-		mes "... Je ne peux juste pas m'habituer à 'la politesse', tu vois.";
-		mes "Ne me regarde pas comme ça !";
+		mes "Hmm... Je vais peut Ãªtre parler grossiÃ¨rement.";
+		mes "... Je ne peux juste pas m'habituer Ã  'la politesse', tu vois.";
+		mes "Ne me regarde pas comme Ã§a !";
 		next;
 		mes "[Instructeur Brade]";
 		mes "Ok t'as l'air vivant moucheron.";
-		mes "Maintenant passons aux objets et équipements.";
+		mes "Maintenant passons aux objets et Ã©quipements.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Premièrement, prend ça.";
-		mes "Ce sont des équipements de base, et des potions de soin.";
+		mes "PremiÃ¨rement, prend Ã§a.";
+		mes "Ce sont des Ã©quipements de base, et des potions de soin.";
 		getitem 2352,1;	// Novice_Plate
 		getitem 2510,1;	// Novice_Hood
 		getitem 2414,1;	// Novice_Boots
@@ -184,52 +182,52 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		set job_novice_q,5;
 		next;
 		mes "[Instructeur Brade]";
-		mes "En haut à gauche, appuie sur 'Item' pour ouvrir la Fenêtre des Objets.";
-		mes "La fenêtre des objets a 3 sections...";
+		mes "En haut Ã  gauche, appuie sur 'Item' pour ouvrir la FenÃªtre des Objets.";
+		mes "La fenÃªtre des objets a 3 sections...";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Objets consommables, équipements, et autres objets.";
-		mes "Si tu veux utiliser ou équiper un objet, double-clique sur l'objet ou glisse le dans la Fenêtre d'Équipement.";
+		mes "Objets consommables, Ã©quipements, et autres objets.";
+		mes "Si tu veux utiliser ou Ã©quiper un objet, double-clique sur l'objet ou glisse le dans la FenÃªtre d'Ã‰quipement.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Tu peux voir les informations détaillées de chaque objet avec un clic droit dessus.";
-		mes "Une nouvelle fenêtre s'ouvrira séparément.";
+		mes "Tu peux voir les informations dÃ©taillÃ©es de chaque objet avec un clic droit dessus.";
+		mes "Une nouvelle fenÃªtre s'ouvrira sÃ©parÃ©ment.";
 		next;
 		cutin "tutorial04",3;
 		mes "!- Info -!";
-		mes "Clique droit sur un objet pour voir les informations détaillées.";
+		mes "Clique droit sur un objet pour voir les informations dÃ©taillÃ©es.";
 		next;
 		mes "!- Info -!";
-		mes "Clique droit sur d'autres joueurs pour afficher le Menu de Communauté, avec lequel tu peux rejoindre un groupe, faire un échange, etc.";
+		mes "Clique droit sur d'autres joueurs pour afficher le Menu de CommunautÃ©, avec lequel tu peux rejoindre un groupe, faire un Ã©change, etc.";
 		next;
 		cutin "",255;
 		mes "[Instructeur Brade]";
-		mes "Pourquoi n'équiperais-tu pas les objets que je t'ai donné ?";
-		mes "^4A4AFFDouble-clique^000000 sur l'objet que tu veux équiper. Nous continuerons après que tu te sois équipé.";
+		mes "Pourquoi n'Ã©quiperais-tu pas les objets que je t'ai donnÃ© ?";
+		mes "^4A4AFFDouble-clique^000000 sur l'objet que tu veux Ã©quiper. Nous continuerons aprÃ¨s que tu te sois Ã©quipÃ©.";
 		next;
 		cutin "tutorial03",3;
 		mes "!- Info -!";
-		mes "Les objets peuvent être facilement équipés ou utilisés en cliquant dessus.";
-		mes "Le Raccourci pour ouvrir la Fenêtre des Objets est ALT + E.";
+		mes "Les objets peuvent Ãªtre facilement Ã©quipÃ©s ou utilisÃ©s en cliquant dessus.";
+		mes "Le Raccourci pour ouvrir la FenÃªtre des Objets est ALT + E.";
 		next;
 		mes "!- Info -!";
-		mes "Pour consulter les objets actuellement équipés, utilise le raccourci ALT + Q.";
-		mes "Ensuite, fait glisser l'objet dans l'emplacement dans lequel tu veux l'équiper.";
+		mes "Pour consulter les objets actuellement Ã©quipÃ©s, utilise le raccourci ALT + Q.";
+		mes "Ensuite, fait glisser l'objet dans l'emplacement dans lequel tu veux l'Ã©quiper.";
 		next;
 		mes "!- Info -!";
-		mes "Équipe toi de tous les objets donnés par l'instructeur Brade.";
+		mes "Ã‰quipe toi de tous les objets donnÃ©s par l'instructeur Brade.";
 		close2;
 		cutin "",255;
 		end;
 	}
 	else if(job_novice_q == 4) {
 		mes "[Instructeur Brade]";
-		mes "Hmm... Où en étions-nous ? Ah oui, continuons.";
-		mes "C'est à propos des objets et équipements.";
+		mes "Hmm... OÃ¹ en Ã©tions-nous ? Ah oui, continuons.";
+		mes "C'est Ã  propos des objets et Ã©quipements.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Prend ça.";
-		mes "Ce sont des équipements de base et des potions de soin.";
+		mes "Prend Ã§a.";
+		mes "Ce sont des Ã©quipements de base et des potions de soin.";
 		getitem 2352,1;	// Novice_Plate
 		getitem 2510,1;	// Novice_Hood
 		getitem 2414,1;	// Novice_Boots
@@ -241,40 +239,40 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		set job_novice_q,5;
 		next;
 		mes "[Instructeur Brade]";
-		mes "En haut à gauche de la fenêtre, appuie sur 'Item' pour ouvrir la Fenêtre des Objets.";
-		mes "Cette fenêtre est divisée en...";
+		mes "En haut Ã  gauche de la fenÃªtre, appuie sur 'Item' pour ouvrir la FenÃªtre des Objets.";
+		mes "Cette fenÃªtre est divisÃ©e en...";
 		next;
 		mes "[Instructeur Brade]";
-		mes "3 parties : les objets consommables, les équipements et les autres objets.";
-		mes "Si tu veux utiliser ou équiper un objet, double-clique sur l'objet ou glisse dans la Fenêtre d'Équipement.";
+		mes "3 parties : les objets consommables, les Ã©quipements et les autres objets.";
+		mes "Si tu veux utiliser ou Ã©quiper un objet, double-clique sur l'objet ou glisse dans la FenÃªtre d'Ã‰quipement.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Tu peux voir les informations détaillées de chaque objet avec un clic droit dessus.";
-		mes "Une nouvelle fenêtre s'ouvrira séparément.";
+		mes "Tu peux voir les informations dÃ©taillÃ©es de chaque objet avec un clic droit dessus.";
+		mes "Une nouvelle fenÃªtre s'ouvrira sÃ©parÃ©ment.";
 		next;
 		cutin "tutorial04",3;
 		mes "!- Info -!";
-		mes "Clique droit sur un objet pour voir les informations détaillées.";
+		mes "Clique droit sur un objet pour voir les informations dÃ©taillÃ©es.";
 		next;
 		mes "!- Info -!";
-		mes "Clique droit sur d'autres joueurs pour afficher le Menu de Communauté, avec lequel tu peux rejoindre un groupe, faire un échange, etc.";
+		mes "Clique droit sur d'autres joueurs pour afficher le Menu de CommunautÃ©, avec lequel tu peux rejoindre un groupe, faire un Ã©change, etc.";
 		next;
 		cutin "",255;
 		mes "[Instructeur Brade]";
-		mes "Pourquoi n'équiperais-tu pas les objets que je t'ai donné ?";
-		mes "^4A4AFFDouble-clique^000000 sur l'objet que tu veux équiper. Nous continuerons après que tu te sois équipé.";
+		mes "Pourquoi n'Ã©quiperais-tu pas les objets que je t'ai donnÃ© ?";
+		mes "^4A4AFFDouble-clique^000000 sur l'objet que tu veux Ã©quiper. Nous continuerons aprÃ¨s que tu te sois Ã©quipÃ©.";
 		next;
 		cutin "tutorial03",3;
 		mes "!- Info -!";
-		mes "Les objets peuvent être facilement équipés ou utilisés en cliquant dessus.";
-		mes "Le Raccourci pour ouvrir la Fenêtre des Objets est ALT + E.";
+		mes "Les objets peuvent Ãªtre facilement Ã©quipÃ©s ou utilisÃ©s en cliquant dessus.";
+		mes "Le Raccourci pour ouvrir la FenÃªtre des Objets est ALT + E.";
 		next;
 		mes "!- Info -!";
-		mes "Pour consulter les objets actuellement équipés, utilise le raccourci ALT + Q.";
-		mes "Ensuite, fait glisser l'objet dans l'emplacement dans lequel tu veux l'équiper.";
+		mes "Pour consulter les objets actuellement Ã©quipÃ©s, utilise le raccourci ALT + Q.";
+		mes "Ensuite, fait glisser l'objet dans l'emplacement dans lequel tu veux l'Ã©quiper.";
 		next;
 		mes "!- Info -!";
-		mes "Équipe toi de tous les objets donnés par l'instructeur Brade.";
+		mes "Ã‰quipe toi de tous les objets donnÃ©s par l'instructeur Brade.";
 		close2;
 		cutin "",255;
 		end;
@@ -285,7 +283,7 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 		if(.@EquipCheck >= 4) {
 			if(job_novice_q == 5) {
 				mes "[Instructeur Brade]";
-				mes "Tu es entièrement équipé.";
+				mes "Tu es entiÃ¨rement Ã©quipÃ©.";
 				mes "Le meilleur arrive.";
 				getexp 300,0;
 				getexp 300,0;
@@ -297,79 +295,79 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 				set job_novice_q,6;
 				next;
 				mes "[Instructor Brade]";
-				mes "Voilà quelques Fly Wings et Butterfly Wings en récompense.";
-				mes "Tu n'en as pas besoin au Terrain d'Entraînement, mais elles te serviront plus tard.";
+				mes "VoilÃ  quelques Fly Wings et Butterfly Wings en rÃ©compense.";
+				mes "Tu n'en as pas besoin au Terrain d'EntraÃ®nement, mais elles te serviront plus tard.";
 				next;
 			}
 			mes "[Instructeur Brade]";
 			mes "Ensuite, les Raccourcis.";
 			mes "Appuie sur ^4A4AFFla touche F12^000000 de ton clavier.";
-			mes "Une boîte à 9 emplacements va apparaître.";
+			mes "Une boÃ®te Ã  9 emplacements va apparaÃ®tre.";
 			next;
 			mes "[Instructeur Brade]";
-			mes "Fait glisser le coin droit de la Fenêtre des Raccourcis pour afficher d'autres pages de Raccourcis.";
+			mes "Fait glisser le coin droit de la FenÃªtre des Raccourcis pour afficher d'autres pages de Raccourcis.";
 			next;
 			mes "[Instructeur Brade]";
-			mes "Les touches de F1 à F9 sont désignées aux raccourcis.";
-			mes "Fait glisser un sort ou un objet sur la Fenêtre de Raccourcis et appuie sur la touche correspondante pour l'utiliser directement.";
+			mes "Les touches de F1 Ã  F9 sont dÃ©signÃ©es aux raccourcis.";
+			mes "Fait glisser un sort ou un objet sur la FenÃªtre de Raccourcis et appuie sur la touche correspondante pour l'utiliser directement.";
 			next;
 			cutin "tutorial05",3;
 			mes "!- Info -!";
-			mes "Tu peux créer un raccourci sur un sort ou un objet dans la Fenêtre de Raccourcis simplement en le faisant glisser sur un emplacement.";
+			mes "Tu peux crÃ©er un raccourci sur un sort ou un objet dans la FenÃªtre de Raccourcis simplement en le faisant glisser sur un emplacement.";
 			next;
 			mes "!- Info -!";
-			mes "Les Capacités ou Objets enregistrés peuvent être utilisés/équipés en appuyant sur la touche correspondante.";
+			mes "Les CapacitÃ©s ou Objets enregistrÃ©s peuvent Ãªtre utilisÃ©s/Ã©quipÃ©s en appuyant sur la touche correspondante.";
 			next;
 			mes "!- Info -!";
 			mes "Tu peux personnaliser les Raccourcis pour utiliser n'importe quelle touche en changeant la configuration des Raccourcis dans le menu des options.";
 			next;
 			mes "!- Info -!";
-			mes "Enregistre les capacités et les objets dont tu te sers souvent pour les utiliser plus facilement.";
+			mes "Enregistre les capacitÃ©s et les objets dont tu te sers souvent pour les utiliser plus facilement.";
 			next;
 			cutin "",255;
 			mes "[Instructeur Brade]";
-			mes "La dernière partie consiste à savoir comment utiliser les Capacités.";
-			mes "Mais avant ça, tu dois encore apprendre quelque chose.";
+			mes "La derniÃ¨re partie consiste Ã  savoir comment utiliser les CapacitÃ©s.";
+			mes "Mais avant Ã§a, tu dois encore apprendre quelque chose.";
 			next;
 			setquest 7120;
 			set job_novice_q,7;
 			mes "[Instructeur Brade]";
-			mes "Quelque part dans cette pièce se trouve une personne nommée ^4A4AFFJinha^000000.";
-			mes "Trouve Jinha et apprend la capacité ^4A4AFF[First Aid]^000000 de lui.";
+			mes "Quelque part dans cette piÃ¨ce se trouve une personne nommÃ©e ^4A4AFFJinha^000000.";
+			mes "Trouve Jinha et apprend la capacitÃ© ^4A4AFF[First Aid]^000000 de lui.";
 			next;
 			mes "[Instructeur Brade]";
-			mes "Tu auras ta leçon après ça.";
-			mes "Va trouver Jinha et apprend la capacité [First Aid]. Ensuite revient me voir.";
+			mes "Tu auras ta leÃ§on aprÃ¨s Ã§a.";
+			mes "Va trouver Jinha et apprend la capacitÃ© [First Aid]. Ensuite revient me voir.";
 			close;
 		}
 		mes "[Insucteur Brade]";
-		mes "Essaye de mettre au moins 4 des équipements que je t'ai donné.";
+		mes "Essaye de mettre au moins 4 des Ã©quipements que je t'ai donnÃ©.";
 		mes "Met ceose shoes on, wear those clothes, and arm yourself with that weapon you maggot.";
 		close;
 	}
 	else if(job_novice_q == 7) {
 		mes "[Instructeur Brade]";
-    	mes "Quelque part dans cette pièce se trouve une personne nommée ^4A4AFFJinha^000000.";
-    	mes "Trouve Jinha et apprend la capacité ^4A4AFF[First Aid]^000000 de lui.";
+    	mes "Quelque part dans cette piÃ¨ce se trouve une personne nommÃ©e ^4A4AFFJinha^000000.";
+    	mes "Trouve Jinha et apprend la capacitÃ© ^4A4AFF[First Aid]^000000 de lui.";
 		close;
 	}
 	else if(job_novice_q == 8) {
 		mes "[Instructeur Brade]";
-		mes "Bien tu as appris la capacité [First Aid].";
-		mes "Comme je te l'avais dit avant, en enregistrant la capacité First Aid dans tes raccourcis, tu peux l'utiliser rapidement et facilement.";
+		mes "Bien tu as appris la capacitÃ© [First Aid].";
+		mes "Comme je te l'avais dit avant, en enregistrant la capacitÃ© First Aid dans tes raccourcis, tu peux l'utiliser rapidement et facilement.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Et voilà, c'est tout ce que je peux t'apprendre.";
-		mes "Tu vois la sortie à l'ouest ?";
+		mes "Et voilÃ , c'est tout ce que je peux t'apprendre.";
+		mes "Tu vois la sortie Ã  l'ouest ?";
 		mes "Va dans la prochaine salle, il y aura un autre instructeur qui t'y attendra.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Nous nous reverrons bientôt.";
-		mes "Mais pour l'instant, va dans la salle à l'ouest pour avoir plus d'informations.";
+		mes "Nous nous reverrons bientÃ´t.";
+		mes "Mais pour l'instant, va dans la salle Ã  l'ouest pour avoir plus d'informations.";
 		next;
 		mes "[Instructeur Brade]";
-		mes "Tu as déjà été loin.";
-		mes "Ce n'est pas beaucoup, mais voici une récompense.";
+		mes "Tu as dÃ©jÃ  Ã©tÃ© loin.";
+		mes "Ce n'est pas beaucoup, mais voici une rÃ©compense.";
 		getitem 2393,1;	// N_Adventurer's_Suit
 		completequest 7120;
 		set job_novice_q,9;
@@ -377,10 +375,10 @@ new_1-2,100,105,4	script	Brade#nv	733,{
 	}
 	else if(job_novice_q > 8) {
 		mes "[Instructeur Brade]";
-		mes "La prochaine étape de l'entraînement se fait dans la pièce à l'ouest d'ici.";
+		mes "La prochaine Ã©tape de l'entraÃ®nement se fait dans la piÃ¨ce Ã  l'ouest d'ici.";
 		mes "Si tu es perdu, je peux t'y envoyer.";
 		next;
-		if(select("Je peux y aller tout seul.:Envoie moi à la prochaine salle.") == 2) {
+		if(select("Je peux y aller tout seul.:Envoie moi Ã  la prochaine salle.") == 2) {
 			mes "[Instructeur Brade]";
 			mes "Oh d'accord.";
 			mes "Je pense que c'est mieux que de te voir perdu et errant.";
@@ -421,34 +419,34 @@ new_1-2,115,120,4	script	Jinha#nv	59,{
 		mes "Bonjour !";
 		mes "Comment puis-je t'aider ?";
 		next;
-		select("Je veux apprendre la capacité [First Aid].");
+		select("Je veux apprendre la capacitÃ© [First Aid].");
 		mes "[Jinha]";
 		mes "D'accord.";
-		mes "First Aid est une capacité utilisée pour convertir tes SP en HP quand tu es en danger.";
+		mes "First Aid est une capacitÃ© utilisÃ©e pour convertir tes SP en HP quand tu es en danger.";
 		next;
 		specialeffect2 58;
 		specialeffect2 234;
 		mes "[Jinha]";
 		mes "Son pouvoir de soin est faible.";
-		mes "Pourtant, il t'aidera à ne pas succomber à un coup critique.";
+		mes "Pourtant, il t'aidera Ã  ne pas succomber Ã  un coup critique.";
 		next;
 		skill "NV_FIRSTAID",1,0;	// NV_FIRSTAID
 		set job_novice_q,8;
 		mes "[Jinha]";
-		mes "Tu peux ouvrir la Fenêtre de Capacités en appuyant sur le bouton ^4A4AFFskill^000000 en haut à gauche.";
+		mes "Tu peux ouvrir la FenÃªtre de CapacitÃ©s en appuyant sur le bouton ^4A4AFFskill^000000 en haut Ã  gauche.";
 		mes "Le Raccourci est ^4A4AFFALT + S^000000.";
-		mes "Pourquoi n'essayerais-tu pas cette capacité ?";
+		mes "Pourquoi n'essayerais-tu pas cette capacitÃ© ?";
 		next;
 		mes "[Jinha]";
-		mes "Bon, maintenant que tu sais comment utiliser la capacité First Aid, tu dois passer à la prochaine étape.";
+		mes "Bon, maintenant que tu sais comment utiliser la capacitÃ© First Aid, tu dois passer Ã  la prochaine Ã©tape.";
 		mes "Retourne voir l'instructeur Brade et montre lui ce que tu as appris.";
 		close;
 	}
 	else if(job_novice_q == 8) {
 		mes "[Jinha]";
-		mes "Tu n'as pas déjà appris la capacité First Aid ?";
-		mes "Montre la à l'instructeur Brade.";
-		mes "Si tu ne sais pas comment te rendre à lui, je vais t'y envoyer.";
+		mes "Tu n'as pas dÃ©jÃ  appris la capacitÃ© First Aid ?";
+		mes "Montre la Ã  l'instructeur Brade.";
+		mes "Si tu ne sais pas comment te rendre Ã  lui, je vais t'y envoyer.";
 		next;
 		if(select("J'y vais par mes propres moyens.:Je veux bien que vous m'y envoyiez.") == 2) {
 			mes "[Jinha]";
@@ -458,20 +456,20 @@ new_1-2,115,120,4	script	Jinha#nv	59,{
 			end;
 		}
 		mes "[Jinha]";
-		mes "Très bien !";
-		mes "Ça c'est la bonne attitude !";
+		mes "TrÃ¨s bien !";
+		mes "Ã‡a c'est la bonne attitude !";
 		mes "Tu deviendras un grand aventurier.";
 		close;
 	}
 	else if(job_novice_q > 8) {
 		mes "[Jinha]";
 		mes "Que puis-je faire pour toi ?";
-		mes "La prochaine leçon aura lieu dans la pièce à l'Ouest.";
-		mes "Va dans la pièce à l'ouest.";
+		mes "La prochaine leÃ§on aura lieu dans la piÃ¨ce Ã  l'Ouest.";
+		mes "Va dans la piÃ¨ce Ã  l'ouest.";
 		close;
 	}
 	mes "[Jinha]";
-	mes "Pourquoi es-tu toujours là ?";
+	mes "Pourquoi es-tu toujours lÃ  ?";
 	close2;
 	warp "prontera",156,90;
 	end;
@@ -483,19 +481,19 @@ new_1-2,115,120,4	script	Jinha#nv	59,{
 new_1-2,32,172,4	script	Chocolat#nv	96,{
 	if(job_novice_q < 9) {
 		mes "[Chocolat]";
-		mes "Hmmm ? Étrange.";
-		mes "Laisse moi voir ce numéro d'Entraîné une seconde ?";
+		mes "Hmmm ? Ã‰trange.";
+		mes "Laisse moi voir ce numÃ©ro d'EntraÃ®nÃ© une seconde ?";
 		next;
 		mes "[Chocolat]";
 		mes "Tu en es toujours aux cours de base.";
 		mes "Tu dois retourner voir l'instructeur Brade ou Jinha.";
 		next;
 		mes "[Chocolat]";
-		mes "Si tu ne sais pas comment les trouver, je peux t'envoyer à l'instructeur Brade. Tu en penses quoi ?";
+		mes "Si tu ne sais pas comment les trouver, je peux t'envoyer Ã  l'instructeur Brade. Tu en penses quoi ?";
 		next;
-		if(select("Je vais y aller moi-même.:Tu ferais ça pour moi ?") == 2) {
+		if(select("Je vais y aller moi-mÃªme.:Tu ferais Ã§a pour moi ?") == 2) {
 			mes "[Chocolat]";
-			mes "Bien sûr.";
+			mes "Bien sÃ»r.";
 			mes "On se verra plus tard.";
 			close2;
 			warp "new_1-2",100,100;
@@ -508,62 +506,62 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 	else if(job_novice_q == 9) {
 		mes "[Chocolat]";
 		mes "Je vais te parler des gens que tu rencontreras en ville.";
-		mes "Il y a de nombreuses sortes de gens en ville, et certains sont intéressants à connaître.";
+		mes "Il y a de nombreuses sortes de gens en ville, et certains sont intÃ©ressants Ã  connaÃ®tre.";
 		next;
 		mes "[Chocolat]";
-		mes "Il y a beaucoup de monde en ville, mais par dessus tout, ces gens sont importants à connaître.";
+		mes "Il y a beaucoup de monde en ville, mais par dessus tout, ces gens sont importants Ã  connaÃ®tre.";
 		next;
 		mes "[Chocolat]";
-		mes "Il y a les Agents de la [Kafra] juste derrière moi et leurs rivaux de la société [Cool Event].";
-		mes "Quand tu visites une ville pour la première fois, je te conseille de parler aux [Soldat]s.";
+		mes "Il y a les Agents de la [Kafra] juste derriÃ¨re moi et leurs rivaux de la sociÃ©tÃ© [Cool Event].";
+		mes "Quand tu visites une ville pour la premiÃ¨re fois, je te conseille de parler aux [Soldat]s.";
 		next;
 		mes "[Chocolat]";
-		mes "Bien maintenant, écoute chacun d'eux.";
-		mes "Commence par parler à l'agent de la [Kafra].";
+		mes "Bien maintenant, Ã©coute chacun d'eux.";
+		mes "Commence par parler Ã  l'agent de la [Kafra].";
 		setquest 7121;
 		set job_novice_q,10;
 		close;
 	}
 	else if(job_novice_q == 10) {
 		mes "[Chocolat]";
-		mes "Parle aux gens se tenant derrière moi.";
-		mes "Commence par la jeune fille de la [Kafra] juste là.";
+		mes "Parle aux gens se tenant derriÃ¨re moi.";
+		mes "Commence par la jeune fille de la [Kafra] juste lÃ .";
 		close;
 	}
 	else if(job_novice_q == 11) {
 		mes "[Chocolat]";
-		mes "Tu as appris beaucoup de choses à propos des services de la Kafra ?";
+		mes "Tu as appris beaucoup de choses Ã  propos des services de la Kafra ?";
 		mes "Maintenant, tu peux utiliser les Serveurs de la Kafra.";
 		next;
 		mes "[Chocolat]";
-		mes "Ensuite, les rivaux de la Kafra, l'Équipe de [Cool Event].";
-		mes "L'Équipe de [Cool Event] est spécialisée dans les évènements.";
-		mes "Bien, pourquoi n'irais-tu pas leur parler toi-même ?";
+		mes "Ensuite, les rivaux de la Kafra, l'Ã‰quipe de [Cool Event].";
+		mes "L'Ã‰quipe de [Cool Event] est spÃ©cialisÃ©e dans les Ã©vÃ¨nements.";
+		mes "Bien, pourquoi n'irais-tu pas leur parler toi-mÃªme ?";
 		close;
 	}
 	else if(job_novice_q == 12) {
 		mes "[Chocolat]";
-		mes "Après la [Kafra] et [Cool Event], il y a les [Soldat]s.";
-		mes "Ils peuvent paraître insignifiants mais ils pourront t'aider grandement en temps venu.";
+		mes "AprÃ¨s la [Kafra] et [Cool Event], il y a les [Soldat]s.";
+		mes "Ils peuvent paraÃ®tre insignifiants mais ils pourront t'aider grandement en temps venu.";
 		next;
 		mes "[Chocolat]";
-		mes "J'ai demandé à un Soldat de la ville de Prontera de venir.";
+		mes "J'ai demandÃ© Ã  un Soldat de la ville de Prontera de venir.";
 		mes "Demande lui ce qu'il fait normalement en ville.";
 		close;
 	}
 	else if(job_novice_q == 13) {
 		mes "[Chocolat]";
-		mes "Comment était le guide du [Soldat] ?";
-		mes "Le dernier est à propos d'utiliser les [Auberge]s.";
+		mes "Comment Ã©tait le guide du [Soldat] ?";
+		mes "Le dernier est Ã  propos d'utiliser les [Auberge]s.";
 		mes "Il y a une Auberge dans chaque ville.";
 		next;
 		mes "[Chocolat]";
-		mes "Tu peux te reposer dans les Auberges ou les Hôtels pour un faible coût.";
-		mes "Tes HP et SP seront totalement récupérés en t'y reposant.";
-		mes "Ça ne peut pas faire de mal d'essayer, hein ?";
+		mes "Tu peux te reposer dans les Auberges ou les HÃ´tels pour un faible coÃ»t.";
+		mes "Tes HP et SP seront totalement rÃ©cupÃ©rÃ©s en t'y reposant.";
+		mes "Ã‡a ne peut pas faire de mal d'essayer, hein ?";
 		next;
 		mes "[Chocolat]";
-		mes "Derrière ces gens, il y a plusieurs marchands qui vendent différentes sortes d'objets. Va y jeter un oeil.";
+		mes "DerriÃ¨re ces gens, il y a plusieurs marchands qui vendent diffÃ©rentes sortes d'objets. Va y jeter un oeil.";
 		completequest 7121;
 		getexp 300,0;
 		getexp 300,0;
@@ -576,8 +574,8 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 		set job_novice_q,14;
 		next;
 		mes "[Chocolat]";
-		mes "Tu as terminé toutes les quêtes que je t'avais donné.";
-		mes "En récompense, je vais te donner des Free Tickets pour le stockage en Kafra et le service de téléportation.";
+		mes "Tu as terminÃ© toutes les quÃªtes que je t'avais donnÃ©.";
+		mes "En rÃ©compense, je vais te donner des Free Tickets pour le stockage en Kafra et le service de tÃ©lÃ©portation.";
 		mes "Ils te seront utiles.";
 		next;
 		mes "[Chocolat]";
@@ -585,8 +583,8 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 		mes "Maintenant, c'est l'heure de vrais combats !";
 		next;
 		mes "[Chocolat]";
-		mes "L'Entraînement au Combat sera dispensé par l'instructeur Brade. Tu l'as rencontré un peu plus tôt.";
-		mes "Je vais t'envoyer au champ d'Entraînement au Combat.";
+		mes "L'EntraÃ®nement au Combat sera dispensÃ© par l'instructeur Brade. Tu l'as rencontrÃ© un peu plus tÃ´t.";
+		mes "Je vais t'envoyer au champ d'EntraÃ®nement au Combat.";
 		close2;
 		savepoint "new_1-3",96,21;
 		warp "new_1-3",96,21;
@@ -598,14 +596,14 @@ new_1-2,32,172,4	script	Chocolat#nv	96,{
 		next;
 		select("");
 		mes "[Chocolat]";
-		mes "Je vais t'envoyer au champ d'Entraînement au Combat directement.";
+		mes "Je vais t'envoyer au champ d'EntraÃ®nement au Combat directement.";
 		close2;
 		savepoint "new_1-3",96,21;
 		warp "new_1-3",96,21;
 		end;
 	}
 	mes "[Chocolat]";
-	mes "Pourquoi es-tu toujours là ?";
+	mes "Pourquoi es-tu toujours lÃ  ?";
 	close2;
 	warp "prontera",156,90;
 	end;
@@ -617,61 +615,61 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 		mes "[Agent de la Kafra]";
 		mes "Bonjour.";
 		mes "Je ne crois pas que ce soit encore mon tour.";
-		mes "Vous devriez parler à 'Chocolat' d'abord.";
+		mes "Vous devriez parler Ã  'Chocolat' d'abord.";
 		close;
 	}
 	else if(job_novice_q == 10) {
 		mes "[Agent de la Kafra]";
 		mes "Bonjour.";
-		mes "J'ai été envoyée par le Siège Social de la Kafra pour aider les novices.";
-		mes "La Kafra Corporation est la plus grande société mondiale, avec une histoire longue et distinguée sur le continent de Rune Midgard.";
-		mes "C'est important pour vous, les aventuriers, d'être proches de nous.";
+		mes "J'ai Ã©tÃ© envoyÃ©e par le SiÃ¨ge Social de la Kafra pour aider les novices.";
+		mes "La Kafra Corporation est la plus grande sociÃ©tÃ© mondiale, avec une histoire longue et distinguÃ©e sur le continent de Rune Midgard.";
+		mes "C'est important pour vous, les aventuriers, d'Ãªtre proches de nous.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Je vais vous expliquer les Services de la Kafra que vous utiliserez le plus fréquement : les services de [Sauvegarde], [Stockage] et [Téléportation].";
+		mes "Je vais vous expliquer les Services de la Kafra que vous utiliserez le plus frÃ©quement : les services de [Sauvegarde], [Stockage] et [TÃ©lÃ©portation].";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Quand vous parlez à un Agent de la Kafra et demandez une Sauvegarde, l'endroit où vous revivrez, après avoir été tué dans un combat, sera changé.";
+		mes "Quand vous parlez Ã  un Agent de la Kafra et demandez une Sauvegarde, l'endroit oÃ¹ vous revivrez, aprÃ¨s avoir Ã©tÃ© tuÃ© dans un combat, sera changÃ©.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Votre Point de Réapparition est toujours le dernier endroit où vous avez sauvegardé.";
-		mes "Utiliser une Butterfly Wing vous renverra à l'endroit où vous avez sauvegardé pour la dernière fois.";
-		mes "Ce service est gratuit, alors n'hésitez pas à Sauvegarder dès que vous le souhaitez.";
+		mes "Votre Point de RÃ©apparition est toujours le dernier endroit oÃ¹ vous avez sauvegardÃ©.";
+		mes "Utiliser une Butterfly Wing vous renverra Ã  l'endroit oÃ¹ vous avez sauvegardÃ© pour la derniÃ¨re fois.";
+		mes "Ce service est gratuit, alors n'hÃ©sitez pas Ã  Sauvegarder dÃ¨s que vous le souhaitez.";
 		next;
 		mes "[Agent de la Kafra]";
 		mes "Ensuite vient le Service de Stockage.";
-		mes "Vous pouvez stocker et récupérer vos objets dans n'importe quelle ville, comme vous le souhaitez.";
+		mes "Vous pouvez stocker et rÃ©cupÃ©rer vos objets dans n'importe quelle ville, comme vous le souhaitez.";
 		next;
 		mes "[Agent de la Kafra]";
 		mes "Ce n'est pas raisonnable de transporter tous vos objets lorsque vous n'en avez pas besoin.";
-		mes "Utilisez donc notre Stockage pour garder vos objets en sûreté.";
+		mes "Utilisez donc notre Stockage pour garder vos objets en sÃ»retÃ©.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Notre Service de Stockage est proposé à nos clients pour un tarif pouvant varier d'une ville à l'autre.";
-		mes "Cependant, vous devez au moins posséder la ^4A4AFFCapacité de Base au Niveau 6^000000 pour utiliser le Stockage.";
+		mes "Notre Service de Stockage est proposÃ© Ã  nos clients pour un tarif pouvant varier d'une ville Ã  l'autre.";
+		mes "Cependant, vous devez au moins possÃ©der la ^4A4AFFCapacitÃ© de Base au Niveau 6^000000 pour utiliser le Stockage.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Les objets du Stockage sont organisés en 7 sections : les Consommables, les objets Kafra, les Armures, les Armes, les Munitions, les Cartes, et les Autres Objets.";
+		mes "Les objets du Stockage sont organisÃ©s en 7 sections : les Consommables, les objets Kafra, les Armures, les Armes, les Munitions, les Cartes, et les Autres Objets.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Il y a un maximum de 600 emplacements dans le Stockage de la Kafra, ce qui signifie que vous pouvez stocker jusqu'à 600 objets différents en même temps.";
+		mes "Il y a un maximum de 600 emplacements dans le Stockage de la Kafra, ce qui signifie que vous pouvez stocker jusqu'Ã  600 objets diffÃ©rents en mÃªme temps.";
 		next;
 		mes "[Agent de la Kafra]";
 		mes "Si vous avez un Abonnement Premium, le nombre maximum d'emplacements dans le Stockage de la Kafra est de 600 !";
-		mes "Rappelez vous cependant qu'en cas d'un Équipement, l'objet prend un Emplacement complet.";
-		mes "Le nombre maximum d'objets qui peuvent être placés dans notre Stockage est de 30,000.";
+		mes "Rappelez vous cependant qu'en cas d'un Ã‰quipement, l'objet prend un Emplacement complet.";
+		mes "Le nombre maximum d'objets qui peuvent Ãªtre placÃ©s dans notre Stockage est de 30,000.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Le Stockage est partagé par tous les personnages d'un même compte.";
+		mes "Le Stockage est partagÃ© par tous les personnages d'un mÃªme compte.";
 		mes "Les Tarifs du Stockage peuvent varier pour chaque ville.";
-		mes "Gardez cela en tête lorsque vous utiliserez notre service de stockage.";
+		mes "Gardez cela en tÃªte lorsque vous utiliserez notre service de stockage.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Nous vous fournissons aussi un Service de Téléportation pour faciliter vos voyages sur de longues distances.";
+		mes "Nous vous fournissons aussi un Service de TÃ©lÃ©portation pour faciliter vos voyages sur de longues distances.";
 		next;
 		mes "[Agent de la Kafra]";
-		mes "Avec nos capacités de téléportation de vétéran, vos voyages seront plus sûrs et plus confortables.";
-		mes "Oh et rappelez vous que les endroits vers lesquels vous pourrez vous téléporter varieront suivant la ville où vous êtes.";
+		mes "Avec nos capacitÃ©s de tÃ©lÃ©portation de vÃ©tÃ©ran, vos voyages seront plus sÃ»rs et plus confortables.";
+		mes "Oh et rappelez vous que les endroits vers lesquels vous pourrez vous tÃ©lÃ©porter varieront suivant la ville oÃ¹ vous Ãªtes.";
 		next;
 		mes "[Agent de la Kafra]";
 		mes "Nous faisons tout cela pour vous aider sur du long terme. Nous travaillons dur pour la satisfaction de nos clients.";
@@ -683,10 +681,10 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 	}
 	else {
 		mes "[Agent de la Kafra]";
-		mes "Services de la Kafra à votre service.";
-		mes "Que puis-je faire pour vous être utile ?";
+		mes "Services de la Kafra Ã  votre service.";
+		mes "Que puis-je faire pour vous Ãªtre utile ?";
 		next;
-		select("À propos des Services de la Kafra");
+		select("Ã€ propos des Services de la Kafra");
 		mes "[Agent de la Kafra]";
 		mes "Je vais vous donner des explications sur les Services de la Kafra.";
 		mes "De quels services souhaitez vous des renseignements ?";
@@ -694,54 +692,54 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 	}
 	
 	while(1) {
-		switch(select("À propos des Sauvegardes:À propos du Stockage:À propos de la Téléportation:À propos des Chariots:Rien de plus.")) {
+		switch(select("Ã€ propos des Sauvegardes:Ã€ propos du Stockage:Ã€ propos de la TÃ©lÃ©portation:Ã€ propos des Chariots:Rien de plus.")) {
 			case 1:
 				mes "[Agent de la Kafra]";
-				mes "Lorsque vous mourrez au combat, vous pouvez revivre à l'endroit où vous avez sauvegardé via ce service.";
-				mes "Si vous avez sauvegardé à une Kafra dans un village, vous réapparaîtrez à ce village.";
+				mes "Lorsque vous mourrez au combat, vous pouvez revivre Ã  l'endroit oÃ¹ vous avez sauvegardÃ© via ce service.";
+				mes "Si vous avez sauvegardÃ© Ã  une Kafra dans un village, vous rÃ©apparaÃ®trez Ã  ce village.";
 				next;
 				mes "[Agent de la Kafra]";
-				mes "L'endroit sauvegardé est toujours le dernier endroit où vous avez sauvegardé. Utiliser une Butterfly Wing vous téléportera directement à votre point de sauvegarde.";
+				mes "L'endroit sauvegardÃ© est toujours le dernier endroit oÃ¹ vous avez sauvegardÃ©. Utiliser une Butterfly Wing vous tÃ©lÃ©portera directement Ã  votre point de sauvegarde.";
 				mes "Utilisez donc ce service autant que vous le souhaitez.";
 				next;
 				break;
 			case 2:
         		mes "[Agent de la Kafra]";
         		mes "Ensuite vient le Service de Stockage.";
-        		mes "Vous pouvez stocker et récupérer vos objets dans n'importe quelle ville, comme vous le souhaitez.";
+        		mes "Vous pouvez stocker et rÃ©cupÃ©rer vos objets dans n'importe quelle ville, comme vous le souhaitez.";
         		next;
         		mes "[Agent de la Kafra]";
         		mes "Ce n'est pas raisonnable de transporter tous vos objets lorsque vous n'en avez pas besoin.";
-        		mes "Utilisez donc notre Stockage pour garder vos objets en sûreté.";
+        		mes "Utilisez donc notre Stockage pour garder vos objets en sÃ»retÃ©.";
         		next;
         		mes "[Agent de la Kafra]";
-        		mes "Notre Service de Stockage est proposé à nos clients pour un tarif pouvant varier d'une ville à l'autre.";
-        		mes "Cependant, vous devez au moins posséder la ^4A4AFFCapacité de Base au Niveau 6^000000 pour utiliser le Stockage.";
+        		mes "Notre Service de Stockage est proposÃ© Ã  nos clients pour un tarif pouvant varier d'une ville Ã  l'autre.";
+        		mes "Cependant, vous devez au moins possÃ©der la ^4A4AFFCapacitÃ© de Base au Niveau 6^000000 pour utiliser le Stockage.";
         		next;
         		mes "[Agent de la Kafra]";
-        		mes "Les objets du Stockage sont organisés en 7 sections : les Consommables, les objets Kafra, les Armures, les Armes, les Munitions, les Cartes, et les Autres Objets.";
+        		mes "Les objets du Stockage sont organisÃ©s en 7 sections : les Consommables, les objets Kafra, les Armures, les Armes, les Munitions, les Cartes, et les Autres Objets.";
         		next;
         		mes "[Agent de la Kafra]";
-        		mes "Il y a un maximum de 600 emplacements dans le Stockage de la Kafra, ce qui signifie que vous pouvez stocker jusqu'à 600 objets différents en même temps.";
+        		mes "Il y a un maximum de 600 emplacements dans le Stockage de la Kafra, ce qui signifie que vous pouvez stocker jusqu'Ã  600 objets diffÃ©rents en mÃªme temps.";
         		next;
         		mes "[Agent de la Kafra]";
         		mes "Si vous avez un Abonnement Premium, le nombre maximum d'emplacements dans le Stockage de la Kafra est de 600 !";
-						mes "Rappelez vous cependant qu'en cas d'un Équipement, l'objet prend un Emplacement complet.";
-        		mes "Le nombre maximum d'objets qui peuvent être placés dans notre Stockage est de 30,000.";
+						mes "Rappelez vous cependant qu'en cas d'un Ã‰quipement, l'objet prend un Emplacement complet.";
+        		mes "Le nombre maximum d'objets qui peuvent Ãªtre placÃ©s dans notre Stockage est de 30,000.";
         		next;
         		mes "[Agent de la Kafra]";
-        		mes "Le Stockage est partagé par tous les personnages d'un même compte.";
+        		mes "Le Stockage est partagÃ© par tous les personnages d'un mÃªme compte.";
         		mes "Les Tarifs du Stockage peuvent varier pour chaque ville.";
-        		mes "Gardez cela en tête lorsque vous utiliserez notre service de stockage.";
+        		mes "Gardez cela en tÃªte lorsque vous utiliserez notre service de stockage.";
 				next;
 				break;
 			case 3:
 				mes "[Agent de la Kafra]";
-				mes "Nous vous fournissons aussi un Service de Téléportation pour faciliter vos voyages sur de longues distances.";
+				mes "Nous vous fournissons aussi un Service de TÃ©lÃ©portation pour faciliter vos voyages sur de longues distances.";
 				next;
 				mes "[Agent de la Kafra]";
-				mes "Avec nos capacités de téléportation de vétéran, vos voyages seront plus sûrs et plus confortables.";
-				mes "Oh et rappelez vous que les endroits vers lesquels vous pourrez vous téléporter varieront suivant la ville où vous êtes.";
+				mes "Avec nos capacitÃ©s de tÃ©lÃ©portation de vÃ©tÃ©ran, vos voyages seront plus sÃ»rs et plus confortables.";
+				mes "Oh et rappelez vous que les endroits vers lesquels vous pourrez vous tÃ©lÃ©porter varieront suivant la ville oÃ¹ vous Ãªtes.";
 				next;
 				mes "[Agent de la Kafra]";
 				mes "Nous faisons tout cela pour vous aider sur du long terme. Nous travaillons dur pour la satisfaction de nos clients.";
@@ -749,21 +747,21 @@ new_1-2,29,176,4	script	Kafra#nv	117,{
 				break;
 			case 4:
 				mes "[Agent de la Kafra]";
-				mes "La Kafra Corporation peut fournir un service de Location de Chariots à ses clients ayant une activité commerciale.";
-				mes "Auparavant, ce service de location de chariots était uniquement fournit par la guilde des marchands d'Alberta.";
+				mes "La Kafra Corporation peut fournir un service de Location de Chariots Ã  ses clients ayant une activitÃ© commerciale.";
+				mes "Auparavant, ce service de location de chariots Ã©tait uniquement fournit par la guilde des marchands d'Alberta.";
 				next;
 				mes "[Agent de la Kafra]";
-				mes "Cependant depuis que nous avons pris la main sur ce service, nos clients marchands ont la possibilité de louer leur chariot depuis presque partout.";
-				mes "Le service de location de chariots est uniquement disponible pour les classes ayant une activité commerciale, comme les ^4A4AFFMerchants, Blacksmiths, Alchemists, et Super Novices^000000.";
+				mes "Cependant depuis que nous avons pris la main sur ce service, nos clients marchands ont la possibilitÃ© de louer leur chariot depuis presque partout.";
+				mes "Le service de location de chariots est uniquement disponible pour les classes ayant une activitÃ© commerciale, comme les ^4A4AFFMerchants, Blacksmiths, Alchemists, et Super Novices^000000.";
 				next;
 				mes "[Agent de la Kafra]";
-				mes "Bien sûr vous devez apprendre la capacité 'Pushcart' en premier, sinon vous ne pourrez pas nous louer un chariot.";
-				mes "Les tarifs de location peuvent varier selon la ville, gardez bien cela en tête.";
+				mes "Bien sÃ»r vous devez apprendre la capacitÃ© 'Pushcart' en premier, sinon vous ne pourrez pas nous louer un chariot.";
+				mes "Les tarifs de location peuvent varier selon la ville, gardez bien cela en tÃªte.";
 				next;
 				break;
 			case 5:
 				mes "[Agent de la Kafra]";
-				mes "J'espère que vous êtes satisfait de mes explications sur les Services fournis par la Kafra.";
+				mes "J'espÃ¨re que vous Ãªtes satisfait de mes explications sur les Services fournis par la Kafra.";
 				close;
 		}
 	}
@@ -774,34 +772,34 @@ new_1-2,32,176,4	script	Membre de Cool Event#nv	874,{
 	if(job_novice_q < 11) {
 		mes "[Membre de Cool Event]";
 		mes "Ce n'est pas mon tour.";
-		mes "Avez-vous fini de parler avec l'employée de la Kafra ?";
+		mes "Avez-vous fini de parler avec l'employÃ©e de la Kafra ?";
 		close;
 	}
 	else if(job_novice_q == 11) {
 		mes "[Membre de Cool Event]";
 		mes "Bonjour.";
-		mes "Nous travaillons dur pour offrir des services similaires à ceux de la Kafra dans tout Rune Midgard.";
+		mes "Nous travaillons dur pour offrir des services similaires Ã  ceux de la Kafra dans tout Rune Midgard.";
 		next;
 		mes "[Membre de Cool Event]";
-		mes "Nos équipes sont là pour vous aider avec des services de [stockage], de [sauvegarde] et de [téléportation].";
+		mes "Nos Ã©quipes sont lÃ  pour vous aider avec des services de [stockage], de [sauvegarde] et de [tÃ©lÃ©portation].";
 		next;
 		mes "[Membre de Cool Event]";
-		mes "S'il n'y a pas d'employé Kafra proche de vous, nous sommes là pour vous aider.";
+		mes "S'il n'y a pas d'employÃ© Kafra proche de vous, nous sommes lÃ  pour vous aider.";
 		next;
 		mes "[Membre de Cool Event]";
-		mes "Nous travaillons dur sur un réseau d'Évènements pour améliorer votre vie quotidienne.";
-		mes "J'espère que vous pourrez rencontrer notre équipe à Alberta.";
+		mes "Nous travaillons dur sur un rÃ©seau d'Ã‰vÃ¨nements pour amÃ©liorer votre vie quotidienne.";
+		mes "J'espÃ¨re que vous pourrez rencontrer notre Ã©quipe Ã  Alberta.";
 		next;
 		mes "[Membre de Cool Event]";
-		mes "Qui sait, peut être que nous nous reverrons en dehors de cette académie.";
+		mes "Qui sait, peut Ãªtre que nous nous reverrons en dehors de cette acadÃ©mie.";
 		next;
 		mes "[Membre de Cool Event]";
-		mes "La plupart d'entre nous portent des manteaux rouges et sont dans des endroits où les membres de la Kafra ne travaillent pas.";
+		mes "La plupart d'entre nous portent des manteaux rouges et sont dans des endroits oÃ¹ les membres de la Kafra ne travaillent pas.";
 		set job_novice_q,12;
 		close;
 	}
 	mes "[Membre de Cool Event]";
-	mes "La plupart de nos services sont similaires à ceux de la Kafra.";
+	mes "La plupart de nos services sont similaires Ã  ceux de la Kafra.";
 	close;
 }
 
@@ -810,44 +808,44 @@ new_1-2,35,176,4	script	Soldat#nv	105,{
 	if(job_novice_q < 12) {
 		mes "[Soldat]";
 		mes "Ce n'est pas encore mon tour.";
-		mes "Allez écouter Chocolat.";
+		mes "Allez Ã©couter Chocolat.";
 		close;
 	}
 	else if(job_novice_q == 12) {
 		mes "[Soldat]";
 		mes "Il y a des Soldats dans chaque ville pour vous guider vers les endroits utiles.";
-		mes "Demandez nous où vous souhaiteriez aller, et nous vous indiquerons la direction à l'aide d'un ^4A4AFF+^000000 sur votre mini-carte.";
-		mes "N'hésitez pas à nous poser des questions.";
+		mes "Demandez nous oÃ¹ vous souhaiteriez aller, et nous vous indiquerons la direction Ã  l'aide d'un ^4A4AFF+^000000 sur votre mini-carte.";
+		mes "N'hÃ©sitez pas Ã  nous poser des questions.";
 		next;
 		mes "[Soldat]";
-		mes "Nous ne nous ressemblons pas tous dans chaque ville, mais notre rôle est le même.";
+		mes "Nous ne nous ressemblons pas tous dans chaque ville, mais notre rÃ´le est le mÃªme.";
 		mes "Prenez note de cela lorsque vous irez dans une nouvelle ville.";
 		next;
 		mes "[Soldat]";
-		mes "Si vous souhaitez aller dans votre première ville, vous le pourrez une fois que vous atteindrez le Niveau de Base 11 au terrain d'entraînement.";
+		mes "Si vous souhaitez aller dans votre premiÃ¨re ville, vous le pourrez une fois que vous atteindrez le Niveau de Base 11 au terrain d'entraÃ®nement.";
 		set job_novice_q,13;
 		close;
 	}
 	mes "[Soldat]";
-	mes "De quelle manière puis-je vous aider ?";
-	mes "Vous avez besoin que je vous ré-explique ce que je fais ?";
+	mes "De quelle maniÃ¨re puis-je vous aider ?";
+	mes "Vous avez besoin que je vous rÃ©-explique ce que je fais ?";
 	next;
 	if(select("Oui, j'ai besoin d'une explication..:Non merci.") == 2) {
 		mes "[Soldat]";
-		mes "D'accord, alors parlez donc à Chocolat si vous avez fini avec nous.";
+		mes "D'accord, alors parlez donc Ã  Chocolat si vous avez fini avec nous.";
 		close;
 	}
   mes "[Soldat]";
   mes "Il y a des Soldats dans chaque ville pour vous guider vers les endroits utiles.";
-	mes "Demandez nous où vous souhaiteriez aller, et nous vous indiquerons la direction à l'aide d'un ^4A4AFF+^000000 sur votre mini-carte.";
-  mes "N'hésitez pas à nous poser des questions.";
+	mes "Demandez nous oÃ¹ vous souhaiteriez aller, et nous vous indiquerons la direction Ã  l'aide d'un ^4A4AFF+^000000 sur votre mini-carte.";
+  mes "N'hÃ©sitez pas Ã  nous poser des questions.";
   next;
   mes "[Soldat]";
-  mes "Nous ne nous ressemblons pas tous dans chaque ville, mais notre rôle est le même.";
+  mes "Nous ne nous ressemblons pas tous dans chaque ville, mais notre rÃ´le est le mÃªme.";
   mes "Prenez note de cela lorsque vous irez dans une nouvelle ville.";
   next;
   mes "[Soldat]";
-  mes "Si vous souhaitez aller dans votre première ville, vous le pourrez une fois que vous atteindrez le Niveau de Base 11 au terrain d'entraînement.";
+  mes "Si vous souhaitez aller dans votre premiÃ¨re ville, vous le pourrez une fois que vous atteindrez le Niveau de Base 11 au terrain d'entraÃ®nement.";
 	close;
 }
 
@@ -864,16 +862,16 @@ new_1-2,35,176,4	script	Soldat#nv	105,{
 	else if(job_novice_q == 14) {
 		mes "[Brade]";
 		mes "Bienvenue.";
-		mes "Maintenant voici le vrai entraînement.";
-		mes "Nous pouvons nous entraîner avec de vrais combats ici.";
+		mes "Maintenant voici le vrai entraÃ®nement.";
+		mes "Nous pouvons nous entraÃ®ner avec de vrais combats ici.";
 		next;
 		mes "[Brade]";
-		mes "Comme je te l'ai expliqué la première fois, tu peux cliquer sur les monstres.";
+		mes "Comme je te l'ai expliquÃ© la premiÃ¨re fois, tu peux cliquer sur les monstres.";
 		mes "Une attaque par clic.";
 		next;
 		mes "[Brade]";
 		mes "Plus pratique,";
-		mes "^4A4AFFSi tu tiens appuyée la touche Ctrl,^000000";
+		mes "^4A4AFFSi tu tiens appuyÃ©e la touche Ctrl,^000000";
 		mes "pendant que tu attaques, tu attaqueras automatiquement.";
 		next;
 		mes "[Brade]";
@@ -881,20 +879,20 @@ new_1-2,35,176,4	script	Soldat#nv	105,{
 		next;
 		mes "[Brade]";
 		mes "Ensuite, allons chasser du Poring.";
-		mes "Chasse des Poring au Niveau 1 de ce terrain d'entraînement.";
+		mes "Chasse des Poring au Niveau 1 de ce terrain d'entraÃ®nement.";
 		setquest 7122;
 		set job_novice_q,15;
 		getitem 569,100;	// Novice_Potion
 		next;
-		mes "^4A4AFF- Tu as reçu une quête de l'instructeur Brade.^000000";
-		mes "^4A4AFFTu peux la voir dans la Fenêtre de Quêtes.-^000000";
+		mes "^4A4AFF- Tu as reÃ§u une quÃªte de l'instructeur Brade.^000000";
+		mes "^4A4AFFTu peux la voir dans la FenÃªtre de QuÃªtes.-^000000";
 		close;
 	}
 	else if(job_novice_q == 15) {
 		if(checkquest(7122,HUNTING) == 2) {
 			mes "[Brade]";
 			mes "Comme tu peux le voir, ce n'est pas si dur n'est-ce pas ?";
-			mes "Bien joué.";
+			mes "Bien jouÃ©.";
 			getitem 13040,1;	// N_Cutter
 			getexp 1000,0;
 			getexp 1000,0;
@@ -903,14 +901,14 @@ new_1-2,35,176,4	script	Soldat#nv	105,{
 			set job_novice_q,16;
 			next;
 			mes "[Brade]";
-			mes "Maintenant, toutes les leçons sont presques finies.";
+			mes "Maintenant, toutes les leÃ§ons sont presques finies.";
 			mes "Tu es un Novice, et tu ne peux pas avoir de classe pour l'instant.";
 			next;
 			mes "[Brade]";
-			mes "Si tu obtiens toutes les capacités de base avec un Niveau de Job 10, tu pourras alors changer de classe.";
+			mes "Si tu obtiens toutes les capacitÃ©s de base avec un Niveau de Job 10, tu pourras alors changer de classe.";
 			next;
 			mes "[Brade]";
-			mes "Les premières classes sont au nombre de 6.";
+			mes "Les premiÃ¨res classes sont au nombre de 6.";
 			next;
 			mes "[Brade]";
 			mes "Les 6 classes de base sont";
@@ -919,33 +917,33 @@ new_1-2,35,176,4	script	Soldat#nv	105,{
 			mes "Archer et Merchant.";
 			next;
 			mes "[Brade]";
-			mes "Allons expérimenter ces 6 classes de base, Swordman, Thief, Acolyte, Mage, Archer et Merchant et voyons ce que chacune peut faire.";
+			mes "Allons expÃ©rimenter ces 6 classes de base, Swordman, Thief, Acolyte, Mage, Archer et Merchant et voyons ce que chacune peut faire.";
 			next;
 			mes "[Brade]";
-			mes "Derrière moi, il y a des gens provenant de chacune des Guildes de classes de base.";
-			mes "Ces gens vont te donner des manuels d'instruction qui t'autoriseront à essayer quelques capacités limitées de chaque classe.";
+			mes "DerriÃ¨re moi, il y a des gens provenant de chacune des Guildes de classes de base.";
+			mes "Ces gens vont te donner des manuels d'instruction qui t'autoriseront Ã  essayer quelques capacitÃ©s limitÃ©es de chaque classe.";
 			next;
 			mes "[Brade]";
-			mes "Équipe un manuel de la classe que tu veux expérimenter, et tu seras capable d'utiliser quelques capacités de base de la classe correspondante.";
-			mes "Essaye ces capacités et choisit ta classe.";
+			mes "Ã‰quipe un manuel de la classe que tu veux expÃ©rimenter, et tu seras capable d'utiliser quelques capacitÃ©s de base de la classe correspondante.";
+			mes "Essaye ces capacitÃ©s et choisit ta classe.";
 			close;
 		}
 		mes "[Brade]";
 		mes "Tu dois tuer assez de Porings.";
-		mes "Les Porings sont faciles à avoir, alors amuse toi.";
+		mes "Les Porings sont faciles Ã  avoir, alors amuse toi.";
 		mes "Essaye encore.";
 		npcskill "AL_HEAL",10,99,60;
 		close;
 	}
 	mes "[Brade]";
-	mes "As tu essayé les capacités dans les Manuels ?";
-	mes "Si tu veux en savoir plus sur chaque classe, parle aux gens envoyés par les Guildes des différentes classes.";
+	mes "As tu essayÃ© les capacitÃ©s dans les Manuels ?";
+	mes "Si tu veux en savoir plus sur chaque classe, parle aux gens envoyÃ©s par les Guildes des diffÃ©rentes classes.";
 	next;
 	mes "[Brade]";
-	mes "Je pense que tu en as appris assez avec moi. Si tu veux en savoir plus, parle à la fille de l'Eden Group à côté des Entraîneurs.";
+	mes "Je pense que tu en as appris assez avec moi. Si tu veux en savoir plus, parle Ã  la fille de l'Eden Group Ã  cÃ´tÃ© des EntraÃ®neurs.";
 	next;
 	mes "[Brade]";
-	mes "Essaye d'utiliser les manuels de classe pour découvrir les spécificités de chaque capacité de classe.";
+	mes "Essaye d'utiliser les manuels de classe pour dÃ©couvrir les spÃ©cificitÃ©s de chaque capacitÃ© de classe.";
 	mes "Je vais te redonner tous tes HP et SP... Garde la forme.";
 	npcskill "AL_HEAL",10,99,60;
 	close;
@@ -981,77 +979,77 @@ function	script	F_NvErase	{
 -	script	Guide Swordman#nv::NvSwd	728,{
 	if(job_novice_q < 16) {
 		mes "[Guildien Swordman]";
-		mes "Je ne vous aiderai pas jusqu'à ce que vous ayez suivi les instructions de Brade.";
+		mes "Je ne vous aiderai pas jusqu'Ã  ce que vous ayez suivi les instructions de Brade.";
 		close;
 	}
 	mes "[Guildien Swordman]";
 	mes "Puis-je vous aider ?";
 	next;
-	switch(select("À propos de la Classe Swordman.:Changer sa Classe pour Swordman.:Avez-vous des quêtes ?:Annuler.")) {
+	switch(select("Ã€ propos de la Classe Swordman.:Changer sa Classe pour Swordman.:Avez-vous des quÃªtes ?:Annuler.")) {
 		case 1:
 			mes "[Guildien Swordman]";
-			mes "Littéralement, un Swordman est quelqu'un spécialisé dans le maniement de l'épée.";
+			mes "LittÃ©ralement, un Swordman est quelqu'un spÃ©cialisÃ© dans le maniement de l'Ã©pÃ©e.";
 			mes "Mais ils peuvent aussi choisir d'utiliser des lances s'ils veulent.";
 			next;
 			mes "[Guildien Swordman]";
-			mes "Nous possédons une grande force physique.";
-			mes "Donc naturellement nous pouvons équiper des armes et armures lourdes.";
-			mes "La plupart des armes de classes, excepté les arcs et les bâtons, sont équipables par notre classe.";
+			mes "Nous possÃ©dons une grande force physique.";
+			mes "Donc naturellement nous pouvons Ã©quiper des armes et armures lourdes.";
+			mes "La plupart des armes de classes, exceptÃ© les arcs et les bÃ¢tons, sont Ã©quipables par notre classe.";
 			next;
 			mes "[Guildien Swordman]";
 			mes "La seule faiblesse du Swordman est qu'il ne peut pas utiliser de sort magique.";
-			mes "Mais nous compensons ça en utilisant des armes élémentaires.";
+			mes "Mais nous compensons Ã§a en utilisant des armes Ã©lÃ©mentaires.";
 			next;
 			mes "[Guildien Swordman]";
-			mes "L'avantage d'être Swordman est l'énorme montant de HP que nous avons.";
-			mes "La plupart d'entre nous peuvent supporter les attaques de nos ennemis plutôt facilement.";
+			mes "L'avantage d'Ãªtre Swordman est l'Ã©norme montant de HP que nous avons.";
+			mes "La plupart d'entre nous peuvent supporter les attaques de nos ennemis plutÃ´t facilement.";
 			next;
 			mes "[Guildien Swordman]";
-			mes "Et nous sommes imbattables quand il s'agit de combat un-contre-un au corps à corps.";
+			mes "Et nous sommes imbattables quand il s'agit de combat un-contre-un au corps Ã  corps.";
 			next;
 			mes "[Guildien Swordman]";
-			mes "Quelqu'un qui choisit d'être Swordman jouera le rôle de tank. Il est de notre devoir d'aider les faibles.";
+			mes "Quelqu'un qui choisit d'Ãªtre Swordman jouera le rÃ´le de tank. Il est de notre devoir d'aider les faibles.";
 			next;
 			mes "[Guildien Swordman]";
-			mes "En tant que Swordman, vous pourrez choisir d'être ^8C2121Knight^000000 ou ^8C2121Crusader^000000 en seconde classe.";
-			mes "Et très récemment nous avons découvert les troisièmes classes.";
+			mes "En tant que Swordman, vous pourrez choisir d'Ãªtre ^8C2121Knight^000000 ou ^8C2121Crusader^000000 en seconde classe.";
+			mes "Et trÃ¨s rÃ©cemment nous avons dÃ©couvert les troisiÃ¨mes classes.";
 			if(countitem(2819) == 0 && (getequipid(EQI_ACC_L) != 2819 || getequipid(EQI_ACC_R) != 2819)) {
 				next;
 				mes "[Guildien Swordman]";
-				mes "Si vous êtes intéressés pour être un Swordman, je vais vous offrir ce manuel.";
-				mes "Souhaitez-vous essayer les capacités de Swordman ?";
+				mes "Si vous Ãªtes intÃ©ressÃ©s pour Ãªtre un Swordman, je vais vous offrir ce manuel.";
+				mes "Souhaitez-vous essayer les capacitÃ©s de Swordman ?";
 				next;
-				if(select("Je vais essayer les capacités de Swordman.:Non merci.") == 2) {
+				if(select("Je vais essayer les capacitÃ©s de Swordman.:Non merci.") == 2) {
 					mes "[Guildien Swordman]";
-					mes "Hum. Vous êtes certain ?";
-					mes "Ok, je suis d'accord. Choisir une classe est quelque chose de très important dans une vie.";
-					mes "Reparlez moi dès que vous souhaitez expérimenter les capacités de Swordman.";
+					mes "Hum. Vous Ãªtes certain ?";
+					mes "Ok, je suis d'accord. Choisir une classe est quelque chose de trÃ¨s important dans une vie.";
+					mes "Reparlez moi dÃ¨s que vous souhaitez expÃ©rimenter les capacitÃ©s de Swordman.";
 					close;
 				}
 				mes "[Guildien Swordman]";
-				mes "Voilà le manuel de Swordman.";
-				mes "Je vais juste récupérer les manuels des autres classes avant.";
+				mes "VoilÃ  le manuel de Swordman.";
+				mes "Je vais juste rÃ©cupÃ©rer les manuels des autres classes avant.";
 				callfunc "F_NvErase";
 				getitem 2819,1;	// Swordsman_Manual
 				next;
 				mes "[Guildien Swordman]";
-				mes "Après avoir équipé le Manuel, ouvrez votre menu de Capacités en appuyant sur ALT + S.";
-				mes "Vous pouvez minimiser l'arbre des Capacités en cliquant sur le bouton '-' en haut à droite de la fenêtre de Capacités.";
+				mes "AprÃ¨s avoir Ã©quipÃ© le Manuel, ouvrez votre menu de CapacitÃ©s en appuyant sur ALT + S.";
+				mes "Vous pouvez minimiser l'arbre des CapacitÃ©s en cliquant sur le bouton '-' en haut Ã  droite de la fenÃªtre de CapacitÃ©s.";
 			}
 			close;
 		case 2:
 			mes "[Guildien Swordman]";
 			mes "Souhaitez-vous vraiment changer votre classe pour Swordman ?";
-			mes "Si vous voulez être un Swordman, je vais vous envoyer à notre guilde immédiatement.";
+			mes "Si vous voulez Ãªtre un Swordman, je vais vous envoyer Ã  notre guilde immÃ©diatement.";
 			next;
 			mes "[Guildien Swordman]";
-			mes "Je pense que vous avez assez de niveaux de Job bien sûr ?";
-			mes "Voulez-vous arréter votre entraînement et aller à la Guilde des Swordmans ?";
+			mes "Je pense que vous avez assez de niveaux de Job bien sÃ»r ?";
+			mes "Voulez-vous arrÃ©ter votre entraÃ®nement et aller Ã  la Guilde des Swordmans ?";
 			next;
-			if(select("Je vais reconsidérer la question.:Je vais aller à la Guilde des Swordmans.") == 2) {
+			if(select("Je vais reconsidÃ©rer la question.:Je vais aller Ã  la Guilde des Swordmans.") == 2) {
 				mes "[Guildien Swordman]";
 				mes "Je vois.";
-				mes "Alors je vais terminer votre entraînement et vous envoyer à la Guilde des Swordmans.";
+				mes "Alors je vais terminer votre entraÃ®nement et vous envoyer Ã  la Guilde des Swordmans.";
 				close2;
 				callfunc "F_NvErase",1;
 				savepoint "izlude",94,103;
@@ -1059,27 +1057,27 @@ function	script	F_NvErase	{
 				end;
 			}
 			mes "[Guildien Swordman]";
-			mes "Allez essayer les manuels des autres classes, et réfléchissez-y bien.";
-			mes "Bien sûr, vous serez toujours le bienvenu.";
+			mes "Allez essayer les manuels des autres classes, et rÃ©flÃ©chissez-y bien.";
+			mes "Bien sÃ»r, vous serez toujours le bienvenu.";
 			close;
 		case 3:
 			set .@quest, checkquest(7123);
 			if (.@quest == -1) {
 				mes "[Guildien Swordman]";
-				mes "Vous voulez que je vous donne une quête ?";
+				mes "Vous voulez que je vous donne une quÃªte ?";
 				mes "Hmmm. Voyons.";
-				mes "Voilà ! Chassez quelques uns de ces Picky aux alentours.";
+				mes "VoilÃ  ! Chassez quelques uns de ces Picky aux alentours.";
 				next;
-				mes "^4d4dffVous avez reçu une requête de chasse d'un membre de la Guilde des Swordmans.";
-				mes "Vous pouvez consulter le contenu de cette quête dans la fenêtre de quêtes.^000000";
+				mes "^4d4dffVous avez reÃ§u une requÃªte de chasse d'un membre de la Guilde des Swordmans.";
+				mes "Vous pouvez consulter le contenu de cette quÃªte dans la fenÃªtre de quÃªtes.^000000";
 				setquest 7123;
 				next;
 				mes "[Guildien Swordman]";
-				mes "Utilisez la capacité 'Bash' du manuel des Swordmans.";
-				mes "Ouvrez l'Arbre des Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre en appuyant sur le bouton '-' en haut à droite pour voir les capacités de Swordman disponibles.";
+				mes "Utilisez la capacitÃ© 'Bash' du manuel des Swordmans.";
+				mes "Ouvrez l'Arbre des CapacitÃ©s en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenÃªtre en appuyant sur le bouton '-' en haut Ã  droite pour voir les capacitÃ©s de Swordman disponibles.";
 				next;
 				mes "[Guildien Swordman]";
-				mes "Parlez à l'Entraîneur Brutus si vous voulez combattre des monstres plus forts.";
+				mes "Parlez Ã  l'EntraÃ®neur Brutus si vous voulez combattre des monstres plus forts.";
 				mes "Je vous attendrai ici.";
 				mes "Je vous souhaite bonne chance.";
 				close;
@@ -1088,8 +1086,8 @@ function	script	F_NvErase	{
 				if (checkquest(7123,HUNTING) == 2) {
 					mes "[Guildien Swordman]";
 					mes "Bien.";
-					mes "Je pense que vous êtes assez bon pour être un Swordman.";
-					mes "Je vais vous donner quelques potions en récompense.";
+					mes "Je pense que vous Ãªtes assez bon pour Ãªtre un Swordman.";
+					mes "Je vais vous donner quelques potions en rÃ©compense.";
 					completequest 7123;
 					getitem 569,200;	// Novice_Potion
 					getexp 5000,100;
@@ -1097,25 +1095,25 @@ function	script	F_NvErase	{
 				}
 				mes "[Guildien Swordman]";
 				mes "Chassez deux Picky.";
-				mes "Vous pouvez les trouver dans les terrains d'entraînement plus difficiles en parlant à l'Entraîneur Brutus.";
+				mes "Vous pouvez les trouver dans les terrains d'entraÃ®nement plus difficiles en parlant Ã  l'EntraÃ®neur Brutus.";
 				close;
 			}
 			else if (.@quest == 2) {
 				mes "[Guildien Swordman]";
-				mes "Je pense que vous avez déjà fini cette quête, n'est-ce pas ?";
-				mes "Vous aurez accès à plus de ces quêtes durant votre carrière d'aventurier.";
+				mes "Je pense que vous avez dÃ©jÃ  fini cette quÃªte, n'est-ce pas ?";
+				mes "Vous aurez accÃ¨s Ã  plus de ces quÃªtes durant votre carriÃ¨re d'aventurier.";
 				next;
 				mes "[Guildien Swordman]";
-				mes "Votre entraînement est maintenant terminé.";
+				mes "Votre entraÃ®nement est maintenant terminÃ©.";
 				mes "Si vous souhaitez devenir un Swordman, je vous souhaite bonne chance.";
 				close;
 			}
 			mes "[Guildien Swordman]";
-			mes "Je suis désolé, mais je n'ai aucune quête à vous donner pour le moment.";
+			mes "Je suis dÃ©solÃ©, mais je n'ai aucune quÃªte Ã  vous donner pour le moment.";
 			close;
 		case 4:
 			mes "[Guildien Swordman]";
-			mes "Si vous avez des questions à propos de la classe Swordman, n'hésitez pas.";
+			mes "Si vous avez des questions Ã  propos de la classe Swordman, n'hÃ©sitez pas.";
 			mes "La Guilde des Swordmans attend des novices comme vous.";
 			close;
 	}
@@ -1131,28 +1129,28 @@ new_5-3,97,41,4	duplicate(NvSwd)	Guide Swordman#nv5	728
 -	script	Guide Mage#nv::NvMag	123,{
 	if(job_novice_q < 16) {
 		mes "[Guildien Mage]";
-		mes "Vous êtes encore en entraînement avec l'instructeur Brade.";
+		mes "Vous Ãªtes encore en entraÃ®nement avec l'instructeur Brade.";
 		close;
 	}
 	mes "[Guildien Mage]";
 	mes "Comment puis-je vous aider ?";
 	next;
-	switch(select("Parlez moi des Mages.:Je voudrais être un Mage.:Donnez moi une Quête.:Annuler")) {
+	switch(select("Parlez moi des Mages.:Je voudrais Ãªtre un Mage.:Donnez moi une QuÃªte.:Annuler")) {
 	case 1:
 		mes "[Guildien Mage]";
-		mes "Les Mages peuvent utiliser la magie quand ils ont besoin de protéger leurs amis.";
-		mes "Nous pouvons maudire nos ennemis en utilisant les éléments magiques du feu, de l'eau, de la terre et de la foudre.";
+		mes "Les Mages peuvent utiliser la magie quand ils ont besoin de protÃ©ger leurs amis.";
+		mes "Nous pouvons maudire nos ennemis en utilisant les Ã©lÃ©ments magiques du feu, de l'eau, de la terre et de la foudre.";
 		next;
 		mes "[Guildien Mage]";
-		mes "Par contre nous ne pouvont pas équiper des armes autres que des bâtons des livres.";
+		mes "Par contre nous ne pouvont pas Ã©quiper des armes autres que des bÃ¢tons des livres.";
 		mes "Parce que nous sommes trop faibles pour porter des armes lourdes.";
 		next;
 		mes "[Guildien Mage]";
-		mes "Mais nous surpassons cette faiblesse par nos remarquables capacités magiques.";
+		mes "Mais nous surpassons cette faiblesse par nos remarquables capacitÃ©s magiques.";
 		mes "C'est pour cela que tant de gens souhaitent devenir Mage !";
 		next;
 		mes "[Guildien Mage]";
-		mes "Les Mages sont dévoués à leur guilde pour leur faire gagner pouvoir et honneur.";
+		mes "Les Mages sont dÃ©vouÃ©s Ã  leur guilde pour leur faire gagner pouvoir et honneur.";
 		mes "C'est l'une des raisons pour lesquelles les Mages sont si populaires en groupe ou en guilde.";
 		mes "Pourquoi ne deviendriez-vous pas un Mage ?";
 		next;
@@ -1161,40 +1159,40 @@ new_5-3,97,41,4	duplicate(NvSwd)	Guide Swordman#nv5	728
 		if(countitem(2824) == 0 && (getequipid(EQI_ACC_L) != 2824 || getequipid(EQI_ACC_R) != 2824)) {
 			next;
 			mes "[Guildien Mage]";
-			mes "Voulez-vous expérimenter ce qu'est être un Mage ?";
-			mes "Souhaiteriez-vous essayer les capacités de Mage ?";
+			mes "Voulez-vous expÃ©rimenter ce qu'est Ãªtre un Mage ?";
+			mes "Souhaiteriez-vous essayer les capacitÃ©s de Mage ?";
 			next;
-			if(select("Je veux essayer les capacités de Mage.:Je ne veux pas les essayer.") == 2) {
+			if(select("Je veux essayer les capacitÃ©s de Mage.:Je ne veux pas les essayer.") == 2) {
 				mes "[Guildien Mage]";
-				mes "Hum. Vous êtes certain ?";
-				mes "Ok, je suis d'accord. Choisir une classe est quelque chose de très important dans une vie.";
-				mes "Reparlez moi lorsque vous souhaiterez expérimenter les capacités de Mage.";
+				mes "Hum. Vous Ãªtes certain ?";
+				mes "Ok, je suis d'accord. Choisir une classe est quelque chose de trÃ¨s important dans une vie.";
+				mes "Reparlez moi lorsque vous souhaiterez expÃ©rimenter les capacitÃ©s de Mage.";
 				close;
 			}
 			mes "[Guildien Mage]";
 			mes "Voici le Manuel de Mage.";
-			mes "Je vais juste récupérer les manuels des autres classes avant.";
+			mes "Je vais juste rÃ©cupÃ©rer les manuels des autres classes avant.";
 			callfunc "F_NvErase";
 			getitem 2824,1;	// Mage_Manual
 			next;
 			mes "[Guildien Mage]";
-			mes "Après avoir équipé le Manuel, ouvrez le menu de Capacités en appuyant sur ALT + S.";
-			mes "Soyez sûr d'avoir minimisé l'arbre des Capacités en cliquant sur le bouton '-' en haut à droite de la fenêtre de Capacités.";
+			mes "AprÃ¨s avoir Ã©quipÃ© le Manuel, ouvrez le menu de CapacitÃ©s en appuyant sur ALT + S.";
+			mes "Soyez sÃ»r d'avoir minimisÃ© l'arbre des CapacitÃ©s en cliquant sur le bouton '-' en haut Ã  droite de la fenÃªtre de CapacitÃ©s.";
 		}
 		close;
 	case 2:
 		mes "[Guildien Mage]";
 		mes "Vous souhaitez devenir un Mage ?";
-		mes "Bien, alors je vais vous envoyer à la Guilde des Mages à Geffen directement.";
+		mes "Bien, alors je vais vous envoyer Ã  la Guilde des Mages Ã  Geffen directement.";
 		next;
 		mes "[Guildien Mage]";
-		mes "Une seconde, avez-vous vérifié votre niveau de Job ?";
-		mes "Voulez-vous terminer votre entraînement de Novice et aller à la Guilde des Mages ?";
+		mes "Une seconde, avez-vous vÃ©rifiÃ© votre niveau de Job ?";
+		mes "Voulez-vous terminer votre entraÃ®nement de Novice et aller Ã  la Guilde des Mages ?";
 		next;
-		if(select("Je vais y réfléchir encore.:Oui, terminons mon entraînement.") == 2) {
+		if(select("Je vais y rÃ©flÃ©chir encore.:Oui, terminons mon entraÃ®nement.") == 2) {
 			mes "[Guildien Mage]";
 			mes "Bienvenue !!";
-			mes "Je vais vous envoyer à la Guilde des Mages après avoir validé votre entraînement de Novice.";
+			mes "Je vais vous envoyer Ã  la Guilde des Mages aprÃ¨s avoir validÃ© votre entraÃ®nement de Novice.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "geffen",119,38;
@@ -1202,23 +1200,23 @@ new_5-3,97,41,4	duplicate(NvSwd)	Guide Swordman#nv5	728
 			end;
 		}
 		mes "[Guildien Mage]";
-		mes "Essayez toutes les capacités de Mage avant de vous décider.";
+		mes "Essayez toutes les capacitÃ©s de Mage avant de vous dÃ©cider.";
 		mes "Nous serons toujours heureux de vous avoir avec nous !";
 		close;
 	case 3:
 		set .@quest, checkquest(7124);
 		if (.@quest == -1) {
 			mes "[Guildien Mage]";
-			mes "Hein ? Une quête ?";
-			mes "Hmmm... Qu'est-ce qui pourrais être bien pour vous...?";
-			mes "Que pensez-vous de chasser des Lunatics avec les capacités Bolt ?";
+			mes "Hein ? Une quÃªte ?";
+			mes "Hmmm... Qu'est-ce qui pourrais Ãªtre bien pour vous...?";
+			mes "Que pensez-vous de chasser des Lunatics avec les capacitÃ©s Bolt ?";
 			next;
-			mes "^4d4dffVous avez reçu une quête de Chasse du Guide Mage.";
-			mes "Vous pouvez obtenir plus d'information en ouvrant la fenêtre de quêtes.^000000";
+			mes "^4d4dffVous avez reÃ§u une quÃªte de Chasse du Guide Mage.";
+			mes "Vous pouvez obtenir plus d'information en ouvrant la fenÃªtre de quÃªtes.^000000";
 			setquest 7124;
 			next;
 			mes "[Guildien Mage]";
-			mes "Vous devriez être capable d'utiliser la capacité 'Fire Bolt' décrite dans le Manuel de Mage.";
+			mes "Vous devriez Ãªtre capable d'utiliser la capacitÃ© 'Fire Bolt' dÃ©crite dans le Manuel de Mage.";
 			mes "Je vais vous attendre ici.";
 			mes "Bonne chance !";
 			close;
@@ -1227,7 +1225,7 @@ new_5-3,97,41,4	duplicate(NvSwd)	Guide Swordman#nv5	728
 			if (checkquest(7124,HUNTING) == 2) {
 				mes "[Guildien Mage]";
 				mes "Excellent travail.";
-				mes "Alors, être Mage vous a plu ?";
+				mes "Alors, Ãªtre Mage vous a plu ?";
 				mes "Bien. Je vais vous donner quelque chose...";
 				mes "Voici des Novice Butterfly Wings, prenez-les.";
 				completequest 7124;
@@ -1236,26 +1234,26 @@ new_5-3,97,41,4	duplicate(NvSwd)	Guide Swordman#nv5	728
 				close;
 			}
 			mes "[Guildien Mage]";
-			mes "La quête consiste à chasser des";
+			mes "La quÃªte consiste Ã  chasser des";
 			mes "Lunatics et me rapporter 5 Clovers.";
 			close;
 		}
 		else if (.@quest == 2) {
 			mes "[Guildien Mage]";
-			mes "Vous avez déjà terminé la quête.";
-			mes "Vous pourrez avoir de nombreuses et excitantes quêtes lorsque vous vous découvrirez le monde extérieur !";
+			mes "Vous avez dÃ©jÃ  terminÃ© la quÃªte.";
+			mes "Vous pourrez avoir de nombreuses et excitantes quÃªtes lorsque vous vous dÃ©couvrirez le monde extÃ©rieur !";
 			next;
 			mes "[Guildien Mage]";
-			mes "Je pense que c'est tout pour votre entraînement.";
+			mes "Je pense que c'est tout pour votre entraÃ®nement.";
 			close;
 		}
 		mes "[Guildien Mage]";
-		mes "Je suis désolé mais je n'ai aucune quête à vous donner pour le moment.";
+		mes "Je suis dÃ©solÃ© mais je n'ai aucune quÃªte Ã  vous donner pour le moment.";
 		close;
 	case 4:
 		mes "[Guildien Mage]";
-		mes "Si vous avez des questions à propos des Mages, n'hésitez pas à me les poser.";
-		mes "Je pense que vous pourriez être un Mage très intelligent...";
+		mes "Si vous avez des questions Ã  propos des Mages, n'hÃ©sitez pas Ã  me les poser.";
+		mes "Je pense que vous pourriez Ãªtre un Mage trÃ¨s intelligent...";
 		close;
 	}
 }
@@ -1270,64 +1268,64 @@ new_5-3,101,41,4	duplicate(NvMag)	Guide Mage#nv5	123
 -	script	Guide Thief#nv::NvThf	118,{
 	if(job_novice_q < 16) {
 		mes "[Guildien Thief]";
-		mes "Vous n'avez pas l'air d'avoir terminé les leçons de l'instructeur Brade.";
+		mes "Vous n'avez pas l'air d'avoir terminÃ© les leÃ§ons de l'instructeur Brade.";
 		close;
 	}
 	mes "[Guildien Thief]";
-	mes "De quelle manière puis-je vous aider ?";
+	mes "De quelle maniÃ¨re puis-je vous aider ?";
 	next;
-	switch(select("À propos de la Classe Thief.:Je veux devenir Thief.:Avez-vous des quêtes ?:Annuler.")) {
+	switch(select("Ã€ propos de la Classe Thief.:Je veux devenir Thief.:Avez-vous des quÃªtes ?:Annuler.")) {
 	case 1:
 		mes "[Guildien Thief]";
 		mes "Les Thiefs sont experts en maniement des Dagues.";
-		mes "Ils peuvent frapper très rapidement et facilement esquiver les attaques de leurs ennemis.";
+		mes "Ils peuvent frapper trÃ¨s rapidement et facilement esquiver les attaques de leurs ennemis.";
 		next;
 		mes "[Guildien Thief]";
-		mes "Les Thiefs peuvent apprendre des capacités pour sa cacher de leurs ennemis ou même voler des objets aux monstres.";
-		mes "Ils sont aussi craints pour leur utilisation du poison, qui affaiblit petit à petit leurs ennemis.";
+		mes "Les Thiefs peuvent apprendre des capacitÃ©s pour sa cacher de leurs ennemis ou mÃªme voler des objets aux monstres.";
+		mes "Ils sont aussi craints pour leur utilisation du poison, qui affaiblit petit Ã  petit leurs ennemis.";
 		next;
 		mes "[Guildien Thief]";
-		mes "En cas de danger, ou s'ils ne veulent pas être vus, ils peuvent utiliser leur capacité pour se cacher très facilement.";
+		mes "En cas de danger, ou s'ils ne veulent pas Ãªtre vus, ils peuvent utiliser leur capacitÃ© pour se cacher trÃ¨s facilement.";
 		next;
 		mes "[Guildien Thief]";
 		mes "Les Thiefs peuvent ensuite devenir ^8C2121Assassins^000000 ou ^8C2121Rogues.^000000";
 		if(countitem(2820) == 0 && (getequipid(EQI_ACC_L) != 2820 || getequipid(EQI_ACC_R) != 2820)) {
 			next;
 			mes "[Guildien Thief]";
-			mes "Si vous le voulez, je peux vous donner un Manuel des capacités de Thief.";
-			mes "Souhaiteriez-vous essayer les capacités de Thief ?";
+			mes "Si vous le voulez, je peux vous donner un Manuel des capacitÃ©s de Thief.";
+			mes "Souhaiteriez-vous essayer les capacitÃ©s de Thief ?";
 			next;
 			if(select("Oui, avec plaisir.:Non merci.") == 2) {
 				mes "[Guildien Thief]";
-				mes "Oh, êtes vous certain ?";
-				mes "Le choix d'une Classe est très important, alors réfléchissez-y bien.";
-				mes "Si vous souhaitez en savoir plus sur les Thiefs, n'hésitez pas à revenir quand vous voulez.";
+				mes "Oh, Ãªtes vous certain ?";
+				mes "Le choix d'une Classe est trÃ¨s important, alors rÃ©flÃ©chissez-y bien.";
+				mes "Si vous souhaitez en savoir plus sur les Thiefs, n'hÃ©sitez pas Ã  revenir quand vous voulez.";
 				close;
 			}
 			mes "[Guildien Thief]";
-			mes "Voilà, prenez ce manuel de Thief.";
-			mes "Je vais juste récupérer vos autres manuels de classe pendant que j'y suis.";
+			mes "VoilÃ , prenez ce manuel de Thief.";
+			mes "Je vais juste rÃ©cupÃ©rer vos autres manuels de classe pendant que j'y suis.";
 			callfunc "F_NvErase";
 			getitem 2820,1;	// Thief_Manual
 			next;
 			mes "[Guildien Thief]";
-			mes "Équipez bien votre manuel de Capacités en double-cliquant dessus dans votre inventaire.";
-			mes "Ouvrez votre Arbre de Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre des Capacités en cliquant sur le bouton '-' situé en haut à droite pour voir les capacités disponibles.";
+			mes "Ã‰quipez bien votre manuel de CapacitÃ©s en double-cliquant dessus dans votre inventaire.";
+			mes "Ouvrez votre Arbre de CapacitÃ©s en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenÃªtre des CapacitÃ©s en cliquant sur le bouton '-' situÃ© en haut Ã  droite pour voir les capacitÃ©s disponibles.";
 		}
 		close;
 	case 2:
 		mes "[Guildien Thief]";
 		mes "Vous souhaitez vraiment devenir un Thief ?";
-		mes "Si c'est le cas, je vais vous envoyer immédiatement à la Guilde des Thiefs.";
+		mes "Si c'est le cas, je vais vous envoyer immÃ©diatement Ã  la Guilde des Thiefs.";
 		next;
 		mes "[Guildien Thief]";
-		mes "Vous avez déjà atteint le niveau de Job requis, n'est-ce pas ?";
-		mes "Voulez-vous finir votre entraînement de Novice et aller à la Guilde des Thiefs.";
+		mes "Vous avez dÃ©jÃ  atteint le niveau de Job requis, n'est-ce pas ?";
+		mes "Voulez-vous finir votre entraÃ®nement de Novice et aller Ã  la Guilde des Thiefs.";
 		next;
-		if(select("Laissez moi y réfléchir.:Oui je veux y aller.") == 2) {
+		if(select("Laissez moi y rÃ©flÃ©chir.:Oui je veux y aller.") == 2) {
 			mes "[Guildien Thief]";
 			mes "Bien, je vois.";
-			mes "Bienvenue. Maintenant que votre entraînement de Novice est terminé, je vais vous envoyer à la Guilde des Thiefs.";
+			mes "Bienvenue. Maintenant que votre entraÃ®nement de Novice est terminÃ©, je vais vous envoyer Ã  la Guilde des Thiefs.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "morocc",150,100;
@@ -1335,57 +1333,57 @@ new_5-3,101,41,4	duplicate(NvMag)	Guide Mage#nv5	123
 			end;
 		}
 		mes "[Guildien Thief]";
-		mes "Avez vous déjà essayé notre manuel de classe ?";
-		mes "Si vous ne savez pas encore quelle classe choisir, je ne peux que vous conseiller de parler aux Guides des différentes classes.";
+		mes "Avez vous dÃ©jÃ  essayÃ© notre manuel de classe ?";
+		mes "Si vous ne savez pas encore quelle classe choisir, je ne peux que vous conseiller de parler aux Guides des diffÃ©rentes classes.";
 		close;
 	case 3:
 		set .@quest, checkquest(7127);
 		if (.@quest == -1) {
 			mes "[Guildien Thief]";
-			mes "Des quêtes ?";
+			mes "Des quÃªtes ?";
 			mes "Hmmm, qu'est-ce qui vous conviendrait ?";
 			mes "Que dites vous de chasser quelques Willows ?";
 			next;
 			mes "[Guildien Thief]";
-			mes "Vous ne pouvez pas tricher ici, alors soyez certain d'avoir tué 5 Willows. Quand vous aurez fini, revenez me parler.";
-			mes "Si vous parlez à l'Entraîneur Brutus, il pourra vous envoyer à des terrains de difficulté supérieure, où vous pourrez chasser des Willows.";
+			mes "Vous ne pouvez pas tricher ici, alors soyez certain d'avoir tuÃ© 5 Willows. Quand vous aurez fini, revenez me parler.";
+			mes "Si vous parlez Ã  l'EntraÃ®neur Brutus, il pourra vous envoyer Ã  des terrains de difficultÃ© supÃ©rieure, oÃ¹ vous pourrez chasser des Willows.";
 			setquest 7127;
 			next;
 			mes "[Guildien Thief]";
-			mes "Si vous équipez le manuel de Thief, vous aurez accès à la capacité Double Attack.";
-			mes "Double Attack et Hide sont les principales capacités des Thiefs.";
+			mes "Si vous Ã©quipez le manuel de Thief, vous aurez accÃ¨s Ã  la capacitÃ© Double Attack.";
+			mes "Double Attack et Hide sont les principales capacitÃ©s des Thiefs.";
 			close;
 		}
 		else if (.@quest == 1) {
 			if (checkquest(7127,HUNTING) == 2) {
 				mes "[Guildien Thief]";
-				mes "Vous êtes vraiment fort.";
-				mes "Ce n'est pas beaucoup, mais laissez moi vous offrir ceci en récompense de vos efforts.";
+				mes "Vous Ãªtes vraiment fort.";
+				mes "Ce n'est pas beaucoup, mais laissez moi vous offrir ceci en rÃ©compense de vos efforts.";
 				completequest 7127;
 				getitem 12323, 50; // N_Fly_Wing
 				getexp 5000,100;
 				close;
 			}
 			mes "[Guildien Thief]";
-			mes "Chassez 5 willows et revenez me parler pour terminer votre quête.";
+			mes "Chassez 5 willows et revenez me parler pour terminer votre quÃªte.";
 			close;
 		}
 		else if (.@quest == 2) {
 			mes "[Guildien Thief]";
-			mes "Je crois que vous avez déjà fait cette quête.";
-			mes "Vous trouverez d'autres quêtes lors de vos aventures dans ce monde.";
+			mes "Je crois que vous avez dÃ©jÃ  fait cette quÃªte.";
+			mes "Vous trouverez d'autres quÃªtes lors de vos aventures dans ce monde.";
 			next;
 			mes "[Guildien Thief]";
-			mes "Votre entraînement est maintenant terminé.";
+			mes "Votre entraÃ®nement est maintenant terminÃ©.";
 			mes "Si vous choisissez de devenir un Thief, je vous souhaite bonne chance.";
 			close;
 		}
 		mes "[Guildien Thief]";
-		mes "Je suis désolé mais je n'ai aucune quête pour vous pour le moment.";
+		mes "Je suis dÃ©solÃ© mais je n'ai aucune quÃªte pour vous pour le moment.";
 		close;
 	case 4:
 		mes "[Guildien Thief]";
-		mes "Si vous avez des questions à propos de la classe Thief, n'hésitez pas à me demander.";
+		mes "Si vous avez des questions Ã  propos de la classe Thief, n'hÃ©sitez pas Ã  me demander.";
 		close;
 	}
 }
@@ -1400,21 +1398,21 @@ new_5-3,105,41,4	duplicate(NvThf)	Guide Thief#nv5	118
 -	script	Guide Merchant#nv::NvMer	97,{
 	if(job_novice_q < 16) {
 		mes "[Guildien Merchant]";
-		mes "Vous êtes toujours en entraînement avec sir Brade.";
+		mes "Vous Ãªtes toujours en entraÃ®nement avec sir Brade.";
 		close;
 	}
 	mes "[Guildien Merchant]";
 	mes "Comment puis-je vous aider ?";
 	next;
-	switch(select("Parlez moi des Merchants.:Je souhaite devenir un Merchant.:Donnez moi une quête.:Annuler")) {
+	switch(select("Parlez moi des Merchants.:Je souhaite devenir un Merchant.:Donnez moi une quÃªte.:Annuler")) {
 	case 1:
 		mes "[Guildien Merchant]";
 		mes "Des Merchants ? Basiquement, ils vendent des objets et gagnent de l'argent.";
 		mes "C'est le but principal de tous les Merchants.";
 		next;
 		mes "[Guildien Merchant]";
-		mes "Nous avons une capacité spéciale pour gagner de l'argent.";
-		mes "Nous pouvons acheter des objets à des prix plus bas, et les revendre à des prix plus hauts.";
+		mes "Nous avons une capacitÃ© spÃ©ciale pour gagner de l'argent.";
+		mes "Nous pouvons acheter des objets Ã  des prix plus bas, et les revendre Ã  des prix plus hauts.";
 		next;
 		mes "[Guildien Merchant]";
 		mes "Les Merchants peuvent aussi avoir des Chariots, qui leur permettent d'y ranger de nombreux objets.";
@@ -1426,37 +1424,37 @@ new_5-3,105,41,4	duplicate(NvThf)	Guide Thief#nv5	118
 			mes "[Guildien Merchant]";
 			mes "Voulez-vous voir comment est la vie de Merchant ?";
 			next;
-			if(select("Je veux essayer les capacités de Merchant.:Je ne souhaite pas essayer.") == 2) {
+			if(select("Je veux essayer les capacitÃ©s de Merchant.:Je ne souhaite pas essayer.") == 2) {
 				mes "[Guildien Merchant]";
-				mes "Hmmm, êtes vous sûr ?";
-				mes "Bien, d'accord. Choisir une classe est quelque chose de très important dans une vie.";
-				mes "Reparlez-moi si vous souhaitez essayer les capacités de Merchant.";
+				mes "Hmmm, Ãªtes vous sÃ»r ?";
+				mes "Bien, d'accord. Choisir une classe est quelque chose de trÃ¨s important dans une vie.";
+				mes "Reparlez-moi si vous souhaitez essayer les capacitÃ©s de Merchant.";
 				close;
 			}
 			mes "[Guildien Merchant]";
-			mes "Voici un manuel des capacités de Merchant.";
-			mes "Je vais vous reprendre les autres manuels de classe en même temps.";
+			mes "Voici un manuel des capacitÃ©s de Merchant.";
+			mes "Je vais vous reprendre les autres manuels de classe en mÃªme temps.";
 			callfunc "F_NvErase";
 			getitem 2823,1;	// Merchant_Manual
 			next;
 			mes "[Guildien Merchant]";
-			mes "Équipez bien votre manuel de Capacités en double-cliquant dessus dans votre inventaire.";
-			mes "Ouvrez votre Arbre de Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre des Capacités en cliquant sur le bouton '-' situé en haut à droite pour voir les capacités disponibles.";
+			mes "Ã‰quipez bien votre manuel de CapacitÃ©s en double-cliquant dessus dans votre inventaire.";
+			mes "Ouvrez votre Arbre de CapacitÃ©s en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenÃªtre des CapacitÃ©s en cliquant sur le bouton '-' situÃ© en haut Ã  droite pour voir les capacitÃ©s disponibles.";
 		}
 		close;
 	case 2:
 		mes "[Guildien Merchant]";
 		mes "Vous souhaitez devenir un Merchant ?";
-		mes "Bien, je vais vous envoyer à la Guilde des Merchants alors.";
+		mes "Bien, je vais vous envoyer Ã  la Guilde des Merchants alors.";
 		next;
 		mes "[Guildien Merchant]";
-		mes "Attendez, avez-vous vérifié votre niveau de Job ?";
-		mes "Voulez-vous terminer votre entraînement de Novice et aller directement à la Guilde des Merchants.";
+		mes "Attendez, avez-vous vÃ©rifiÃ© votre niveau de Job ?";
+		mes "Voulez-vous terminer votre entraÃ®nement de Novice et aller directement Ã  la Guilde des Merchants.";
 		next;
-		if(select("Je vais y réfléchir encore.:Oui, je veux aller à la Guilde des Merchants.") == 2) {
+		if(select("Je vais y rÃ©flÃ©chir encore.:Oui, je veux aller Ã  la Guilde des Merchants.") == 2) {
 			mes "[Guildien Merchant]";
 			mes "Bienvenue !!";
-			mes "Je vais vous envoyer à la Guilde des Merchants juste après avoir finalisé votre entraînement de Novice.";
+			mes "Je vais vous envoyer Ã  la Guilde des Merchants juste aprÃ¨s avoir finalisÃ© votre entraÃ®nement de Novice.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "alberta",29,231;
@@ -1464,19 +1462,19 @@ new_5-3,105,41,4	duplicate(NvThf)	Guide Thief#nv5	118
 			end;
 		}
 		mes "[Guildien Merchant]";
-		mes "Bien, j'espère que vous songez à devenir un Merchant.";
+		mes "Bien, j'espÃ¨re que vous songez Ã  devenir un Merchant.";
 		mes "Nous serons toujours ravis de vous avoir avec nous !";
 		close;
 	case 3:
 		set .@quest, checkquest(7126);
 		if (.@quest == -1) {
 			mes "[Guildien Merchant]";
-			mes "Hein ? Une quête ??";
+			mes "Hein ? Une quÃªte ??";
 			mes "Hmmm... Ceci devrait vous convenir...";
 			mes "Bien, apportez moi ^5d5dff300 zeny^000000 en revendant quelques objets au Marchand de Patates.";
 			next;
 			mes "[Guildien Merchant]";
-			mes "Si vous avez équipé le manuel de Merchant, vous profiterez des effets des capacités 'Overcharge' et 'Discount'.";
+			mes "Si vous avez Ã©quipÃ© le manuel de Merchant, vous profiterez des effets des capacitÃ©s 'Overcharge' et 'Discount'.";
 			setquest 7126;
 			next;
 			mes "[Guildien Merchant]";
@@ -1489,17 +1487,17 @@ new_5-3,105,41,4	duplicate(NvThf)	Guide Thief#nv5	118
 				mes "[Guildien Merchant]";
 				mes "Excellent !";
 				mes "Le Zeny est la monnaie de Rune Midgard.";
-				mes "Vous pouvez récupérer des zenys en vendant les objets récupérés aux marchands ou en revendant intelligement aux autres joueurs.";
+				mes "Vous pouvez rÃ©cupÃ©rer des zenys en vendant les objets rÃ©cupÃ©rÃ©s aux marchands ou en revendant intelligement aux autres joueurs.";
 				next;
 				mes "[Guildien Merchant]";
-				mes "Nous pouvons utiliser des capacités très puissantes avec nos zenys !";
-				mes "Mammonite ! C'est notre capacité d'attaque ultime !!";
+				mes "Nous pouvons utiliser des capacitÃ©s trÃ¨s puissantes avec nos zenys !";
+				mes "Mammonite ! C'est notre capacitÃ© d'attaque ultime !!";
 				mes "Pour faire court, nous collons de l'argent sur notre arme puis nous attaquons. La Mort par les Zenys ! Mouahahahaha !";
 				next;
 				mes "[Guildien Merchant]";
 				mes "Au fait, vous avez fait un excellent travail. Donc je devrais vous donner quelque chose... Qu'est-ce qui serait bien ?";
 				mes "Ah, je sais ! Pourquoi pas des Phracons ?";
-				mes "Le Phracon est un élément métalique qui peut être utilisé pour perfectionner des armes.";
+				mes "Le Phracon est un Ã©lÃ©ment mÃ©talique qui peut Ãªtre utilisÃ© pour perfectionner des armes.";
 				completequest 7126;
 				getitem 1010,7; // Phracon
 				getexp 5000,100;
@@ -1507,32 +1505,32 @@ new_5-3,105,41,4	duplicate(NvThf)	Guide Thief#nv5	118
 			}
 			mes "[Guildien Merchant]";
 			mes "Le Zeny est la monnaie de Rune Midgard.";
-			mes "Vous pouvez récupérer des zenys en vendant les objets récupérés aux marchands ou en revendant intelligement aux autres joueurs.";
+			mes "Vous pouvez rÃ©cupÃ©rer des zenys en vendant les objets rÃ©cupÃ©rÃ©s aux marchands ou en revendant intelligement aux autres joueurs.";
 			next;
 			mes "[Guildien Merchant]";
 			mes "Vous pouvez obtenir des objets en tuant des monstres. Ensuite, il vous suffit de revendre ces objets pour faire du profit !";
-			mes "C'est vraiment une classe intéressante, n'est-ce pas ?";
+			mes "C'est vraiment une classe intÃ©ressante, n'est-ce pas ?";
 			next;
 			mes "[Guildien Merchant]";
-			mes "Pourquoi n'essayeriez-vous pas d'être Merchant ? Faire de l'argent n'est pas simple, mais c'est une très bonne expérience.";
+			mes "Pourquoi n'essayeriez-vous pas d'Ãªtre Merchant ? Faire de l'argent n'est pas simple, mais c'est une trÃ¨s bonne expÃ©rience.";
 			close;
 		}
 		else if (.@quest == 2) {
 			mes "[Guildien Merchant]";
-			mes "Vous avez déjà réalisé cette quête.";
-			mes "Une fois que vous entrerez dans le monde principal, vous y trouverez de nombreuses quêtes très excitantes !";
+			mes "Vous avez dÃ©jÃ  rÃ©alisÃ© cette quÃªte.";
+			mes "Une fois que vous entrerez dans le monde principal, vous y trouverez de nombreuses quÃªtes trÃ¨s excitantes !";
 			next;
 			mes "[Guildien Merchant]";
-			mes "Je pense que vous êtes assez fort pour changer votre classe maintenant ? Hahahaha, ne perdez pas plus de temps ici Novice.";
+			mes "Je pense que vous Ãªtes assez fort pour changer votre classe maintenant ? Hahahaha, ne perdez pas plus de temps ici Novice.";
 			close;
 		}
 		mes "[Guildien Merchant]";
-		mes "Je suis désolé mais je n'ai aucune quête pour vous.";
+		mes "Je suis dÃ©solÃ© mais je n'ai aucune quÃªte pour vous.";
 		close;
 	case 4:
 		mes "[Guildien Merchant]";
-		mes "Si vous avez des questions à propos des Merchants, posez-les moi.";
-		mes "Je pense que vous pourriez être un riche Merchant. Ahahaha.";
+		mes "Si vous avez des questions Ã  propos des Merchants, posez-les moi.";
+		mes "Je pense que vous pourriez Ãªtre un riche Merchant. Ahahaha.";
 		close;
 	}
 }
@@ -1547,66 +1545,66 @@ new_5-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv5	97
 -	script	Guide Archer#nv::NvArc	727,{
 	if(job_novice_q < 16) {
 		mes "[Guildien Archer]";
-		mes "Vous avez un entraînement en cours avec sir Brade.";
+		mes "Vous avez un entraÃ®nement en cours avec sir Brade.";
 		close;
 	}
 	mes "[Guildien Archer]";
-	mes "Comment puis-je vous être utile ?";
+	mes "Comment puis-je vous Ãªtre utile ?";
 	next;
 	switch(select("Parlez-moi des Archers.:Je veux devenir Archer.:Annuler")) {
 	case 1:
 		mes "[Guildien Archer]";
-		mes "Les Archers ont des capacités spéciales utilisant des Arcs et ont une collection de capacités puissantes.";
-		mes "Les Archers sont efficaces à rester derrière et évincer leurs cibles.";
+		mes "Les Archers ont des capacitÃ©s spÃ©ciales utilisant des Arcs et ont une collection de capacitÃ©s puissantes.";
+		mes "Les Archers sont efficaces Ã  rester derriÃ¨re et Ã©vincer leurs cibles.";
 		next;
 		mes "[Guildien Archer]";
-		mes "Les Archers n'ont pas une grande vitalité, c'est pour ça qu'ils doivent rester à distance de leurs ennemis.";
+		mes "Les Archers n'ont pas une grande vitalitÃ©, c'est pour Ã§a qu'ils doivent rester Ã  distance de leurs ennemis.";
 		next;
 		mes "[Guildien Archer]";
-		mes "D'un autre côté, les Archers sont attentifs et ont une précision incroyable.";
-		mes "Dès qu'ils sont prêts à attaquer, ils peuvent tuer leurs ennemis avant même que ceux-ci ne soient au courant de leur présence.";
+		mes "D'un autre cÃ´tÃ©, les Archers sont attentifs et ont une prÃ©cision incroyable.";
+		mes "DÃ¨s qu'ils sont prÃªts Ã  attaquer, ils peuvent tuer leurs ennemis avant mÃªme que ceux-ci ne soient au courant de leur prÃ©sence.";
 		next;
 		mes "[Guildien Archer]";
 		mes "^8C2121Les Archers peuvent devenir des Hunters en seconde classe.^000000";
-		mes "^8C2121Mis à part les Hunters, les Archers peuvent devenir Bard, si ce sont des hommes.^000000";
+		mes "^8C2121Mis Ã  part les Hunters, les Archers peuvent devenir Bard, si ce sont des hommes.^000000";
 		mes "^8C2121Si ce sont des femmes, ils peuvent devenir Dancer.^000000";
 		if(countitem(2822) == 0 && (getequipid(EQI_ACC_L) != 2822 || getequipid(EQI_ACC_R) != 2822)) {
 			next;
 			mes "[Guildien Archer]";
-			mes "Souhaitez-vous vous enregistrer pour expérimenter de nouvelles capacités ?";
-			mes "Voulez-vous essayer les capacités d'Archer.";
+			mes "Souhaitez-vous vous enregistrer pour expÃ©rimenter de nouvelles capacitÃ©s ?";
+			mes "Voulez-vous essayer les capacitÃ©s d'Archer.";
 			next;
-			if(select("Je veux essayer les capacités d'Archer.:Non, je ne veux pas.") == 2) {
+			if(select("Je veux essayer les capacitÃ©s d'Archer.:Non, je ne veux pas.") == 2) {
 				mes "[Guildien Archer]";
-				mes "Hmmm, êtes vous certain ?";
-				mes "Bien, d'accord. Choisir une classe est quelque chose de très important dans une vie.";
-				mes "Reparlez moi si vous souhaitez finalement essayer les capacités d'Archer.";
+				mes "Hmmm, Ãªtes vous certain ?";
+				mes "Bien, d'accord. Choisir une classe est quelque chose de trÃ¨s important dans une vie.";
+				mes "Reparlez moi si vous souhaitez finalement essayer les capacitÃ©s d'Archer.";
 				close;
 			}
 			mes "[Guildien Archer]";
 			mes "Voici le manuel d'Archer.";
-			mes "Je vais avant récupérer les autres manuels de classe.";
+			mes "Je vais avant rÃ©cupÃ©rer les autres manuels de classe.";
 			callfunc "F_NvErase";
 			getitem 2822,1;	// Archer_Manual
 			next;
 			mes "[Guildien Archer]";
-			mes "Équipez bien votre manuel de Capacités en double-cliquant dessus dans votre inventaire.";
-			mes "Ouvrez votre Arbre de Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre des Capacités en cliquant sur le bouton '-' situé en haut à droite pour voir les capacités disponibles.";
+			mes "Ã‰quipez bien votre manuel de CapacitÃ©s en double-cliquant dessus dans votre inventaire.";
+			mes "Ouvrez votre Arbre de CapacitÃ©s en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenÃªtre des CapacitÃ©s en cliquant sur le bouton '-' situÃ© en haut Ã  droite pour voir les capacitÃ©s disponibles.";
 		}
 		close;
 	case 2:
 		mes "[Guildien Archer]";
-		mes "Vous voulez être un Archer ?";
-		mes "Bien, alors je vais vous envoyer à la Guilde des Archers de ce pas.";
+		mes "Vous voulez Ãªtre un Archer ?";
+		mes "Bien, alors je vais vous envoyer Ã  la Guilde des Archers de ce pas.";
 		next;
 		mes "[Guildien Archer]";
-		mes "Attendez, avez-vous vérifié votre niveau de Job ?";
-		mes "Voulez-vous terminer votre entraînement de Novice et aller à la Guilde des Archers maintenant ?";
+		mes "Attendez, avez-vous vÃ©rifiÃ© votre niveau de Job ?";
+		mes "Voulez-vous terminer votre entraÃ®nement de Novice et aller Ã  la Guilde des Archers maintenant ?";
 		next;
-		if(select("Je vais y réfléchir encore.:Oui je veux aller à la Guilde des Archers.") == 2) {
+		if(select("Je vais y rÃ©flÃ©chir encore.:Oui je veux aller Ã  la Guilde des Archers.") == 2) {
 			mes "[Guildien Archer]";
 			mes "Bienvenue !!";
-			mes "Je vais vous envoyer à la Guilde des Archers après avoir terminé votre entraînement de Novice.";
+			mes "Je vais vous envoyer Ã  la Guilde des Archers aprÃ¨s avoir terminÃ© votre entraÃ®nement de Novice.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "payon",256,242;
@@ -1619,7 +1617,7 @@ new_5-3,109,41,4	duplicate(NvMer)	Guide Merchant#nv5	97
 		close;
 	case 3:
 		mes "[Guildien Archer]";
-		mes "Si vous avez quelques questions à propos des Archers, n'hésitez pas à me les poser.";
+		mes "Si vous avez quelques questions Ã  propos des Archers, n'hÃ©sitez pas Ã  me les poser.";
 		mes "Je pense que vous feriez un puissant archer, jeune novice.";
 		close;
 	}
@@ -1635,56 +1633,56 @@ new_5-3,113,41,4	duplicate(NvArc)	Guide Archer#nv5	727
 -	script	Guide Acolyte#nv::NvAco	95,{
 	if(job_novice_q < 16) {
 		mes "[Acolyte de Prontera]";
-		mes "Vous n'avez pas l'air d'en avoir fini avec les leçons de l'instructeur Brade.";
+		mes "Vous n'avez pas l'air d'en avoir fini avec les leÃ§ons de l'instructeur Brade.";
 		close;
 	}
 	mes "[Acolyte de Prontera]";
-	mes "De quelle manière puis-je vous être utile ?";
+	mes "De quelle maniÃ¨re puis-je vous Ãªtre utile ?";
 	next;
 	switch(select("Qu'est-ce qu'un Acolyte ?:Changer de classe pour Acolyte.:Annuler")) {
 	case 1:
 		mes "[Acolyte de Prontera]";
-		mes "Un Acolyte est quelqu'un qui vénère la déesse Freya et se sacrifie pour aider les autres.";
+		mes "Un Acolyte est quelqu'un qui vÃ©nÃ¨re la dÃ©esse Freya et se sacrifie pour aider les autres.";
 		next;
 		mes "[Acolyte de Prontera]";
-		mes "Les Acolytes utilisent des capacités de support pour rendre le combat plus facile.";
-		mes "C'est essentiel d'avoir un Acolyte pour le succès d'un groupe.";
+		mes "Les Acolytes utilisent des capacitÃ©s de support pour rendre le combat plus facile.";
+		mes "C'est essentiel d'avoir un Acolyte pour le succÃ¨s d'un groupe.";
 		next;
 		mes "[Acolyte de Prontera]";
 		mes "^8C2121En tant qu'Acolyte, vous pourrez changer de classe vers Priest ou Monk.^000000";
 		if(countitem(2821) == 0 && (getequipid(EQI_ACC_L) != 2821 || getequipid(EQI_ACC_R) != 2821)) {
 			next;
 			mes "[Acolyte de Prontera]";
-			mes "Si vous le souhaitez, je peux vous donner un manuel de capacités pour expérimenter les sensations d'être un Acolyte.";
-			mes "Voudriez-vous essayer les capacités d'Acolyte ?";
+			mes "Si vous le souhaitez, je peux vous donner un manuel de capacitÃ©s pour expÃ©rimenter les sensations d'Ãªtre un Acolyte.";
+			mes "Voudriez-vous essayer les capacitÃ©s d'Acolyte ?";
 			next;
-			if(select("Oui, s'il vous plait.:Non je ne suis pas intéressé.") == 2) {
+			if(select("Oui, s'il vous plait.:Non je ne suis pas intÃ©ressÃ©.") == 2) {
 				mes "[Acolyte de Prontera]";
-				mes "Hmmm, êtes vous sûr ?";
-				mes "Bien, d'accord. Choisir une classe est quelque chose de très important dans une vie.";
-				mes "N'hésitez pas à revenir me voir si vous voulez plus d'informations sur les Acolytes.";
+				mes "Hmmm, Ãªtes vous sÃ»r ?";
+				mes "Bien, d'accord. Choisir une classe est quelque chose de trÃ¨s important dans une vie.";
+				mes "N'hÃ©sitez pas Ã  revenir me voir si vous voulez plus d'informations sur les Acolytes.";
 				close;
 			}
 			mes "[Acolyte de Prontera]";
-			mes "Et voilà pour vous, un manuel d'instructions d'Acolyte.";
-			mes "Je vais vous reprendre ces autres manuels de classe pendant que vous étudiez celui-ci.";
+			mes "Et voilÃ  pour vous, un manuel d'instructions d'Acolyte.";
+			mes "Je vais vous reprendre ces autres manuels de classe pendant que vous Ã©tudiez celui-ci.";
 			callfunc "F_NvErase";
 			getitem 2821,1;	// Acolyte_Manual
 			next;
 			mes "[Acolyte de Prontera]";
-			mes "Équipez bien votre manuel de Capacités en double-cliquant dessus dans votre inventaire.";
-			mes "Ouvrez votre Arbre de Capacités en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenêtre des Capacités en cliquant sur le bouton '-' situé en haut à droite pour voir les capacités disponibles.";
+			mes "Ã‰quipez bien votre manuel de CapacitÃ©s en double-cliquant dessus dans votre inventaire.";
+			mes "Ouvrez votre Arbre de CapacitÃ©s en appuyant sur ^4A4AFFALT + S^000000 et minimisez la fenÃªtre des CapacitÃ©s en cliquant sur le bouton '-' situÃ© en haut Ã  droite pour voir les capacitÃ©s disponibles.";
 		}
 		close;
 	case 2:
 		mes "[Acolyte de Prontera]";
-		mes "Bien sûr, je pars du principe que vous avez assez de niveau de Job pour devenir Acolyte ?";
-		mes "Voulez-vous quitter l'entraînement et aller à la Cathédrale de Prontera ?";
+		mes "Bien sÃ»r, je pars du principe que vous avez assez de niveau de Job pour devenir Acolyte ?";
+		mes "Voulez-vous quitter l'entraÃ®nement et aller Ã  la CathÃ©drale de Prontera ?";
 		next;
-		if(select("Laissez-moi y repenser.:Je veux aller à la Cathédrale.") == 2) {
+		if(select("Laissez-moi y repenser.:Je veux aller Ã  la CathÃ©drale.") == 2) {
 			mes "[Acolyte de Prontera]";
-			mes "C'est très bien.";
-			mes "Alors je vais définitivement terminer votre entraînement et vous envoyer à la Cathédrale de Prontera.";
+			mes "C'est trÃ¨s bien.";
+			mes "Alors je vais dÃ©finitivement terminer votre entraÃ®nement et vous envoyer Ã  la CathÃ©drale de Prontera.";
 			close2;
 			callfunc "F_NvErase",1;
 			savepoint "prontera",117,72;
@@ -1694,11 +1692,11 @@ new_5-3,113,41,4	duplicate(NvArc)	Guide Archer#nv5	727
 		mes "[Acolyte de Prontera]";
 		mes "Vous devriez essayer chacun des manuels de classe.";
 		mes "Essayez les minutieusement, et choississez soigneusement.";
-		mes "Bien sûr, je vous accepterai tout le temps.";
+		mes "Bien sÃ»r, je vous accepterai tout le temps.";
 		close;
 	case 3:
 		mes "[Acolyte de Prontera]";
-		mes "Si vous aviez d'autres questions à propos des Acolytes, demandez moi dès que vous le souhaitez.";
+		mes "Si vous aviez d'autres questions Ã  propos des Acolytes, demandez moi dÃ¨s que vous le souhaitez.";
 		mes "Notre Dieu, Odin, attends des aventuriers comme vous.";
 		close;
 	}
@@ -1714,50 +1712,50 @@ new_5-3,117,41,4	duplicate(NvAco)	Guide Acolyte#nv5	95
 -	script	Bruce#nv::NvBruce	57,{
 	mes "[Bruce]";
 	mes "Bonjour ?";
-	mes "Je suis le guide des classes extra et spéciales.";
+	mes "Je suis le guide des classes extra et spÃ©ciales.";
 	next;
 	mes "[Bruce]";
-	mes "Pour les classes spéciales, il s'agit de Taekwon, Ninja, Super Novice et Gunslinger.";
-	mes "Quelle classe souhaitez-vous que je vous décrive ?";
+	mes "Pour les classes spÃ©ciales, il s'agit de Taekwon, Ninja, Super Novice et Gunslinger.";
+	mes "Quelle classe souhaitez-vous que je vous dÃ©crive ?";
 	next;
 	while(1) {
 		switch(select("Taekwon:Ninja:Super Novice:Gunslinger:Terminer la conversation.")) {
 		case 1:
 			mes "[Bruce]";
-			mes "C'est une classe qui utilise habituellement beaucoup de capacités de coups de pieds.";
-			mes "Elle appartient aux classes spéciales. Plus tard vous pourrez changer votre classe pour Taekwon Master, qui possède des capacités d'attaque bien plus puissantes.";
+			mes "C'est une classe qui utilise habituellement beaucoup de capacitÃ©s de coups de pieds.";
+			mes "Elle appartient aux classes spÃ©ciales. Plus tard vous pourrez changer votre classe pour Taekwon Master, qui possÃ¨de des capacitÃ©s d'attaque bien plus puissantes.";
 			next;
 			mes "[Bruce]";
-			mes "Il y a une seconde possibilité de classe dénommée Soul Linker, et qui a aussi de plus fortes attaques.";
-			mes "Vous pourrez décider cela plus tard, quand vous serez meilleur.";
+			mes "Il y a une seconde possibilitÃ© de classe dÃ©nommÃ©e Soul Linker, et qui a aussi de plus fortes attaques.";
+			mes "Vous pourrez dÃ©cider cela plus tard, quand vous serez meilleur.";
 			next;
 			break;
 		case 2:
 			mes "[Bruce]";
-			mes "La spécialité des Ninja est le mouvement rapide.";
-			mes "Ils sont spécialisés dans l'utilisation d'armes de jet.";
+			mes "La spÃ©cialitÃ© des Ninja est le mouvement rapide.";
+			mes "Ils sont spÃ©cialisÃ©s dans l'utilisation d'armes de jet.";
 			next;
 			mes "[Bruce]";
-			mes "Les Ninjas sont une sorte de classe hybride, qui peut utiliser différentes capacités d'esquive, avec la possibilité d'attaques physiques ou magiques, selon leur préférence.";
+			mes "Les Ninjas sont une sorte de classe hybride, qui peut utiliser diffÃ©rentes capacitÃ©s d'esquive, avec la possibilitÃ© d'attaques physiques ou magiques, selon leur prÃ©fÃ©rence.";
 			next;
 			break;
 		case 3:
 			mes "[Bruce]";
-			mes "Le plus gros attrait de ces Super Novices, juste des Novices plus puissants, est leur attirance pour la médiocrité.";
-			mes "Ce sont des gens à tout faire, mais qui ne maîtrisent rien.";
+			mes "Le plus gros attrait de ces Super Novices, juste des Novices plus puissants, est leur attirance pour la mÃ©diocritÃ©.";
+			mes "Ce sont des gens Ã  tout faire, mais qui ne maÃ®trisent rien.";
 			next;
 			mes "[Bruce]";
-			mes "Les Super Novices peuvent apprendre la plupart des capacités des premières classes.";
-			mes "Si vous devenez Super Novice, vous ne pourrez malheureusement pas changer de classe, mais vous pourrez facilement évoluer seul.";
+			mes "Les Super Novices peuvent apprendre la plupart des capacitÃ©s des premiÃ¨res classes.";
+			mes "Si vous devenez Super Novice, vous ne pourrez malheureusement pas changer de classe, mais vous pourrez facilement Ã©voluer seul.";
 			next;
 			break;
 		case 4:
 			mes "[Bruce]";
-			mes "Vous pouvez passer directement de Novice vers une classe spécialisée dans les attaques longues distances avec des pistolets.";
+			mes "Vous pouvez passer directement de Novice vers une classe spÃ©cialisÃ©e dans les attaques longues distances avec des pistolets.";
 			next;
 			mes "[Bruce]";
-			mes "Les Gunslingers utilisent toutes sortes de pistolets fabriqués à 'Einbroch', la ville d'acier.";
-			mes "Je les recommande pour ceux qui veulent devenir de puissants tireurs d'élite.";
+			mes "Les Gunslingers utilisent toutes sortes de pistolets fabriquÃ©s Ã  'Einbroch', la ville d'acier.";
+			mes "Je les recommande pour ceux qui veulent devenir de puissants tireurs d'Ã©lite.";
 			next;
 			break;
 		case 5:
@@ -1781,65 +1779,65 @@ new_5-3,121,41,4	duplicate(NvBruce)	Bruce#nv5	57
 -	script	Officier Eden Group#nv::NvEdn	-1,{
 	if(BaseLevel < 10) {
 		mes "[Officier de l'Eden Group]";
-		mes "Bonjour, je suis un représentant de l'Eden Group.";
+		mes "Bonjour, je suis un reprÃ©sentant de l'Eden Group.";
 		mes "Nous sommes ici pour assister tous les aventuriers de Rune Midgard.";
 		next;
 		mes "[Officier de l'Eden Group]";
-		mes "Nous avons des agents tout autour du monde qui attendent de vous envoyer dans nos quartiers secrets, d'où vous pourrez récupérer différentes quêtes très utiles.";
+		mes "Nous avons des agents tout autour du monde qui attendent de vous envoyer dans nos quartiers secrets, d'oÃ¹ vous pourrez rÃ©cupÃ©rer diffÃ©rentes quÃªtes trÃ¨s utiles.";
 		next;
 		mes "[Officier de l'Eden Group]";
-		mes "Si vous prenez nos quêtes, nous vous donnerons même des armes et des équipements. Alors pensez à venir nous rendre visite au moins un fois quand vous aurez terminé cet entraînement.";
+		mes "Si vous prenez nos quÃªtes, nous vous donnerons mÃªme des armes et des Ã©quipements. Alors pensez Ã  venir nous rendre visite au moins un fois quand vous aurez terminÃ© cet entraÃ®nement.";
 		next;
 		mes "[Officier de l'Eden Group]";
-		mes "Reparlez moi lorsque vous aurez atteint le niveau de Base 10 et je vous ferai sortir de ce terrain d'entraînement.";
-		mes "Avez vous pris toutes les quêtes des différents Guides ?";
+		mes "Reparlez moi lorsque vous aurez atteint le niveau de Base 10 et je vous ferai sortir de ce terrain d'entraÃ®nement.";
+		mes "Avez vous pris toutes les quÃªtes des diffÃ©rents Guides ?";
 		close;
 	}else{
 		mes "[Officier de l'Eden Group]";
-		mes "Bien ! Vous êtes maintenant prêt à affronter les difficultés de ce monde.";
+		mes "Bien ! Vous Ãªtes maintenant prÃªt Ã  affronter les difficultÃ©s de ce monde.";
 		mes "Que souhaiteriez-vous faire ?";
 		next;
-		switch(select("Je veux quitter le terrain d'entraînement.:Parlez-moi des villes.:Annuler")) {
+		switch(select("Je veux quitter le terrain d'entraÃ®nement.:Parlez-moi des villes.:Annuler")) {
 		case 1:
 			mes "[Officier de l'Eden Group]";
-			mes "Vous semblez être prêt.";
+			mes "Vous semblez Ãªtre prÃªt.";
 			mes "Je suppose que vous avez fait votre choix, hein ?";
 			next;
 			mes "[Officier de l'Eden Group]";
-			mes "Si vous savez vers quelle classe vous vous dirigez, vous devriez demander aux ^4A4AFFGuides des Classes^000000 de vous faire sortir du terrain d'entraînement.";
+			mes "Si vous savez vers quelle classe vous vous dirigez, vous devriez demander aux ^4A4AFFGuides des Classes^000000 de vous faire sortir du terrain d'entraÃ®nement.";
 			mes "Vers quelle ville souhaiteriez-vous aller ?";
 			next;
 			switch(select("Prontera:Morocc:Payon:Alberta:Geffen:Annuler")) {
 			case 1:
 				mes "[Officier de l'Eden Group]";
 				mes "Prontera, la Capitale du Royaume de Rune Midgard.";
-				mes "Prenez soin de vous, puisse Freya bénir votre périple.";
+				mes "Prenez soin de vous, puisse Freya bÃ©nir votre pÃ©riple.";
 				callsub S_Warp,"prontera",121,77,121,76;
 			case 2:
 				mes "[Officier de l'Eden Group]";
-				mes "La ville désertique de Morocc a été récemment détruite.";
+				mes "La ville dÃ©sertique de Morocc a Ã©tÃ© rÃ©cemment dÃ©truite.";
 				mes "Je vais vous envoyer au camp des survivants.";
 				callsub S_Warp,"moc_ruins",71,157,70,158;
 			case 3:
 				mes "[Officier de l'Eden Group]";
 				mes "Vous trouverez le Village des Archers juste au nord de Payon.";
-				mes "Bonne chance pour votre périple.";
+				mes "Bonne chance pour votre pÃ©riple.";
 				callsub S_Warp,"payon",167,68,172,111;
 			case 4:
 				mes "[Officier de l'Eden Group]";
 				mes "Alberta, la Ville Portuaire.";
-				mes "C'est le principal centre d'échange.";
-				mes "Si vous souhaitez voyager vers d'autres civilisations, Alberta est la seule possibilité.";
+				mes "C'est le principal centre d'Ã©change.";
+				mes "Si vous souhaitez voyager vers d'autres civilisations, Alberta est la seule possibilitÃ©.";
 				callsub S_Warp,"alberta",115,57,116,58;
 			case 5:
 				mes "[Officier de l'Eden Group]";
-				mes "Geffen, connue comme Cité Magique de Rune Midgard.";
-				mes "Je vais vous envoyer à côté de la Fontaine.";
-				mes "Puisse la Déesse Freya vous bénir.";
+				mes "Geffen, connue comme CitÃ© Magique de Rune Midgard.";
+				mes "Je vais vous envoyer Ã  cÃ´tÃ© de la Fontaine.";
+				mes "Puisse la DÃ©esse Freya vous bÃ©nir.";
 				callsub S_Warp,"geffen",118,36,128,66;
 			case 6:
 				mes "[Officier de l'Eden Group]";
-				mes "Si vous n'êtes pas certain de la classe que vous voulez, parlez aux Guides des Classes pour plus d'aide.";
+				mes "Si vous n'Ãªtes pas certain de la classe que vous voulez, parlez aux Guides des Classes pour plus d'aide.";
 				close;
 			}
 		case 2:
@@ -1847,22 +1845,22 @@ new_5-3,121,41,4	duplicate(NvBruce)	Bruce#nv5	57
 			mes "Prontera est la Capitale du Royaume de Rune Midgard. Vous y trouverez des Merchants vendant leurs objets. C'est aussi un des points de rassemblement favoris des aventuriers.";
 			next;
 			mes "[Officier de l'Eden Group]";
-			mes "La Guilde des Acolytes est située dans la Cathédrale de Prontera, au nord-ouest. La Guilde des Swordmans est à Izlude, une ville juste au sud-est de Prontera.";
+			mes "La Guilde des Acolytes est situÃ©e dans la CathÃ©drale de Prontera, au nord-ouest. La Guilde des Swordmans est Ã  Izlude, une ville juste au sud-est de Prontera.";
 			next;
 			mes "[Officier de l'Eden Group]";
-			mes "Morocc est une cité située dans le désert, et qui a récemment été détruite par un monstre diabolique du nom de Satan Morroc. La Guilde des Thiefs travaille dur pour lui rendre sa gloire d'antan.";
+			mes "Morocc est une citÃ© situÃ©e dans le dÃ©sert, et qui a rÃ©cemment Ã©tÃ© dÃ©truite par un monstre diabolique du nom de Satan Morroc. La Guilde des Thiefs travaille dur pour lui rendre sa gloire d'antan.";
 			next;
 			mes "[Officier de l'Eden Group]";
 			mes "Payon est la maison de la Guilde des Archers. Vous pourrez aussi y trouver des Magasins de la Kafra y vendant leurs objets proche du centre de la ville.";
 			next;
 			mes "[Officier de l'Eden Group]";
-			mes "Alberta est le centre d'échange de Rune Midgard. La Guilde des Merchants y est située et les docks sont remplis de bâteaux allant vers différentes îles.";
+			mes "Alberta est le centre d'Ã©change de Rune Midgard. La Guilde des Merchants y est situÃ©e et les docks sont remplis de bÃ¢teaux allant vers diffÃ©rentes Ã®les.";
 			next;
 			mes "[Officier de l'Eden Group]";
-			mes "Geffen est connue comme Cité Magique de Rune Midgard. La Guilde des Mages y est présente, et des recherches sur de nouvelles magies y sont faites dans leurs quartiers.";
+			mes "Geffen est connue comme CitÃ© Magique de Rune Midgard. La Guilde des Mages y est prÃ©sente, et des recherches sur de nouvelles magies y sont faites dans leurs quartiers.";
 			next;
 			mes "[Officier de l'Eden Group]";
-			mes "Si vous souhaitez être envoyé directement dans les batiments de Guilde, parlez aux Guides de Classes et dites leur que vous souhaitez changer de classe.";
+			mes "Si vous souhaitez Ãªtre envoyÃ© directement dans les batiments de Guilde, parlez aux Guides de Classes et dites leur que vous souhaitez changer de classe.";
 			close;
 		case 3:
 			close;
@@ -1899,20 +1897,20 @@ new_5-3,100,50,4	duplicate(NvPotato)	Marchand#nv5	93
 
 // Trainer (Real Combat Training)
 //============================================================
--	script	Entraîneur Niveau 1#nv::NvBrutus	84,{
-	mes "[Entraîneur Brutus]";
-	mes "Ces monstres sont tous faibles et faciles à tuer. Mais prenez garde, beaucoup d'entres eux sont agressifs et cherchent du sang !";
+-	script	EntraÃ®neur Niveau 1#nv::NvBrutus	84,{
+	mes "[EntraÃ®neur Brutus]";
+	mes "Ces monstres sont tous faibles et faciles Ã  tuer. Mais prenez garde, beaucoup d'entres eux sont agressifs et cherchent du sang !";
 	next;
-	mes "[Entraîneur Brutus]";
-	mes "Si vous pensez que les monstres ici sont trop faibles pour vous, je peux vous envoyer sur un autre terrain d'entraînement où les monstres sont plus fort qu'ici.";
+	mes "[EntraÃ®neur Brutus]";
+	mes "Si vous pensez que les monstres ici sont trop faibles pour vous, je peux vous envoyer sur un autre terrain d'entraÃ®nement oÃ¹ les monstres sont plus fort qu'ici.";
 	next;
-	mes "[Entraîneur Brutus]";
+	mes "[EntraÃ®neur Brutus]";
 	mes "Alors, souhaitez-vous essayer ?";
 	next;
 	switch(select("Envoyez-moi vers un autre Niveau.:Quels monstres y a-t-il ici ?:Annuler")) {
 	case 1:
-		mes "[Entraîneur Brutus]";
-		mes "Je vois, laissez moi vous guider vers un autre niveau. À quel niveau voulez-vous aller ?";
+		mes "[EntraÃ®neur Brutus]";
+		mes "Je vois, laissez moi vous guider vers un autre niveau. Ã€ quel niveau voulez-vous aller ?";
 		next;
 		for(set .@i,1; .@i<6; set .@i,.@i+1) {
 			if (!compare(strnpcinfo(2),"nv"+.@i))
@@ -1923,68 +1921,68 @@ new_5-3,100,50,4	duplicate(NvPotato)	Marchand#nv5	93
 		if (.@i < 7) warp "new_"+.@i+"-3",96,21;
 		close;
 	case 2:
-		mes "[Entraîneur Brutus]";
-		mes "Vous semblez pressé de vous battre.";
-		mes "Le niveau des monstres augmente à chaque niveau des terrains d'entraînement.";
+		mes "[EntraÃ®neur Brutus]";
+		mes "Vous semblez pressÃ© de vous battre.";
+		mes "Le niveau des monstres augmente Ã  chaque niveau des terrains d'entraÃ®nement.";
 		next;
-		mes "[Entraîneur Brutus]";
+		mes "[EntraÃ®neur Brutus]";
 		mes "Le niveau 1 a les monstres les plus faibles.";
 		mes "Vous y trouverez des Porings, des Drops, des Lunatics, des Fabres et des Chonchons.";
 		next;
-		mes "[Entraîneur Brutus]";
+		mes "[EntraÃ®neur Brutus]";
 		mes "Le niveau 2 est un peu plus dur.";
 		mes "Vous y trouverez des Condors, des Pickys, des Willows, des Fabres et des Roda Frogs.";
 		next;
-		mes "[Entraîneur Brutus]";
-		mes "Le niveau 3 est à peu près le même que le niveau 2.";
+		mes "[EntraÃ®neur Brutus]";
+		mes "Le niveau 3 est Ã  peu prÃ¨s le mÃªme que le niveau 2.";
 		mes "Vous y trouverez des Condors, des Pickys, des Willows, des Fabres et des Roda Frogs.";
 		next;
-		mes "[Entraîneur Brutus]";
+		mes "[EntraÃ®neur Brutus]";
 		mes "Le niveau 4 a les monstres les plus forts.";
 		mes "Vous y trouverez des Rockers, des Spores et des Fabres.";
 		next;
-		mes "[Entraîneur Brutus]";
-		mes "Le niveau 5 est le même que le niveau 4.";
+		mes "[EntraÃ®neur Brutus]";
+		mes "Le niveau 5 est le mÃªme que le niveau 4.";
 		mes "Vous y trouverez des Rockers, des Spores et des Fabres.";
 		close;
 	case 3:
-		mes "[Entraîneur Brutus]";
+		mes "[EntraÃ®neur Brutus]";
 		mes "Hmmm...?";
-		mes "Êtes vous inquiet d'aller à des niveaux plus difficiles ? C'est compréhensible, étant donné que tu n'es qu'un jeune aventurier. Bonne chance !";
+		mes "ÃŠtes vous inquiet d'aller Ã  des niveaux plus difficiles ? C'est comprÃ©hensible, Ã©tant donnÃ© que tu n'es qu'un jeune aventurier. Bonne chance !";
 		close;
 	}
 }
 
-new_1-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 1#nv1	84
-new_2-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 2#nv2	84
-new_3-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 3#nv3	84
-new_4-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 4#nv4	84
-new_5-3,103,50,4	duplicate(NvBrutus)	Entraîneur Niveau 5#nv5	84
+new_1-3,103,50,4	duplicate(NvBrutus)	EntraÃ®neur Niveau 1#nv1	84
+new_2-3,103,50,4	duplicate(NvBrutus)	EntraÃ®neur Niveau 2#nv2	84
+new_3-3,103,50,4	duplicate(NvBrutus)	EntraÃ®neur Niveau 3#nv3	84
+new_4-3,103,50,4	duplicate(NvBrutus)	EntraÃ®neur Niveau 4#nv4	84
+new_5-3,103,50,4	duplicate(NvBrutus)	EntraÃ®neur Niveau 5#nv5	84
 
 // Random Stuff (Guards & Bulletin Board)
 //============================================================
 new_1-1,66,114,4	script	Panneau d'affichage#nv	111,{
 	mes "^FF0000=================================^000000";
-	mes "^FF0000^000000^E40CAA[Bienvenue]^CC0000 au ^00FF00Terrain d'Entraînement ^CC0000des ^FF9000Novices ^E40CAA[Bienvenue]^FF0000^000000";
+	mes "^FF0000^000000^E40CAA[Bienvenue]^CC0000 au ^00FF00Terrain d'EntraÃ®nement ^CC0000des ^FF9000Novices ^E40CAA[Bienvenue]^FF0000^000000";
 	mes "^FF0000=================================^000000";
 	close;
 }
 
 new_1-1,144,116,2	script	Guarde#nv1	105,{
-	mes "[Guarde du Terrain d'Entraînement]";
-	mes "Bienvenue au Terrain d'Entraînement.";
-	mes "Tu es dans la cour extérieure. Entre dans le château pour commencer ton entraînement.";
+	mes "[Guarde du Terrain d'EntraÃ®nement]";
+	mes "Bienvenue au Terrain d'EntraÃ®nement.";
+	mes "Tu es dans la cour extÃ©rieure. Entre dans le chÃ¢teau pour commencer ton entraÃ®nement.";
 	close;
 }
 
 new_1-1,144,107,2	script	Guarde#nv2	105,{
-	mes "[Guarde du Terrain d'Entraînement]";
+	mes "[Guarde du Terrain d'EntraÃ®nement]";
 	if(rand(2)) {
 		mes "Entre !";
-		mes "J'aimerais te souhaiter la bienvenue au Terrain d'Entraînement !";
+		mes "J'aimerais te souhaiter la bienvenue au Terrain d'EntraÃ®nement !";
 		next;
-    mes "[Guarde du Terrain d'Entraînement]";
-		mes "Ici tu peux te préparer pour tes futures aventures dans le monde de Ragnarok !";
+    mes "[Guarde du Terrain d'EntraÃ®nement]";
+		mes "Ici tu peux te prÃ©parer pour tes futures aventures dans le monde de Ragnarok !";
 	}
 	else {
 		mes "Fonce, Novice, fonce !";
@@ -1995,11 +1993,11 @@ new_1-1,144,107,2	script	Guarde#nv2	105,{
 
 new_1-2,161,182,5	script	Instructeur#nv	92,{
 	mes "[Edwin]";
-	mes "Hein ? Qu'est-ce que tu fais là ?";
-	mes "Il n'y a plus de leçons que tu puisses prendre.";
+	mes "Hein ? Qu'est-ce que tu fais lÃ  ?";
+	mes "Il n'y a plus de leÃ§ons que tu puisses prendre.";
 	next;
 	mes "[Edwin]";
-	mes "Bien, je vais te faire sortir de là.";
+	mes "Bien, je vais te faire sortir de lÃ .";
 	mes "Va trouver l'instructeur Brade.";
 	close2;
 	warp "new_1-2",100,100;

@@ -1,4 +1,4 @@
-//===== rAthena Script ======================================= 
+ï»¿//===== rAthena Script ======================================= 
 //= Renewal Merchant Job Quest
 //===== By: ================================================== 
 //= Kisuka
@@ -11,33 +11,30 @@
 //===== Additional Comments: ================================= 
 //= 1.0 First Version. [Kisuka]
 //= 1.1 Added support for Baby classes. [Euphy]
-//===== Translated in French by: =============================
-//= Emerick42
 //============================================================
-
-alberta_in,53,43,6	script	Merchant#mer	86,{
+alberta_in,53,43,6	script	Marchand#mer	86,{
 	if (Upper == 1) {
 		if (Class == Job_Novice_High && (ADVJOB == Job_Whitesmith || ADVJOB == Job_Creator)) {
 			mes "[Chef Mahnsoo]";
-			mes "Hey, ça fait longtemps qu'on ne s'est pas vu !";
-			mes "Tu n'as pas laissé ton activité n'est-ce pas ?";
-			mes "Que s'est-il passé ?";
+			mes "Hey, Ã§a fait longtemps qu'on ne s'Ã©tait pas vu !";
+			mes "Tu n'as pas abandonnÃ© ton commerce n'est-ce pas ?";
+			mes "Que s'est-il passÃ© ?";
 			next;
 			mes "[Chef Mahnsoo]";
 			mes "Woah...";
-			mes "Tu as carrément été au Valhalla ?! Ça fait loin...";
+			mes "Tu as carrÃ©ment Ã©tÃ© au Valhalla ?! Ã‡a fait loin...";
 			next;
 			if (getskilllv("NV_BASIC") < 9) {
 				mes "[Chef Mahnsoo]";
 				mes "Hmmm...";
-				mes "Tu n'as pas l'air de pouvoir redevenir Merchant pour l'instant. Va finir ton entraînement de Novice d'abord.";
+				mes "Tu n'as pas l'air de pouvoir redevenir Merchant pour l'instant. Va finir ton entraÃ®nement de Novice d'abord.";
 				next;
 				mes "[Chef Mahnsoo]";
-				mes "Et ne t'inquiète pas, nous aurons toujours une place de Merchant pour toi. Reviens juste quand tu seras prêt, ok ?";
+				mes "Et ne t'inquiÃ¨te pas, nous aurons toujours une place de Merchant pour toi. Reviens juste quand tu seras prÃªt, ok ?";
 				close;
 			}
 			mes "[Chef Mahnsoo]";
-			mes "Je suppose que c'est la destinée qui veut que nous nous rencontrions encore. Bien. Encore une fois, je vais te changer en Merchant !";
+			mes "Je suppose que c'est la destinÃ©e qui veut que nous nous rencontrions encore. Bien. Encore une fois, je vais faire de toi un Merchant !";
 			next;
 			skill 143,0,0;
 			jobchange Job_Merchant_High;
@@ -45,81 +42,81 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 			skill 154,1,0;
 			skill 155,1,0;
 			mes "[Chef Mahnsoo]";
-			mes "Ah, quelle nostalgie. Comme aux bons vieux temps ! Allez, va, et fait de ton mieux !";
+			mes "Ah, quelle nostalgie. Comme au bon vieux temps ! Allez, va, et fait de ton mieux !";
 			close;
 		}else{
 			mes "[Chef Mahnsoo]";
 			mes "^333333*Baille*^000000";
 			mes "Je m'ennuie tellement...";
-			mes "Quand reverrais-je ma chère Blossom ?";
+			mes "Quand recevrais-je des nouvelles de ma chÃ¨re Blossom ?";
 			close;
 		}
 	}
 	mes "[Guildien Mahnsoo]";
-	mes "Bien le bonjour, pourquoi êtes-vous là ?";
+	mes "Bien le bonjour, pourquoi Ãªtes-vous lÃ  ?";
 	next;
-	switch(select("Je souhaiterais devenir merchant.:En savoir plus sur les merchants.:Demander les prérequis pour merchant.:Rien.")) {
+	switch(select("Je souhaiterais devenir marchand.:En savoir plus sur les marchands.:Demander les prÃ©requis pour marchand.:Rien.")) {
 	case 1:
 		mes "[Guildien Mahnsoo]";
 		if(BaseJob != Job_Novice) {
 			if(BaseJob == Job_Merchant) {
 				mes ".....? Quoi ? Qu'est-ce que vous dites ?";
-				mes "Vous êtes déjà un merchant. Oh mon...";
-				mes "Ah ah... Vous êtes marrant !";
+				mes "Vous Ãªtes dÃ©jÃ  marchand. Oh mon...";
+				mes "Ah ah... Je suis censÃ© rire ?";
 			}else{
-				mes "Hein ? Vous essayez d'avoir deux classes en même temps ?";
+				mes "Hein ? Vous essayez d'avoir deux classes en mÃªme temps ?";
 				mes "Pourquoi ne vous investiriez vous pas plus dans votre classe actuelle ?";
 				next;
 				mes "[Guildien Mahnsoo]";
-				mes "Nous avons une éthique ici, vous savez.";
+				mes "Nous avons une Ã©thique ici, vous savez.";
 			}
 			close;
 		}else{
-			mes "Vous souhaitez être un merchant ? Hmmm...";
+			mes "Vous souhaitez devenir marchand ? Hmmm...";
 			next;
 			if (getskilllv("NV_BASIC") < 9) {
 				mes "[Guildien Mahnsoo]";
-				mes "Mais si vous voulez devenir merchant, votre capacité de base doit atteindre le niveau 9, et vous devez avoir utilisé tous vos points de capacités.";
+				mes "Mais si vous voulez devenir marchand, votre Basic Skill doit atteindre le niveau 9, et vous devez avoir utilisÃ© tous vos points de compÃ©tence.";
 				next;
 				mes "[Guildien Mahnsoo]";
-				mes "Ne pensez-vous pas que nous devons apprendre quelques basiques, malgré que nous ne faisions que nous occuper d'argent ?";
+				mes "MÃªme si nous ne faisont que nous occuper d'argent, ne pensez pas que vous devriez apprendre quelques bases avant de commencer ?";
 				close;
 			}
 			mes "[Guildien Mahnsoo]";
-			mes "Bien, je pense que vous êtes totalement prêt pour ça, étant donné que votre capacité de base est à son niveau maximum.";
-			mes "Maintenant, je vais vous autoriser à devenir merchant.";
+			mes "Bien, je pense que vous Ãªtes totalement prÃªt pour Ã§a, Ã©tant donnÃ© que votre Basic Skill est Ã  son niveau maximum.";
+			mes "Maintenant, je vais vous autoriser Ã  devenir marchand.";
 			next;
 			mes "[Guildien Mahnsoo]";
-			mes "Toutes mes félicitations pour être devenu merchant !";
-			mes "Félicitations aussi pour être devenu membre de la guilde des merchants, et un de nos collègues. Nous comptons sur votre investissement dans la guilde dorénavant !";
+			mes "Toutes mes fÃ©licitations pour Ãªtre devenu un marchand !";
+			mes "FÃ©licitations Ã©galement pour Ãªtre devenu membre de la guilde des marchands, et un de nos collÃ¨gues. Nous comptons sur votre investissement dans la guilde dorÃ©navant !";
 			callfunc "Job_Change",Job_Merchant;
 			getitem 1381,1;	// N_Battle_Axe
 			next;
 			mes "[Guildien Mahnsoo]";
-			mes "Tout à fait, nous avons besoin de jeunes gens pleins de passion pour atteindre notre but. Nous voulons représenter 20% du commerce mondial. Vous comprenez ?";
-			mes "Bien, je disais juste... Qu'il faut faire un maximum d'argent au final. Vous comprenez ça au moins ~";
+			mes "Tout Ã  fait, nous avons besoin de jeunes gens pleins de passion pour atteindre notre but. Nous voulons assurer 20% du volume de monnaie mondial. Vous comprenez ?";
+			mes "Si vous prÃ©ferrez... On doit juste faire un maximum d'argent. Ã‡a doit mieux vous parler.";
 			close;
 		}
 	case 2:
 		mes "[Guildien Mahnsoo]";
-		mes "Merchant ? Basiquement, les gens qui vendent des objets pour faire de l'argent sont des merchants.";
-		mes "Pas très bons pour se battre, et pas de capacités spéciales pour attaquer ou se soigner... Mais un merchant peut acheter des objets à bas prix et les revendre pour se faire de l'argent.";
+		mes "Marchand ? Basiquement, les gens qui vendent des objets pour faire de l'argent sont des marchands.";
+		mes "Pas trÃ¨s bons pour se battre, et pas de capacitÃ©s spÃ©ciales pour attaquer ou se soigner... Mais un marchands peut acheter des objets Ã  bas prix et les revendre pour se faire de l'argent.";
 		next;
 		mes "[Guildien Mahnsoo]";
-		mes "En fait, les merchants ont une capacité ultime appelée Mammonite, qui frappe les ennemis avec leur argent... Et ils peuvent équiper presque toutes les armes, sauf les Arcs, les Bâtons et les Épées à Deux Mains. Mais nous pouvons toujours les vendre.";
-		mes "Et oui... Nous les merchants avons toujours le terme argent en tête. Vous comprenez ?";
+		mes "En fait, les marchands ont une capacitÃ© ultime appelÃ©e Mammonite, qui frappe les ennemis avec leur argent... Et ils peuvent Ã©quiper presque toutes les armes, sauf les Arcs, les BÃ¢tons et les Ã‰pÃ©es Ã  Deux Mains. Mais nous pouvons toujours les vendre.";
+		mes "Et oui... Nous les marchands avons toujours le terme argent en tÃªte. Vous comprenez ?";
 		close;
 	case 3:
 		mes "[Guildien Mahnsoo]";
-		mes "Pour devenir un merchant, et malgré que notre métier soit juste de vendre des objets et recevoir de l'argent, vous devez atteindre le niveau 9 pour votre capacité de base.";
+		mes "Pour devenir un marchand, et malgrÃ© que notre mÃ©tier se rÃ©sume Ã  vendre des objets et recevoir de l'argent, votre Basic Skill doit atteindre le niveau 9.";
 		next;
 		mes "[Guildien Mahnsoo]";
-		mes "Sinon, nous avions l'habitude avant de faire payer une taxe d'entrée dans la guilde. Ce n'était pourtant pas si dur de gagner cet argent...?";
-		mes "Mais il y a eu trop de gens qui n'arrivaient pas à rassembler la somme et continuaient de pleurer.";
+		mes "Sinon, nous avions l'habitude avant de faire payer une taxe d'entrÃ©e dans la guilde. Ce n'Ã©tait pourtant pas si dur de gagner cet argent...?";
+		mes "Mais il y a eu trop de gens qui n'arrivaient pas Ã  rassembler la somme et fondaient en larme.";
 		next;
 		mes "[Guildien Mahnsoo]";
-		mes "Alors récemment, nous avons décidé d'autoriser n'importe quel Novice qui le souhaitait à devenir un merchant.";
-		mes "Après tout, ce sont leurs affaires s'ils arrivent à rester en vie ou non.";
+		mes "Alors rÃ©cemment, nous avons dÃ©cidÃ© d'autoriser n'importe quel Novice qui le souhaitait Ã  devenir un marchand.";
+		mes "AprÃ¨s tout, ce sont leurs affaires s'ils arrivent Ã  rester en vie ou non.";
 		close;
 	case 4:
 		close;
