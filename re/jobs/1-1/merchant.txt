@@ -79,7 +79,7 @@ alberta_in,53,43,6	script	Marchand#mer	86,{
 				mes "Mais si vous voulez devenir marchand, votre Basic Skill doit atteindre le niveau 9, et vous devez avoir utilisé tous vos points de compétence.";
 				next;
 				mes "[Guildien Mahnsoo]";
-				mes "Même si nous ne faisont que nous occuper d'argent, ne pensez pas que vous devriez apprendre quelques bases avant de commencer ?";
+				mes "Même si nous ne faisons que nous occuper d'argent, ne pensez-vous pas que vous devriez apprendre quelques bases avant de commencer ?";
 				close;
 			}
 			mes "[Guildien Mahnsoo]";
