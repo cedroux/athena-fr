@@ -11,12 +11,12 @@
 //= Kunlun Town Script
 //===== Additional Comments: ================================= 
 //= 1.5 Rescripted to Aegis 10.3 standards. [L0ne_W0lf]
-//=	Moved Lost Knife mini-quest to quest file.
+//=     Moved Lost Knife mini-quest to quest file.
 //= 1.6 Moved Alberta NPC to pre-re/re paths. [Euphy]
 //============================================================
 
 // Kunlun Transportation
-//============================================================ 
+//============================================================
 -	script	::Kunlun_Envoy_gonryun	-1,{
 	mes "[Wa Bai Hu]";
 	mes "Good day~";
@@ -102,7 +102,7 @@
 				mes "[Wa Bai Hu]";
 				mes "Thank you, let me guide you there immediately.";
 				close2;
-				set zeny,zeny-10000;
+				set Zeny, Zeny-10000;
 				warp "gon_fild01",258,82;
 				end;
 			}
@@ -189,7 +189,7 @@ gonryun,153,64,7	script	Kunlun Envoy#gon4	776,{
 }
 
 // Generic Kunlun NPCs
-//============================================================ 
+//============================================================
 gonryun,200,82,3	script	Jian Chung Xun#gon	774,{
 	mes "[Jian Chung Xun]";
 	mes "I simply adore festivals.";

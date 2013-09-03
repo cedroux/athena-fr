@@ -3,7 +3,7 @@
 //===== By: ================================================== 
 //= Daegaladh, Masao
 //===== Current Version: ===================================== 
-//= 1.0
+//= 1.1
 //===== Compatible With: ===================================== 
 //= rAthena SVN
 //===== Description: ========================================= 
@@ -11,6 +11,11 @@
 //= Trade Clover, Fluff and Jellopy for a Mr. Smile mask.
 //===== Additional Comments: ================================= 
 //= 1.0 Updated to match the new Izlude Map. [Masao]
+//= 1.1 Added Izlude duplicates. [Euphy]
 //============================================================ 
 
-izlude,125,175,4	duplicate(SmileHelper)	Association du Sourire#0	92
+izlude,125,175,4	duplicate(SmileHelper)	Association du Sourire#i1	92
+izlude_a,125,175,4	duplicate(SmileHelper)	Association du Sourire#i2	92
+izlude_b,125,175,4	duplicate(SmileHelper)	Association du Sourire#i3	92
+izlude_c,125,175,4	duplicate(SmileHelper)	Association du Sourire#i4	92
+izlude_d,125,175,4	duplicate(SmileHelper)	Association du Sourire#i5	92
